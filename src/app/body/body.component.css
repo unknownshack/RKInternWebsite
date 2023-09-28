@@ -1,3 +1,45 @@
-.img1 {
-background-image:url('/src/app/img/jpt.jpg')
+@keyframes slideInLeft{
+    from{
+        transform: translateX(-300px);
+        
+    }   
+
+    to{
+        transform: translateX(0);
+       
+    }
 }
+
+.fade {
+    animation: slideInLeft 1s ease-in;
+    opacity: 1;
+}
+#introCarousel,
+.carousel-inner,
+.carousel-item,
+.carousel-item.active {
+  height: 90vh;
+}
+
+.carousel-item:nth-child(1) {
+  background-image: url('https://mdbootstrap.com/img/Photos/Others/images/76.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.carousel-item:nth-child(2) {
+  background-image: url('https://mdbootstrap.com/img/Photos/Others/images/77.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.carousel-item:nth-child(3) {
+    background-image: url('https://mdbootstrap.com/img/Photos/Others/images/78.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  
+  
