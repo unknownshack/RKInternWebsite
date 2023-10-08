@@ -9,6 +9,8 @@ import { BodyComponent } from './body/body.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { CareerComponent } from './career/career.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +19,9 @@ import { CareerComponent } from './career/career.component';
     BodyComponent,
     ContactComponent,
     AboutComponent,
-    CareerComponent
+    CareerComponent,
+    LoginComponent,
+    RegisterComponent
 
   ],
   imports: [

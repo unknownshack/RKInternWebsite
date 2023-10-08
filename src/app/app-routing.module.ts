@@ -4,6 +4,8 @@ import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { BodyComponent } from './body/body.component';
 import { CareerComponent } from './career/career.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 
 const routes: Routes = [
@@ -22,7 +24,16 @@ const routes: Routes = [
 {
   component: CareerComponent,
   path:'career'
+},
+{
+  component: LoginComponent,
+  path:'login'
+},
+{
+  component: RegisterComponent,
+  path:'signUp'
 }
+
 ];
 
 @NgModule({
