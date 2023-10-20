@@ -13,7 +13,8 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist",
+            "outputPath": "dist" ,
+            "optimization": true,
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -25,17 +26,21 @@
               "src/assets"
             ],
             "styles": [
-              "node_modules/minireset.css/minireset.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/animate.css/animate.min.css",
               "node_modules/font-awesome/css/font-awesome.min.css",
               "node_modules/@fortawesome/fontawesome-free/css/all.css",
-              "node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.carousel.min.css",
-              "node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.theme.default.min.css",
-              "node_modules/animate.css/animate.min.css",
+              "src/assets/css/flaticon.css",
+              "src/assets/css/ionicons.min.css",
+              "src/assets/css/icomoon.css",
+              "src/assets/css/style.css",
               "src/styles.css"
             ],
             "scripts": [
-              "./node_modules/hammerjs/hammer.min.js"
+              "node_modules/hammerjs/hammer.min.js",
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/waypoints/lib/jquery.waypoints.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
             ],
             "stylePreprocessorOptions": {
               "includePaths": [
@@ -61,7 +66,7 @@
             },
             "development": {
               "buildOptimizer": false,
-              "optimization": false,
+              "optimization": true,
               "vendorChunk": true,
               "extractLicenses": false,
               "sourceMap": true,
