@@ -1,0 +1,31 @@
+.block-18 {
+  display: block;
+  width: 100%; }
+
+
+      .text strong.number {
+        font-weight: 600;
+        font-size: 40px;
+        color: #000000;
+        display: block;
+        position: relative; }
+
+        .text strong.number:after {
+          position: absolute;
+          bottom: 5px;
+          left: 0;
+          content: '';
+          width: 35px;
+          height: 2px;
+          background: #1b9ce3; }
+.text span{
+  display: block;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.8);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 800;
+}
+
+
+        
