@@ -1,0 +1,1818 @@
+<nav id="navigation-header" _ngcontent-jhq-c0="" _ngcontent-hnm-c0="" class="navbar navbar-expand-md navbar-dark fixed-top"><div _ngcontent-jhq-c0="" class="logo-container ml-0 sm:ml-4 mr-4 relative p-1"><img _ngcontent-jhq-c0="" src="https://d16zz69zs6o3lx.cloudfront.net/img/ivisa-logo-bars.svg" alt="ivisa logo" width="93" height="65" class="logo-ivisa"></div><div _ngcontent-jhq-c0="" class="flex items-center mr-auto"><div _ngcontent-jhq-c0="" class="leading-none mb-0 lg:mb-1 feature-logo"><p _ngcontent-jhq-c0="" class="hidden lg:inline-block align-middle m-0 w-full sm:w-auto">Featured on</p><img _ngcontent-jhq-c0="" alt="CNN" width="42" height="12" src="https://d16zz69zs6o3lx.cloudfront.net/img/CNN_small.png" class="hidden lg:block"></div></div><div _ngcontent-jhq-c0="" _ngcontent-hnm-c0="" id="navbarCollapse" class="navbar-collapse" style=""><ul class="flex flex-row px-4 items-center ml-auto" style="">
+
+      <li class="nav-item justify-center">
+<a id="btn_travel_docs" class="nav-link nav-link-dropdown-btn px-4">
+  <span class="text-black md:text-primary">Travel Documents</span>
+</a>
+</li>
+<li class="nav-item justify-center">
+<a id="btn_subscription" class="nav-link nav-link-dropdown-btn lg:px-4" href="/plus">
+  <span class="">iVisa Plus</span>
+</a>
+</li>
+<li class="nav-item flex-col nav-user">
+<a (click)="dropdownClickHandler($event)" [attr.aria-expanded]="false" class="h-full flex items-center px-4 py-2 rounded-md duration-100 transition-all hover:bg-gray-200 dropdown-js" id="renewPassportBtn" href="javascript:void(0)" aria-haspopup="true">
+  <span class="text-dark text-sm pointer-events-none">Passport</span>
+  <svg class="pointer-events-none h-3 w-3 v2-h-3 v2-w-3 text-dark mr-2 ml-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg>
+</a>
+<div aria-labelledby="renewPassportBtn" class="dropdown-menu dropdown-menu-header w-56 rounded-md shadow-lg ring-1 ring-black ring-opacity-25 focus:outline-none bg-white origin-top-right right-0">
+  <a href="/passport-renewal/united-states" class="text-gray-700 hover:text-gray-925 hover:bg-gray-200 block px-4 py-2 text-sm">US Passport Renewal</a>
+  <a href="/passport-renewal/united-kingdom" class="text-gray-700 hover:text-gray-925 hover:bg-gray-200 block px-4 py-2 text-sm">UK Passport Renewal</a>
+  <a href="/passport-renewal/canada" class="text-gray-700 hover:text-gray-925 hover:bg-gray-200 block px-4 py-2 text-sm">Canada Passport Renewal</a>
+  <a href="/passport-renewal/ireland" class="text-gray-700 hover:text-gray-925 hover:bg-gray-200 block px-4 py-2 text-sm">Ireland Passport Renewal</a>
+</div>
+</li>
+<li class="nav-item justify-center">
+<a id="btn_passport_photos" class="nav-link nav-link-dropdown-btn px-0 lg:px-4" href="/photos">
+  <span class="">Photos</span>
+</a>
+</li>
+<li class="nav-item justify-center mt-2 ml-4 md:mt-0 md:ml-0">
+<button class="w-full py-1 px-0 text-primary text-base hover:text-secondary hidden text-left lg:px-4" id="save-and-exit-button">
+  Save &amp; Exit  </button>
+</li>
+      <div class="text-base flex items-center px-4 py-2 rounded-md duration-100 cursor-pointer transition-all hover:bg-gray-200" onclick="window.mount_currency_selector()">
+<div class="flex items-center uppercase">
+  <svg class=" h-5 w-5 v2-h-5 v2-w-5  mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
+</svg>
+
+  <span class="whitespace-nowrap">en</span>
+  <span class="mx-2">|</span>
+  <div class="whitespace-nowrap" id="currencyHeader">$ USD</div>
+</div>
+</div>
+      
+      <li id="logged-in-header-transformer" class="hidden lg:block text-sm">
+    <a class="h-full flex items-center px-4 py-2 rounded-md duration-100 transition-all hover:bg-gray-200" href="https://www.ivisa.com/login" aria-label="My Account">
+      <svg class="text-black h-6 w-6 v2-h-6 v2-w-6  mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+</svg>
+
+      <span class="text-dark">Login</span>
+    </a>
+  </li>
+  
+      </ul></div>
+    </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="lg:mt-20 md:mt-0 relative flex items-center bg-gray-custom">
+      <div class="flex container pt-8 lg:pt-16 pb-8 lg:pb-0">
+
+        <div class="container flex">
+          <div class="w-full lg:w-7/12 xl:w-8/12 -mr-24">
+            <h1 class="lg:text-left mt-12 mb-4 text-gray-950 w-full lg:w-11/12">
+              Find Visa information for all countries and apply today.  
+            </h1>
+            <h2 class="hidden lg:block text-left mb-6 text-dark text-2xl w-11/12">Focus on your trip, not paperwork. Let us help you easily get your travel documents.</h2>
+            <div>
+            </div>
+          </div>
+          <div class="z-0 flex justify-end items-end hidden lg:flex">
+            <img src="https://d16zz69zs6o3lx.cloudfront.net/img/homepage/bg-hero-girl-en.webp" alt="Girl using iVisa" style="transform: translateX(30px)">
+          </div> 
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="hero-trustpilot relative lg:-mb-20">
+      <div class="container our-number-stats mx-auto text-center mb-24 mt-4 relative z-10">
+      <div class="flex flex-col lg:flex-row justify-evenly border-0 lg:border-1 lg:border-gray-300 shadow-xl bg-white py-8 mb-8">
+            <span class="lg:mb-0 flex w-auto px-2 text-black text-base text-center justify-center items-center">
+                <strong>1.2M</strong>&nbsp;Happy Customers        </span>
+        <span class="lg:mb-0 flex w-auto px-2 text-black text-base text-center justify-center items-center">
+                <strong>99%</strong>&nbsp;On Time Delivery        </span>
+        <span class="lg:mb-0 flex w-auto px-2 text-black text-base text-center justify-center items-center">
+                <strong>10</strong>&nbsp;Years of Experience        </span>
+    
+        <div class="w-auto">
+          <a target="_blank" href="https://www.trustpilot.com/review/ivisa.com?sort=recency&amp;utm_medium=trustbox&amp;utm_source=MicroCombo" class="flex flex-col justify-center flex-wrap items-center" aria-label="View our Trustpilot page">
+            <!-- Stars  with logo-->
+            <div class="flex justify-between items-center">
+              <img class="h-6 xl:h-8 mr-1" alt="" src="https://d16zz69zs6o3lx.cloudfront.net/img/trustpilot/star-filled-black.svg" width="32" height="32">
+              <img class="h-6 xl:h-8 mr-1" alt="" src="https://d16zz69zs6o3lx.cloudfront.net/img/trustpilot/star-filled-black.svg" width="32" height="32">
+              <img class="h-6 xl:h-8 mr-1" alt="" src="https://d16zz69zs6o3lx.cloudfront.net/img/trustpilot/star-filled-black.svg" width="32" height="32">
+              <img class="h-6 xl:h-8 mr-1" alt="" src="https://d16zz69zs6o3lx.cloudfront.net/img/trustpilot/star-filled-black.svg" width="32" height="32">
+              <img class="h-6 xl:h-8 mr-2 xl:mr-4" alt="" src="https://d16zz69zs6o3lx.cloudfront.net/img/trustpilot/star-half-black.svg" width="32" height="32">
+              <img class="h-6 mx-auto" alt="" src="https://d16zz69zs6o3lx.cloudfront.net/img/trustpilot/trustpilot-icon-black.svg" width="98" height="24">
+            </div>
+          </a>
+        </div>
+      </div>
+    
+      <span class="text-black text-lg font-normal">
+              Trustpilot recommended. We <strong>lead the industry</strong> in innovation and reputation
+          </span>
+    </div></div>
+
+
+
+    <div class="pb-8 lg:mt-20" id="main">
+      <div>
+        <section class="container pb-8">
+
+          <div class="text-center flex justify-center mt-8">
+            <h2 class="text-secondary">
+              <div class="hidden md:block">Trusted by global brands</div>
+              <div class="md:hidden pt-8">Trusted By</div>
+            </h2>
+          </div>
+        
+          
+          <div class="w-full py-4 mb-8 overflow-x-auto hidden md:flex">
+            <div class="w-1/6 py-4" (click)="showFirstTrustedBy('desktop')">
+              <svg class="cursor-pointer hover:text-secondary rounded-full border-primary border-2 h-10 w-10 v2-h-10 v2-w-10 text-primary mr-2 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+          <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+        </svg>
+        
+            </div>
+            <div class="w-2/3 items-center justify-evenly">
+              <div class="trusted-by-container w-full h-full flex overflow-x-scroll">
+                <div id="trusted-by-desktop-0" class="flex w-full flex-shrink-0">
+                  <div class="flex-1 p-4">
+              <img src="https://d16zz69zs6o3lx.cloudfront.net/img/trusted-by/aena.png" alt="Aena Logo" class="mx-auto">
+            </div>
+                  <div class="flex-1 p-4">
+              <img src="https://d16zz69zs6o3lx.cloudfront.net/img/trusted-by/iata.png" alt="Iata Logo" class="mx-auto">
+            </div>
+                  <div class="flex-1 p-4">
+              <img src="https://d16zz69zs6o3lx.cloudfront.net/img/trusted-by/intermundial.png" alt="Intermundial Logo" class="mx-auto">
+            </div>
+                  <div class="flex-1 p-4">
+              <img src="https://d16zz69zs6o3lx.cloudfront.net/img/trusted-by/product-hunt.png" alt="Product-hunt Logo" class="mx-auto">
+            </div>
+              </div>
+              <div id="trusted-by-desktop-1" class="flex w-full flex-shrink-0">
+                      <div class="flex-1 p-4">
+                  <img alt="Iberia Logo" class="mx-auto" src="https://d16zz69zs6o3lx.cloudfront.net/img/trusted-by/iberia.png">
+                </div>
+                      <div class="flex-1 p-4">
+                  <img alt="Latam Logo" class="mx-auto" src="https://d16zz69zs6o3lx.cloudfront.net/img/trusted-by/latam.png">
+                </div>
+                      <div class="flex-1 p-4">
+                  <img alt="Cnn Logo" class="mx-auto" src="https://d16zz69zs6o3lx.cloudfront.net/img/trusted-by/cnn.png">
+                </div>
+                      <div class="flex-1 p-4">
+                  <img alt="Boundless Logo" class="mx-auto" src="https://d16zz69zs6o3lx.cloudfront.net/img/trusted-by/boundless.png">
+                </div>
+                  </div>
+              
+          </div>
+        
+            </div>
+            <div class="w-1/6 py-4" (click)="showLastTrustedBy('desktop')">
+              <svg class="cursor-pointer hover:text-secondary rounded-full border-primary border-2 float-right h-10 w-10 v2-h-10 v2-w-10 text-primary mr-2 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+          <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+        </svg>
+        
+            </div>
+          </div>
+        
+          
+          <div class="w-full py-4 overflow-x-auto md:hidden">
+            <div class="items-center justify-evenly">
+              <div class="trusted-by-container w-full h-full flex overflow-x-scroll">
+              <div id="trusted-by-mobile-0" class="flex w-full flex-shrink-0">
+                      <div class="flex-1 p-4">
+                  <img src="https://d16zz69zs6o3lx.cloudfront.net/img/trusted-by/iberia.png" alt="Iberia Logo" class="mx-auto">
+                </div>
+                      <div class="flex-1 p-4">
+                  <img src="https://d16zz69zs6o3lx.cloudfront.net/img/trusted-by/cnn.png" alt="Cnn Logo" class="mx-auto">
+                </div>
+                  </div>
+              <div id="trusted-by-mobile-1" class="flex w-full flex-shrink-0">
+                      <div class="flex-1 p-4">
+                  <img src="https://d16zz69zs6o3lx.cloudfront.net/img/trusted-by/aena.png" alt="Aena Logo" class="mx-auto">
+                </div>
+                      <div class="flex-1 p-4">
+                  <img src="https://d16zz69zs6o3lx.cloudfront.net/img/trusted-by/iata.png" alt="Iata Logo" class="mx-auto">
+                </div>
+                  </div>
+              <div id="trusted-by-mobile-2" class="flex w-full flex-shrink-0">
+                      <div class="flex-1 p-4">
+                  <img src="https://d16zz69zs6o3lx.cloudfront.net/img/trusted-by/latam.png" alt="Latam Logo" class="mx-auto">
+                </div>
+                      <div class="flex-1 p-4">
+                  <img src="https://d16zz69zs6o3lx.cloudfront.net/img/trusted-by/boundless.png" alt="Boundless Logo" class="mx-auto">
+                </div>
+                  </div>
+              <div id="trusted-by-mobile-3" class="flex w-full flex-shrink-0">
+                      <div class="flex-1 p-4">
+                  <img src="https://d16zz69zs6o3lx.cloudfront.net/img/trusted-by/intermundial.png" alt="Intermundial Logo" class="mx-auto">
+                </div>
+                      <div class="flex-1 p-4">
+                  <img src="https://d16zz69zs6o3lx.cloudfront.net/img/trusted-by/product-hunt.png" alt="Product-hunt Logo" class="mx-auto">
+                </div>
+                  </div>
+          </div>
+      
+            </div>
+            
+            <div class="flex items-center justify-center mt-4">
+                      <div onclick="showTrustedBy('trusted-by-mobile-0')">
+                  <svg class="ml-0 mr-0 cursor-pointer hover:text-secondary h-3 w-3 v2-h-3 v2-w-3 text-gray-300 mr-2 ml-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"></path></svg>
+                </div>
+                      <div onclick="showTrustedBy('trusted-by-mobile-1')">
+                  <svg class="ml-0 mr-0 cursor-pointer hover:text-secondary h-3 w-3 v2-h-3 v2-w-3 text-gray-300 mr-2 ml-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"></path></svg>
+                </div>
+                      <div onclick="showTrustedBy('trusted-by-mobile-2')">
+                  <svg class="ml-0 mr-0 cursor-pointer hover:text-secondary h-3 w-3 v2-h-3 v2-w-3 text-gray-300 mr-2 ml-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"></path></svg>
+                </div>
+                      <div onclick="showTrustedBy('trusted-by-mobile-3')">
+                  <svg class="ml-0 mr-0 cursor-pointer hover:text-secondary h-3 w-3 v2-h-3 v2-w-3 text-gray-300 mr-2 ml-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"></path></svg>
+                </div>
+                  </div>
+          </div>
+        
+        </section>
+
+
+        <div id="most-popular"><div class="most-popular-visas-all mb-2 flex flex-col justify-center items-center mt-6 flex-wrap hidden md:flex">
+          <div class="flex justify-center items-center">
+                <span class="inline-block align-middle bg-secondary mb-2 w-6 md:w-12" style="height: 2px"></span>
+            <h2 class="px-2 md:px-4 text-secondary text-center inline">Most Popular Destinations</h2>
+            <span class="inline-block align-middle bg-secondary mb-2 w-6 md:w-12" style="height: 2px"></span>
+            </div>
+      
+        <div class="most-popular-visas text-center w-full max-w-8xl mx-auto">
+          <div class="flex flex-col justify-center items-center p-3 mx-auto mt-12 mostpopularvisas__content sm:flex-row">
+                              <div class="mb-12 lg:mb-4">
+        <a href="https://www.ivisa.com/denmark/schengen-visa" class="h-full w-full" aria-label="Click here to learn more">
+          </a><div class="mostpopularvisas__element shadow flex flex-col mx-6 sm:mx-4 p-0 cursor-pointer justify-center items-center rounded-lg border-transparent border-solid"><a href="https://www.ivisa.com/denmark/schengen-visa" class="h-full w-full" aria-label="Click here to learn more">
+            <div class="visa__image flex flex-col items-center justify-center relative">
+              <img class="bkg-country w-full relative" alt="Scenic picture of Denmark - DK" src="https://d16zz69zs6o3lx.cloudfront.net/img/background-country/DK.png">
+              <div class="flex justify-center">
+                <img class="flag-country absolute rounded-full border-white border-3 h-9 w-9 border-solid" alt="Denmark - DK flag" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/DK.png">
+              </div>
+            </div>
+            <h3 class="text-secondary h-24 flex items-center justify-center px-2">
+              Denmark - DK
+            </h3>
+      
+            </a><div class="-mt-4 z-10 justify-center"><a href="https://www.ivisa.com/denmark/schengen-visa" class="h-full w-full" aria-label="Click here to learn more">
+              </a><a href="https://www.ivisa.com/denmark/schengen-visa" tabindex="-1" class="">
+          
+          <button type="button" aria-label="Learn More" data-destination="https://www.ivisa.com/denmark/schengen-visa" data-btn-text="Learn More" class="btn btn--secondary btn--small btn--std flex-row-reverse link-visa-category flex relative visa__button">
+                    <span>
+                          Learn More                </span>
+            
+                </button>
+      
+           </a>
+            </div>
+          </div>
+        
+      </div>                  <div class="mb-12 lg:mb-4">
+        <a href="https://www.ivisa.com/mexico/tourist-visa" class="h-full w-full" aria-label="Click here to learn more">
+          </a><div class="mostpopularvisas__element shadow flex flex-col mx-6 sm:mx-4 p-0 cursor-pointer justify-center items-center rounded-lg border-transparent border-solid"><a href="https://www.ivisa.com/mexico/tourist-visa" class="h-full w-full" aria-label="Click here to learn more">
+            <div class="visa__image flex flex-col items-center justify-center relative">
+              <img class="bkg-country w-full relative" alt="Scenic picture of Mexico - MX" src="https://d16zz69zs6o3lx.cloudfront.net/img/background-country/MX.png">
+              <div class="flex justify-center">
+                <img class="flag-country absolute rounded-full border-white border-3 h-9 w-9 border-solid" alt="Mexico - MX flag" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/MX.png">
+              </div>
+            </div>
+            <h3 class="text-secondary h-24 flex items-center justify-center px-2">
+              Mexico - MX
+            </h3>
+      
+            </a><div class="-mt-4 z-10 justify-center"><a href="https://www.ivisa.com/mexico/tourist-visa" class="h-full w-full" aria-label="Click here to learn more">
+              </a><a href="https://www.ivisa.com/mexico/tourist-visa" tabindex="-1" class="">
+          
+          <button type="button" aria-label="Learn More" data-destination="https://www.ivisa.com/mexico/tourist-visa" data-btn-text="Learn More" class="btn btn--secondary btn--small btn--std flex-row-reverse link-visa-category flex relative visa__button">
+                    <span>
+                          Learn More                </span>
+            
+                </button>
+      
+           </a>
+            </div>
+          </div>
+        
+      </div>                  <div class="mb-12 lg:mb-4">
+        <a href="https://www.ivisa.com/morocco/visa" class="h-full w-full" aria-label="Click here to learn more">
+          </a><div class="mostpopularvisas__element shadow flex flex-col mx-6 sm:mx-4 p-0 cursor-pointer justify-center items-center rounded-lg border-transparent border-solid"><a href="https://www.ivisa.com/morocco/visa" class="h-full w-full" aria-label="Click here to learn more">
+            <div class="visa__image flex flex-col items-center justify-center relative">
+              <img class="bkg-country w-full relative" alt="Scenic picture of Morocco - MA" src="https://d16zz69zs6o3lx.cloudfront.net/img/background-country/MA.png">
+              <div class="flex justify-center">
+                <img class="flag-country absolute rounded-full border-white border-3 h-9 w-9 border-solid" alt="Morocco - MA flag" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/MA.png">
+              </div>
+            </div>
+            <h3 class="text-secondary h-24 flex items-center justify-center px-2">
+              Morocco - MA
+            </h3>
+      
+            </a><div class="-mt-4 z-10 justify-center"><a href="https://www.ivisa.com/morocco/visa" class="h-full w-full" aria-label="Click here to learn more">
+              </a><a href="https://www.ivisa.com/morocco/visa" tabindex="-1" class="">
+          
+          <button type="button" aria-label="Learn More" data-destination="https://www.ivisa.com/morocco/visa" data-btn-text="Learn More" class="btn btn--secondary btn--small btn--std flex-row-reverse link-visa-category flex relative visa__button">
+                    <span>
+                          Learn More                </span>
+            
+                </button>
+      
+           </a>
+            </div>
+          </div>
+        
+      </div>                  <div class="mb-12 lg:mb-4">
+        <a href="https://www.ivisa.com/portugal/schengen-visa" class="h-full w-full" aria-label="Click here to learn more">
+          </a><div class="mostpopularvisas__element shadow flex flex-col mx-6 sm:mx-4 p-0 cursor-pointer justify-center items-center rounded-lg border-transparent border-solid"><a href="https://www.ivisa.com/portugal/schengen-visa" class="h-full w-full" aria-label="Click here to learn more">
+            <div class="visa__image flex flex-col items-center justify-center relative">
+              <img class="bkg-country w-full relative" alt="Scenic picture of Portugal - PT" src="https://d16zz69zs6o3lx.cloudfront.net/img/background-country/PT.png">
+              <div class="flex justify-center">
+                <img class="flag-country absolute rounded-full border-white border-3 h-9 w-9 border-solid" alt="Portugal - PT flag" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/PT.png">
+              </div>
+            </div>
+            <h3 class="text-secondary h-24 flex items-center justify-center px-2">
+              Portugal - PT
+            </h3>
+      
+            </a><div class="-mt-4 z-10 justify-center"><a href="https://www.ivisa.com/portugal/schengen-visa" class="h-full w-full" aria-label="Click here to learn more">
+              </a><a href="https://www.ivisa.com/portugal/schengen-visa" tabindex="-1" class="">
+          
+          <button type="button" aria-label="Learn More" data-destination="https://www.ivisa.com/portugal/schengen-visa" data-btn-text="Learn More" class="btn btn--secondary btn--small btn--std flex-row-reverse link-visa-category flex relative visa__button">
+                    <span>
+                          Learn More                </span>
+            
+                </button>
+      
+           </a>
+            </div>
+          </div>
+        
+      </div>                  <div class="mb-12 lg:mb-4">
+        <a href="https://www.ivisa.com/singapore/e-visa" class="h-full w-full" aria-label="Click here to learn more">
+          </a><div class="mostpopularvisas__element shadow flex flex-col mx-6 sm:mx-4 p-0 cursor-pointer justify-center items-center rounded-lg border-transparent border-solid"><a href="https://www.ivisa.com/singapore/e-visa" class="h-full w-full" aria-label="Click here to learn more">
+            <div class="visa__image flex flex-col items-center justify-center relative">
+              <img class="bkg-country w-full relative" alt="Scenic picture of Singapore - SG" src="https://d16zz69zs6o3lx.cloudfront.net/img/background-country/SG.png">
+              <div class="flex justify-center">
+                <img class="flag-country absolute rounded-full border-white border-3 h-9 w-9 border-solid" alt="Singapore - SG flag" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/SG.png">
+              </div>
+            </div>
+            <h3 class="text-secondary h-24 flex items-center justify-center px-2">
+              Singapore - SG
+            </h3>
+      
+            </a><div class="-mt-4 z-10 justify-center"><a href="https://www.ivisa.com/singapore/e-visa" class="h-full w-full" aria-label="Click here to learn more">
+              </a><a href="https://www.ivisa.com/singapore/e-visa" tabindex="-1" class="">
+          
+          <button type="button" aria-label="Learn More" data-destination="https://www.ivisa.com/singapore/e-visa" data-btn-text="Learn More" class="btn btn--secondary btn--small btn--std flex-row-reverse link-visa-category flex relative visa__button">
+                    <span>
+                          Learn More                </span>
+            
+                </button>
+      
+           </a>
+            </div>
+          </div>
+        
+      </div>                  </div>
+        </div>
+      
+            <button id="collapseCountriesBtn" class="flex flex-col justify-center items-center relative active:outline-none focus:outline-none" type="button" style="bottom: -64px;">
+        <div class="flex justify-center items-center w-12 cursor-pointer text-white h-12 bg-secondary rounded-full" (click)="toggleArrowImage()">
+          <img id="arrow-img" class="icon-arrow-open" src="https://d16zz69zs6o3lx.cloudfront.net/img/icons/icon-arrow-open-white.svg" alt="">
+        </div>
+        <span class="mt-2 text-secondary relative text-lg">
+                  <span id="view-more" class="">View All</span>
+                  <span id="view-less" class="hidden">View Less</span>
+              </span>
+      </button>
+      
+      <div class="collapsecountries__container mb-2 w-full flex flex-col items-center bg-gray-100">
+        <div class="max-w-9xl flex flex-wrap justify-center m-auto pt-16 px-2 container hidden" id="collapseCountries">
+                                                                <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/american-samoa/entry-permit">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="American Samoa - AS" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/AS.png">
+                  American Samoa - AS
+                </a>
+              </div>
+                                        <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/angola/e-visa-on-arrival">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Angola - AO" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/AO.png">
+                  Angola - AO
+                </a>
+              </div>
+                              <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/anguilla/e-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Anguilla - AI" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/AI.png">
+                  Anguilla - AI
+                </a>
+              </div>
+                                                  <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/argentina/eta-ave">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Argentina - AR" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/AR.png">
+                  Argentina - AR
+                </a>
+              </div>
+                              <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/armenia/visitors-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Armenia - AM" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/AM.png">
+                  Armenia - AM
+                </a>
+              </div>
+                              <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/aruba/ed-card">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Aruba - AW" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/AW.png">
+                  Aruba - AW
+                </a>
+              </div>
+                              <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/australia/visitor-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Australia - AU" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/AU.png">
+                  Australia - AU
+                </a>
+              </div>
+                              <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/austria/schengen-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Austria - AT" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/AT.png">
+                  Austria - AT
+                </a>
+              </div>
+                              <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/azerbaijan/e-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Azerbaijan - AZ" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/AZ.png">
+                  Azerbaijan - AZ
+                </a>
+              </div>
+                              <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/bahamas/travel-visa-electronic-e-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Bahamas - BS" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/BS.png">
+                  Bahamas - BS
+                </a>
+              </div>
+                              <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/bahrain/tourist-e-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Bahrain - BH" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/BH.png">
+                  Bahrain - BH
+                </a>
+              </div>
+                              <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/bangladesh/visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Bangladesh - BD" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/BD.png">
+                  Bangladesh - BD
+                </a>
+              </div>
+                              <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/barbados/ed-card">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Barbados - BB" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/BB.png">
+                  Barbados - BB
+                </a>
+              </div>
+                                        <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/belgium/belgium-schengen-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Belgium - BE" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/BE.png">
+                  Belgium - BE
+                </a>
+              </div>
+                              <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/belize/travel-insurance">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Belize - BZ" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/BZ.png">
+                  Belize - BZ
+                </a>
+              </div>
+                              <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/benin/e-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Benin - BJ" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/BJ.png">
+                  Benin - BJ
+                </a>
+              </div>
+                              <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/bermuda/1-year-residential-certificate">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Bermuda - BM" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/BM.png">
+                  Bermuda - BM
+                </a>
+              </div>
+                              <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/bhutan/health-declaration">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Bhutan - BT" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/BT.png">
+                  Bhutan - BT
+                </a>
+              </div>
+                              <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/bolivia/tourist-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Bolivia - BO" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/BO.png">
+                  Bolivia - BO
+                </a>
+              </div>
+                                                  <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/botswana/e-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Botswana - BW" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/BW.png">
+                  Botswana - BW
+                </a>
+              </div>
+                                        <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/brazil/tourist-e-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Brazil - BR" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/BR.png">
+                  Brazil - BR
+                </a>
+              </div>
+                                                            <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/burkina-faso/e-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Burkina Faso - BF" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/BF.png">
+                  Burkina Faso - BF
+                </a>
+              </div>
+                                        <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/cambodia/e-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Cambodia - KH" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/KH.png">
+                  Cambodia - KH
+                </a>
+              </div>
+                                        <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/canada/visitor-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Canada - CA" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/CA.png">
+                  Canada - CA
+                </a>
+              </div>
+                                        <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/cayman-islands/e-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Cayman Islands - KY" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/KY.png">
+                  Cayman Islands - KY
+                </a>
+              </div>
+                                                  <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/chile/permanencia-transitoria">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Chile - CL" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/CL.png">
+                  Chile - CL
+                </a>
+              </div>
+                              <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/china/tourist-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="China - CN" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/CN.png">
+                  China - CN
+                </a>
+              </div>
+                                                  <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/colombia/check-mig-form">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Colombia - CO" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/CO.png">
+                  Colombia - CO
+                </a>
+              </div>
+                                                                      <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/ivory-coast/e-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Ivory Coast - CI" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/CI.png">
+                  Ivory Coast - CI
+                </a>
+              </div>
+                                                  <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/curacao/immigration-card-passenger-locator-card">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Curacao - CW" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/CW.png">
+                  Curacao - CW
+                </a>
+              </div>
+                                        <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/czech-republic/schengen-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Czech Republic - CZ" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/CZ.png">
+                  Czech Republic - CZ
+                </a>
+              </div>
+                                        <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/denmark/schengen-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Denmark - DK" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/DK.png">
+                  Denmark - DK
+                </a>
+              </div>
+                              <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/djibouti/tourist-e-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Djibouti - DJ" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/DJ.png">
+                  Djibouti - DJ
+                </a>
+              </div>
+                                        <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/dominican-republic/eticket">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Dominican Republic - DO" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/DO.png">
+                  Dominican Republic - DO
+                </a>
+              </div>
+                                                  <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/egypt/e-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Egypt - EG" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/EG.png">
+                  Egypt - EG
+                </a>
+              </div>
+                                                                      <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/ethiopia/e-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Ethiopia - ET" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/ET.png">
+                  Ethiopia - ET
+                </a>
+              </div>
+                                                            <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/finland/schengen-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Finland - FI" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/FI.png">
+                  Finland - FI
+                </a>
+              </div>
+                              <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/france/schengen-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="France - FR" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/FR.png">
+                  France - FR
+                </a>
+              </div>
+                                                            <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/gabon/e-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Gabon - GA" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/GA.png">
+                  Gabon - GA
+                </a>
+              </div>
+                                        <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/georgia/e-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Georgia - GE" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/GE.png">
+                  Georgia - GE
+                </a>
+              </div>
+                              <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/germany/schengen-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Germany - DE" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/DE.png">
+                  Germany - DE
+                </a>
+              </div>
+                                                  <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/greece/schengen-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Greece - GR" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/GR.png">
+                  Greece - GR
+                </a>
+              </div>
+                                        <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/grenada/customs-ed-card">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Grenada - GD" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/GD.png">
+                  Grenada - GD
+                </a>
+              </div>
+                                        <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/guam/guam-health-declaration-form">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Guam - GU" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/GU.png">
+                  Guam - GU
+                </a>
+              </div>
+                                                  <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/guinea/e-visa-online">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Guinea - GN" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/GN.png">
+                  Guinea - GN
+                </a>
+              </div>
+                                                                      <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/honduras/pre-check-application">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Honduras - HN" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/HN.png">
+                  Honduras - HN
+                </a>
+              </div>
+                              <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/hong-kong/pre-arrival-registration">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Hong Kong - HK" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/HK.png">
+                  Hong Kong - HK
+                </a>
+              </div>
+                              <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/hungary/schengen-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Hungary - HU" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/HU.png">
+                  Hungary - HU
+                </a>
+              </div>
+                                        <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/india/tourist-e-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="India - IN" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/IN.png">
+                  India - IN
+                </a>
+              </div>
+                              <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/indonesia/b211a-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Indonesia - ID" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/ID.png">
+                  Indonesia - ID
+                </a>
+              </div>
+                              <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/iran/e-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Iran - IR" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/IR.png">
+                  Iran - IR
+                </a>
+              </div>
+                              <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/iraq/kurdistan-e-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Iraq - IQ" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/IQ.png">
+                  Iraq - IQ
+                </a>
+              </div>
+                              <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/ireland/tourist-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Ireland - IE" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/IE.png">
+                  Ireland - IE
+                </a>
+              </div>
+                                                  <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/italy/schengen-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Italy - IT" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/IT.png">
+                  Italy - IT
+                </a>
+              </div>
+                              <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/jamaica/c5-form">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Jamaica - JM" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/JM.png">
+                  Jamaica - JM
+                </a>
+              </div>
+                              <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/japan/tourist-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Japan - JP" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/JP.png">
+                  Japan - JP
+                </a>
+              </div>
+                                        <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/jordan/pass">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Jordan - JO" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/JO.png">
+                  Jordan - JO
+                </a>
+              </div>
+                              <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/kazakhstan/visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Kazakhstan - KZ" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/KZ.png">
+                  Kazakhstan - KZ
+                </a>
+              </div>
+                              <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/kenya/e-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Kenya - KE" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/KE.png">
+                  Kenya - KE
+                </a>
+              </div>
+                                                  <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/kuwait/e-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Kuwait - KW" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/KW.png">
+                  Kuwait - KW
+                </a>
+              </div>
+                              <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/kyrgyzstan/tourist-e-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Kyrgyzstan - KG" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/KG.png">
+                  Kyrgyzstan - KG
+                </a>
+              </div>
+                              <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/laos/tourist-e-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Laos - LA" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/LA.png">
+                  Laos - LA
+                </a>
+              </div>
+                              <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/latvia/schengen-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Latvia - LV" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/LV.png">
+                  Latvia - LV
+                </a>
+              </div>
+                                                                                <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/lithuania/schengen-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Lithuania - LT" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/LT.png">
+                  Lithuania - LT
+                </a>
+              </div>
+                                                            <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/madagascar/e-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Madagascar - MG" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/MG.png">
+                  Madagascar - MG
+                </a>
+              </div>
+                              <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/malawi/e-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Malawi - MW" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/MW.png">
+                  Malawi - MW
+                </a>
+              </div>
+                              <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/malaysia/tourist-e-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Malaysia - MY" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/MY.png">
+                  Malaysia - MY
+                </a>
+              </div>
+                              <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/maldives/health-declaration">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Maldives - MV" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/MV.png">
+                  Maldives - MV
+                </a>
+              </div>
+                                                                                <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/mauritius/premium-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Mauritius - MU" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/MU.png">
+                  Mauritius - MU
+                </a>
+              </div>
+                                        <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/mexico/tourist-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Mexico - MX" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/MX.png">
+                  Mexico - MX
+                </a>
+              </div>
+                                        <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/moldova/e-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Moldova - MD" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/MD.png">
+                  Moldova - MD
+                </a>
+              </div>
+                                        <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/mongolia/e-visa-online">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Mongolia - MN" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/MN.png">
+                  Mongolia - MN
+                </a>
+              </div>
+                                        <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/montserrat/e-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Montserrat - MS" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/MS.png">
+                  Montserrat - MS
+                </a>
+              </div>
+                              <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/morocco/visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Morocco - MA" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/MA.png">
+                  Morocco - MA
+                </a>
+              </div>
+                                        <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/myanmar/tourist-e-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Myanmar - MM" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/MM.png">
+                  Myanmar - MM
+                </a>
+              </div>
+                                                  <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/nepal/visa-on-arrival">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Nepal - NP" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/NP.png">
+                  Nepal - NP
+                </a>
+              </div>
+                              <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/netherlands/schengen-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Netherlands - NL" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/NL.png">
+                  Netherlands - NL
+                </a>
+              </div>
+                                        <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/new-zealand/visitor-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="New Zealand - NZ" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/NZ.png">
+                  New Zealand - NZ
+                </a>
+              </div>
+                              <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/nicaragua/immigration-form">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Nicaragua - NI" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/NI.png">
+                  Nicaragua - NI
+                </a>
+              </div>
+                                                                                          <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/norway/schengen-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Norway - NO" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/NO.png">
+                  Norway - NO
+                </a>
+              </div>
+                              <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/oman/e-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Oman - OM" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/OM.png">
+                  Oman - OM
+                </a>
+              </div>
+                                                                      <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/papua-new-guinea/e-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Papua New Guinea - PG" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/PG.png">
+                  Papua New Guinea - PG
+                </a>
+              </div>
+                                                  <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/philippines/travel-authorization">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Philippines - PH" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/PH.png">
+                  Philippines - PH
+                </a>
+              </div>
+                                        <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/poland/schengen-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Poland - PL" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/PL.png">
+                  Poland - PL
+                </a>
+              </div>
+                              <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/portugal/schengen-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Portugal - PT" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/PT.png">
+                  Portugal - PT
+                </a>
+              </div>
+                              <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/puerto-rico/visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Puerto Rico - PR" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/PR.png">
+                  Puerto Rico - PR
+                </a>
+              </div>
+                              <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/qatar/e-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Qatar - QA" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/QA.png">
+                  Qatar - QA
+                </a>
+              </div>
+                                                  <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/russia/e-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Russia - RU" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/RU.png">
+                  Russia - RU
+                </a>
+              </div>
+                              <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/rwanda/entry-e-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Rwanda - RW" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/RW.png">
+                  Rwanda - RW
+                </a>
+              </div>
+                                                  <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/saint-kitts-and-nevis/e-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Saint Kitts and Nevis - KN" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/KN.png">
+                  Saint Kitts and Nevis - KN
+                </a>
+              </div>
+                              <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/saint-lucia/electronic-immigration-form">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Saint Lucia - LC" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/LC.png">
+                  Saint Lucia - LC
+                </a>
+              </div>
+                                                                                <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/sao-tome-principe/e-visa-on-arrival">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Sao Tome &amp; Principe - ST" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/ST.png">
+                  Sao Tome &amp; Principe - ST
+                </a>
+              </div>
+                              <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/saudi-arabia/tourist-e-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Saudi Arabia - SA" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/SA.png">
+                  Saudi Arabia - SA
+                </a>
+              </div>
+                                                  <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/seychelles/travel-authorization">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Seychelles - SC" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/SC.png">
+                  Seychelles - SC
+                </a>
+              </div>
+                              <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/sierra-leone/e-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Sierra Leone - SL" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/SL.png">
+                  Sierra Leone - SL
+                </a>
+              </div>
+                              <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/singapore/e-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Singapore - SG" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/SG.png">
+                  Singapore - SG
+                </a>
+              </div>
+                                                                      <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/somalia/tourist-e-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Somalia - SO" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/SO.png">
+                  Somalia - SO
+                </a>
+              </div>
+                              <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/south-africa/e-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="South Africa - ZA" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/ZA.png">
+                  South Africa - ZA
+                </a>
+              </div>
+                                        <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/south-korea/eta">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="South Korea - KR" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/KR.png">
+                  South Korea - KR
+                </a>
+              </div>
+                              <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/south-sudan/traveller-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="South Sudan - SS" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/SS.png">
+                  South Sudan - SS
+                </a>
+              </div>
+                              <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/spain/schengen-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Spain - ES" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/ES.png">
+                  Spain - ES
+                </a>
+              </div>
+                              <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/sri-lanka/tourist-eta">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Sri Lanka - LK" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/LK.png">
+                  Sri Lanka - LK
+                </a>
+              </div>
+                                        <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/suriname/entry-fee">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Suriname - SR" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/SR.png">
+                  Suriname - SR
+                </a>
+              </div>
+                                                  <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/sweden/schengen-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Sweden - SE" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/SE.png">
+                  Sweden - SE
+                </a>
+              </div>
+                              <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/switzerland/schengen-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Switzerland - CH" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/CH.png">
+                  Switzerland - CH
+                </a>
+              </div>
+                                        <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/taiwan/e-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Taiwan - TW" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/TW.png">
+                  Taiwan - TW
+                </a>
+              </div>
+                              <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/tajikistan/e-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Tajikistan - TJ" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/TJ.png">
+                  Tajikistan - TJ
+                </a>
+              </div>
+                              <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/tanzania/tourist-e-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Tanzania - TZ" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/TZ.png">
+                  Tanzania - TZ
+                </a>
+              </div>
+                              <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/thailand/tourist-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Thailand - TH" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/TH.png">
+                  Thailand - TH
+                </a>
+              </div>
+                              <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/togo/traveler-declaration-form">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Togo - TG" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/TG.png">
+                  Togo - TG
+                </a>
+              </div>
+                                                                      <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/turkey/e-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Turkey - TR" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/TR.png">
+                  Turkey - TR
+                </a>
+              </div>
+                                        <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/turks-caicos-islands/customs-declaration">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Turks &amp; Caicos Islands - TC" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/TC.png">
+                  Turks &amp; Caicos Islands - TC
+                </a>
+              </div>
+                                        <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/uganda/tourist-e-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Uganda - UG" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/UG.png">
+                  Uganda - UG
+                </a>
+              </div>
+                                                  <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/united-arab-emirates/tourist-e-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="United Arab Emirates - AE" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/AE.png">
+                  United Arab Emirates - AE
+                </a>
+              </div>
+                              <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/united-kingdom/visitor-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="United Kingdom - GB" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/GB.png">
+                  United Kingdom - GB
+                </a>
+              </div>
+                              <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/united-states/b1b2-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="United States - US" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/US.png">
+                  United States - US
+                </a>
+              </div>
+                                                            <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/uzbekistan/e-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Uzbekistan - UZ" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/UZ.png">
+                  Uzbekistan - UZ
+                </a>
+              </div>
+                                                            <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/vietnam/e-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Vietnam - VN" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/VN.png">
+                  Vietnam - VN
+                </a>
+              </div>
+                                                            <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/zambia/e-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Zambia - ZM" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/ZM.png">
+                  Zambia - ZM
+                </a>
+              </div>
+                              <div class="collapsecountry my-2 w-full md:w-1/3 lg:w-1/3 px-3">
+                <a class="collapsecountry__element px-3 h-13 rounded-big m-auto flex items-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark" href="https://www.ivisa.com/zimbabwe/e-visa">
+                  <img class="flag-country rounded-full h-8 w-8 border-white border-2 border-solid mr-2" alt="Zimbabwe - ZW" src="https://d16zz69zs6o3lx.cloudfront.net/img/circle-flags/ZW.png">
+                  Zimbabwe - ZW
+                </a>
+              </div>
+                    
+          <div class="seo-links flex items-center h-13 w-full justify-evenly my-2 transform">
+            <a href="/schengen" class="collapsecountry__element w-1/2 h-full rounded-big mx-2 flex items-center justify-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark">
+              Schengen
+            </a>
+            <a href="/etias" class="collapsecountry__element w-1/2 h-full rounded-big mx-2 flex items-center justify-center bg-white hover:border-secondary active:border-secondary focus:border-secondary border-solid text-dark hover:text-dark">
+              Etias
+            </a>
+          </div>
+        </div>
+      </div>
+      
+        
+        </div>
+
+        <div class="container pb-24 md:py-24 mt-12 lg:mt-0">
+          <h2 class="text-black mb-3">Why Choose Us</h2>
+          <div class="h-1 w-24 bg-secondary mb-6"></div>
+        
+          <div class="flex flex-col lg:flex-row mb-4">
+            <div class="w-full lg:w-1/4 my-4 lg:mr-12">
+              <h3 class="text-secondary mb-6 lg:mb-4">Speed and Simplicity</h3>
+              <p class="text-gray-900 text-base">
+                Easy, traveler-friendly application process. Simple and much less complicated than dealing with foreign governments.      </p>
+            </div>
+        
+            <div class="w-full lg:w-1/4 my-4 lg:mr-12">
+              <h3 class="text-secondary mb-6 lg:mb-4">Get Approved</h3>
+              <p class="text-gray-900 text-base">
+                All documents are reviewed by a team of immigration experts. Our staff is well-trained and offers years of experience.      </p>
+            </div>
+        
+            <div class="w-full lg:w-1/4 my-4 lg:mr-12">
+              <h3 class="text-secondary mb-6 lg:mb-4">Secure and Safe</h3>
+              <p class="text-gray-900 text-base">
+                World-class data centers and state-of-the-art security. Your credit card information will never be exposed to any government websites!      </p>
+            </div>
+        
+            <div class="w-full lg:w-1/4 my-4">
+              <h3 class="text-secondary mb-6 lg:mb-4">Awesome support</h3>
+              <p class="text-gray-900 text-base">
+                Our customer support is ready to help 24/7. We want you to enjoy your travels and avoid the stress of getting a visa!      </p>
+            </div>
+          </div>
+        
+          <div class="flex justify-center">
+            <a href="#app" tabindex="-1" class="">
+            
+            <button type="button" data-destination="#app" data-btn-text="Apply Now" class="btn btn--primary btn--std flex-row-reverse">
+                      <span>
+                            Apply Now                </span>
+              
+                  </button>
+        
+             </a>
+          </div>
+        </div>
+
+        <div class="bg-gray-100 pt-16">
+          <div class="container flex justify-between">
+            <div class="w-1/2 flex flex-col justify-center mr-6">
+                      <div class="text-3xl lg:text-6xl mb-4">Download our <span class="text-primary">app!</span></div>
+                <div class="text-xs lg:text-2xl mb-6">Check what <strong>travel documents</strong> you need for your upcoming travels. Quickly and securely apply directly from our easy to use app. Now available on iOS and Android!</div>
+              
+              <div class="flex lg:hidden md:w-3/4">
+                <a class="w-1/2 mr-2" href="https://app.adjust.com/10qsd1aq"><img data-src="https://d16zz69zs6o3lx.cloudfront.net/img/app_store.svg" class="w-full" alt="Click to download our iOS app"></a>
+                <a class="w-1/2" href="https://app.adjust.com/10qsd1aq"><img alt="Link to Google Play Store" class="w-full" data-src="https://d16zz69zs6o3lx.cloudfront.net/img/play_store.svg"></a>
+              </div>
+            </div>
+        
+            <img class="w-1/2 md:1/3 lg:w-auto md:mx-8" src="https://d16zz69zs6o3lx.cloudfront.net/img/app_mockup.png">
+        
+            <div class="hidden lg:flex flex-col justify-center">
+              <a href="https://app.adjust.com/10qsd1aq"><img class="w-full mb-2" alt="Click to download our iOS app" src="https://d16zz69zs6o3lx.cloudfront.net/img/app_store.svg"></a>
+              <a href="https://app.adjust.com/10qsd1aq"><img alt="Link to Google Play Store" class="w-full h-auto" src="https://d16zz69zs6o3lx.cloudfront.net/img/play_store.svg"></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-gray-100 py-12 pt-24 ivisa-tabs text-center">
+          <div class="flex justify-center items-center">
+            <span class="inline-block align-middle bg-secondary mb-2 w-6 md:w-12" style="height: 2px"></span>
+            <h2 class="px-2 md:px-4 text-secondary text-center  inline">How it Works?</h2>
+            <span class="inline-block align-middle bg-secondary mb-2 w-6 md:w-12" style="height: 2px"></span>
+          </div>
+        
+          <div class="nav-pills container grid grid-cols-4 gap-4 md:gap-6 px-4 py-0 mt-12" role="tablist">
+                  <button class="nav-link col-span-4 sm:col-span-2 lg:col-span-1 shadow font-normal py-4 lg:py-1 text-sm" role="tab" data-tabs-btn="" aria-controls="evisa" aria-selected="false">
+                Electronic Visa (e-Visa)
+              </button>
+                  <button class="nav-link col-span-4 sm:col-span-2 lg:col-span-1 shadow font-normal py-4 lg:py-1 text-sm" role="tab" data-tabs-btn="" aria-controls="voa" aria-selected="false">
+                e-Visa on Arrival
+              </button>
+                  <button class="nav-link col-span-4 sm:col-span-2 lg:col-span-1 shadow font-normal py-4 lg:py-1 text-sm" role="tab" data-tabs-btn="" aria-controls="health_declaration" aria-selected="false">
+                Health Declaration
+              </button>
+                  <button class="nav-link col-span-4 sm:col-span-2 lg:col-span-1 shadow font-normal py-4 lg:py-1 text-sm active" role="tab" data-tabs-btn="" aria-controls="guided_entry" aria-selected="true">
+                Guided Visa
+              </button>
+              </div>
+        
+          <div class="tab-content">
+                  <div class="tab-pane fade container-fluid text-center flex items-center flex-col tab-ivisa-container max-w-8xl relative px-1" id="evisa" role="tabpanel" aria-expanded="false" aria-labelledby="evisa">
+                <div class="mt-12 mb-6 flex flex-col lg:flex-row lg:overflow-x-auto justify-between lg:justify-center flex-nowrap">
+                  <div class="card relative flex flex-col bg-white bg-clip-border mb-6 pt-6 lg:w-52 xl:w-64 mx-3 px-6 min-h-full shadow-none flex-none rounded-big border border-gray-300">
+            <div class="flex row">
+              <div class="col-8 col-lg-12 order-2 order-lg-1">
+                <div class="font-bold text-black flex items-center justify-start lg:justify-center whitespace-normal text-left lg:text-center m-0 leading-snug">
+                  Fill out online application
+                </div>
+                <div class="hidden lg:block mb-3">────</div>
+                <p class="block lg:hidden text-sm mt-3 mb-6 whitespace-normal text-left lg:text-center leading-snug">
+                  Complete our easy online application and pay with credit card or PayPal
+                </p>
+              </div>
+              <div class="col-4 col-lg-12 order-1 lg:order-2 px-0">
+                <figure class="mb-6 mt-0 lg:mt-6 flex justify-center">
+                  <img class="w-auto h-16 lg:h-24 lg:p-2" height="64" width="64" alt="Fill out online application" src="https://ivisa.s3.amazonaws.com/visa-classification-steps/electronic-visa-online.png">
+                </figure>
+              </div>
+              <p class="col-8 col-lg-12 order-3 hidden lg:block text-sm mb-6 whitespace-normal">Complete our easy online application and pay with credit card or PayPal</p>
+            </div>
+          </div>
+          <div class="card relative flex flex-col bg-white bg-clip-border mb-6 pt-6 lg:w-52 xl:w-64 mx-3 px-6 min-h-full shadow-none flex-none rounded-big border border-gray-300">
+            <div class="flex row">
+              <div class="col-8 col-lg-12 order-2 order-lg-1">
+                <div class="font-bold text-black flex items-center justify-start lg:justify-center whitespace-normal text-left lg:text-center m-0 leading-snug">
+                  Receive document via email
+                </div>
+                <div class="hidden lg:block mb-3">────</div>
+                <p class="block lg:hidden text-sm mt-3 mb-6 whitespace-normal text-left lg:text-center leading-snug">
+                  No need to deal with the embassy. We do it for you so you don't lose valuable time
+                </p>
+              </div>
+              <div class="col-4 col-lg-12 order-1 lg:order-2 px-0">
+                <figure class="mb-6 mt-0 lg:mt-6 flex justify-center">
+                  <img class="w-auto h-16 lg:h-24 lg:p-2" height="64" width="64" alt="Receive document via email" src="https://ivisa.s3.amazonaws.com/visa-classification-steps/electronic-visa-email.png">
+                </figure>
+              </div>
+              <p class="col-8 col-lg-12 order-3 hidden lg:block text-sm mb-6 whitespace-normal">No need to deal with the embassy. We do it for you so you don't lose valuable time</p>
+            </div>
+          </div>
+          <div class="card relative flex flex-col bg-white bg-clip-border mb-6 pt-6 lg:w-52 xl:w-64 mx-3 px-6 min-h-full shadow-none flex-none rounded-big border border-gray-300">
+            <div class="flex row">
+              <div class="col-8 col-lg-12 order-2 order-lg-1">
+                <div class="font-bold text-black flex items-center justify-start lg:justify-center whitespace-normal text-left lg:text-center m-0 leading-snug">
+                  Enter destination
+                </div>
+                <div class="hidden lg:block mb-3">────</div>
+                <p class="block lg:hidden text-sm mt-3 mb-6 whitespace-normal text-left lg:text-center leading-snug">
+                  Present your Passport and the Document we provide upon entry to destination country
+                </p>
+              </div>
+              <div class="col-4 col-lg-12 order-1 lg:order-2 px-0">
+                <figure class="mb-6 mt-0 lg:mt-6 flex justify-center">
+                  <img class="w-auto h-16 lg:h-24 lg:p-2" height="64" width="64" alt="Enter destination" src="https://ivisa.s3.amazonaws.com/visa-classification-steps/pay-on-arrival.png">
+                </figure>
+              </div>
+              <p class="col-8 col-lg-12 order-3 hidden lg:block text-sm mb-6 whitespace-normal">Present your Passport and the Document we provide upon entry to destination country</p>
+            </div>
+          </div>
+                </div>
+        
+                <div class="flex justify-center">
+                  <a href="#app" tabindex="-1" class="">
+            
+            <button type="button" data-destination="#app" data-btn-text="Apply Now" class="btn btn--primary btn--std flex-row-reverse">
+                      <span>
+                            Apply Now                </span>
+              
+                  </button>
+        
+             </a>
+                </div>
+              </div>
+                  <div class="tab-pane fade container-fluid text-center flex items-center flex-col tab-ivisa-container max-w-8xl relative px-1" id="voa" role="tabpanel" aria-expanded="false" aria-labelledby="voa">
+                <div class="mt-12 mb-6 flex flex-col lg:flex-row lg:overflow-x-auto justify-between lg:justify-center flex-nowrap">
+                  <div class="card relative flex flex-col bg-white bg-clip-border mb-6 pt-6 lg:w-52 xl:w-64 mx-3 px-6 min-h-full shadow-none flex-none rounded-big border border-gray-300">
+            <div class="flex row">
+              <div class="col-8 col-lg-12 order-2 order-lg-1">
+                <div class="font-bold text-black flex items-center justify-start lg:justify-center whitespace-normal text-left lg:text-center m-0 leading-snug">
+                  Fill out online application
+                </div>
+                <div class="hidden lg:block mb-3">────</div>
+                <p class="block lg:hidden text-sm mt-3 mb-6 whitespace-normal text-left lg:text-center leading-snug">
+                  Complete our easy online application pay with credit card or PayPal
+                </p>
+              </div>
+              <div class="col-4 col-lg-12 order-1 lg:order-2 px-0">
+                <figure class="mb-6 mt-0 lg:mt-6 flex justify-center">
+                  <img class="w-auto h-16 lg:h-24 lg:p-2" height="64" width="64" alt="Fill out online application" src="https://ivisa.s3.amazonaws.com/visa-classification-steps/electronic-visa-online.png">
+                </figure>
+              </div>
+              <p class="col-8 col-lg-12 order-3 hidden lg:block text-sm mb-6 whitespace-normal">Complete our easy online application pay with credit card or PayPal</p>
+            </div>
+          </div>
+          <div class="card relative flex flex-col bg-white bg-clip-border mb-6 pt-6 lg:w-52 xl:w-64 mx-3 px-6 min-h-full shadow-none flex-none rounded-big border border-gray-300">
+            <div class="flex row">
+              <div class="col-8 col-lg-12 order-2 order-lg-1">
+                <div class="font-bold text-black flex items-center justify-start lg:justify-center whitespace-normal text-left lg:text-center m-0 leading-snug">
+                  Receive visa on arrival confirmation via email
+                </div>
+                <div class="hidden lg:block mb-3">────</div>
+                <p class="block lg:hidden text-sm mt-3 mb-6 whitespace-normal text-left lg:text-center leading-snug">
+                  No need to deal with the embassy or lose valuable time at destination airport.
+                </p>
+              </div>
+              <div class="col-4 col-lg-12 order-1 lg:order-2 px-0">
+                <figure class="mb-6 mt-0 lg:mt-6 flex justify-center">
+                  <img class="w-auto h-16 lg:h-24 lg:p-2" height="64" width="64" alt="Receive visa on arrival confirmation via email" src="https://ivisa.s3.amazonaws.com/visa-classification-steps/electronic-visa-email.png">
+                </figure>
+              </div>
+              <p class="col-8 col-lg-12 order-3 hidden lg:block text-sm mb-6 whitespace-normal">No need to deal with the embassy or lose valuable time at destination airport.</p>
+            </div>
+          </div>
+          <div class="card relative flex flex-col bg-white bg-clip-border mb-6 pt-6 lg:w-52 xl:w-64 mx-3 px-6 min-h-full shadow-none flex-none rounded-big border border-gray-300">
+            <div class="flex row">
+              <div class="col-8 col-lg-12 order-2 order-lg-1">
+                <div class="font-bold text-black flex items-center justify-start lg:justify-center whitespace-normal text-left lg:text-center m-0 leading-snug">
+                  Enter destination
+                </div>
+                <div class="hidden lg:block mb-3">────</div>
+                <p class="block lg:hidden text-sm mt-3 mb-6 whitespace-normal text-left lg:text-center leading-snug">
+                  Present your Passport and Document we provide at destination airport. Receive visa and enter country.
+                </p>
+              </div>
+              <div class="col-4 col-lg-12 order-1 lg:order-2 px-0">
+                <figure class="mb-6 mt-0 lg:mt-6 flex justify-center">
+                  <img class="w-auto h-16 lg:h-24 lg:p-2" height="64" width="64" alt="Enter destination" src="https://ivisa.s3.amazonaws.com/visa-classification-steps/pay-on-arrival.png">
+                </figure>
+              </div>
+              <p class="col-8 col-lg-12 order-3 hidden lg:block text-sm mb-6 whitespace-normal">Present your Passport and Document we provide at destination airport. Receive visa and enter country.</p>
+            </div>
+          </div>
+                </div>
+        
+                <div class="flex justify-center">
+                  <a href="#app" tabindex="-1" class="">
+            
+            <button type="button" data-destination="#app" data-btn-text="Apply Now" class="btn btn--primary btn--std flex-row-reverse">
+                      <span>
+                            Apply Now                </span>
+              
+                  </button>
+        
+             </a>
+                </div>
+              </div>
+                  <div class="tab-pane fade container-fluid text-center flex items-center flex-col tab-ivisa-container max-w-8xl relative px-1" id="health_declaration" role="tabpanel" aria-expanded="false" aria-labelledby="health_declaration">
+                <div class="mt-12 mb-6 flex flex-col lg:flex-row lg:overflow-x-auto justify-between lg:justify-center flex-nowrap">
+                  <div class="card relative flex flex-col bg-white bg-clip-border mb-6 pt-6 lg:w-52 xl:w-64 mx-3 px-6 min-h-full shadow-none flex-none rounded-big border border-gray-300">
+            <div class="flex row">
+              <div class="col-8 col-lg-12 order-2 order-lg-1">
+                <div class="font-bold text-black flex items-center justify-start lg:justify-center whitespace-normal text-left lg:text-center m-0 leading-snug">
+                  Apply Online
+                </div>
+                <div class="hidden lg:block mb-3">────</div>
+                <p class="block lg:hidden text-sm mt-3 mb-6 whitespace-normal text-left lg:text-center leading-snug">
+                  Our application form is 100% digital and easy to fill-in, complete it and pay it with credit card or PayPal.
+                </p>
+              </div>
+              <div class="col-4 col-lg-12 order-1 lg:order-2 px-0">
+                <figure class="mb-6 mt-0 lg:mt-6 flex justify-center">
+                  <img class="w-auto h-16 lg:h-24 lg:p-2" height="64" width="64" alt="Apply Online" src="https://ivisa.s3.amazonaws.com/visa-classification-steps/electronic-visa-email.png">
+                </figure>
+              </div>
+              <p class="col-8 col-lg-12 order-3 hidden lg:block text-sm mb-6 whitespace-normal">Our application form is 100% digital and easy to fill-in, complete it and pay it with credit card or PayPal.</p>
+            </div>
+          </div>
+          <div class="card relative flex flex-col bg-white bg-clip-border mb-6 pt-6 lg:w-52 xl:w-64 mx-3 px-6 min-h-full shadow-none flex-none rounded-big border border-gray-300">
+            <div class="flex row">
+              <div class="col-8 col-lg-12 order-2 order-lg-1">
+                <div class="font-bold text-black flex items-center justify-start lg:justify-center whitespace-normal text-left lg:text-center m-0 leading-snug">
+                  Get your Health Declaration via Email
+                </div>
+                <div class="hidden lg:block mb-3">────</div>
+                <p class="block lg:hidden text-sm mt-3 mb-6 whitespace-normal text-left lg:text-center leading-snug">
+                  No need to deal with the embassy. We do it for you so you don't lose valuable time.
+                </p>
+              </div>
+              <div class="col-4 col-lg-12 order-1 lg:order-2 px-0">
+                <figure class="mb-6 mt-0 lg:mt-6 flex justify-center">
+                  <img class="w-auto h-16 lg:h-24 lg:p-2" height="64" width="64" alt="Get your Health Declaration via Email" src="https://ivisa.s3.amazonaws.com/visa-classification-steps/paper-visa-consulate.png">
+                </figure>
+              </div>
+              <p class="col-8 col-lg-12 order-3 hidden lg:block text-sm mb-6 whitespace-normal">No need to deal with the embassy. We do it for you so you don't lose valuable time.</p>
+            </div>
+          </div>
+          <div class="card relative flex flex-col bg-white bg-clip-border mb-6 pt-6 lg:w-52 xl:w-64 mx-3 px-6 min-h-full shadow-none flex-none rounded-big border border-gray-300">
+            <div class="flex row">
+              <div class="col-8 col-lg-12 order-2 order-lg-1">
+                <div class="font-bold text-black flex items-center justify-start lg:justify-center whitespace-normal text-left lg:text-center m-0 leading-snug">
+                  Take your trip!
+                </div>
+                <div class="hidden lg:block mb-3">────</div>
+                <p class="block lg:hidden text-sm mt-3 mb-6 whitespace-normal text-left lg:text-center leading-snug">
+                  Present your Passport and the Health Declaration we provide when you arrive at the airport.
+                </p>
+              </div>
+              <div class="col-4 col-lg-12 order-1 lg:order-2 px-0">
+                <figure class="mb-6 mt-0 lg:mt-6 flex justify-center">
+                  <img class="w-auto h-16 lg:h-24 lg:p-2" height="64" width="64" alt="Take your trip!" src="https://ivisa.s3.amazonaws.com/visa-classification-steps/travel-safely.png">
+                </figure>
+              </div>
+              <p class="col-8 col-lg-12 order-3 hidden lg:block text-sm mb-6 whitespace-normal">Present your Passport and the Health Declaration we provide when you arrive at the airport.</p>
+            </div>
+          </div>
+                </div>
+        
+                <div class="flex justify-center">
+                  <a href="#app" tabindex="-1" class="">
+            
+            <button type="button" data-destination="#app" data-btn-text="Apply Now" class="btn btn--primary btn--std flex-row-reverse">
+                      <span>
+                            Apply Now                </span>
+              
+                  </button>
+        
+             </a>
+                </div>
+              </div>
+                  <div class="tab-pane fade container-fluid text-center flex items-center flex-col tab-ivisa-container max-w-8xl relative px-1 show active" id="guided_entry" role="tabpanel" aria-expanded="true" aria-labelledby="guided_entry">
+                <div class="mt-12 mb-6 flex flex-col lg:flex-row lg:overflow-x-auto justify-between lg:justify-center flex-nowrap">
+                  <div class="card relative flex flex-col bg-white bg-clip-border mb-6 pt-6 lg:w-52 xl:w-64 mx-3 px-6 min-h-full shadow-none flex-none rounded-big border border-gray-300">
+            <div class="flex row">
+              <div class="col-8 col-lg-12 order-2 order-lg-1">
+                <div class="font-bold text-black flex items-center justify-start lg:justify-center whitespace-normal text-left lg:text-center m-0 leading-snug">
+                  Easy application
+                </div>
+                <div class="hidden lg:block mb-3">────</div>
+                <p class="block lg:hidden text-sm mt-3 mb-6 whitespace-normal text-left lg:text-center leading-snug">
+                  Fill out the online simplified application with the guidance of our Guide Manual.
+                </p>
+              </div>
+              <div class="col-4 col-lg-12 order-1 lg:order-2 px-0">
+                <figure class="mb-6 mt-0 lg:mt-6 flex justify-center">
+                  <img class="w-auto h-16 lg:h-24 lg:p-2" height="64" width="64" alt="Easy application" src="https://ivisa.s3.amazonaws.com/visa-classification-steps/electronic-visa-email.png">
+                </figure>
+              </div>
+              <p class="col-8 col-lg-12 order-3 hidden lg:block text-sm mb-6 whitespace-normal">Fill out the online simplified application with the guidance of our Guide Manual.</p>
+            </div>
+          </div>
+          <div class="card relative flex flex-col bg-white bg-clip-border mb-6 pt-6 lg:w-52 xl:w-64 mx-3 px-6 min-h-full shadow-none flex-none rounded-big border border-gray-300">
+            <div class="flex row">
+              <div class="col-8 col-lg-12 order-2 order-lg-1">
+                <div class="font-bold text-black flex items-center justify-start lg:justify-center whitespace-normal text-left lg:text-center m-0 leading-snug">
+                  Personal Assistance
+                </div>
+                <div class="hidden lg:block mb-3">────</div>
+                <p class="block lg:hidden text-sm mt-3 mb-6 whitespace-normal text-left lg:text-center leading-snug">
+                  Get unlimited support during the entire process from our team of iVisa Experts that will help you apply correctly.
+                </p>
+              </div>
+              <div class="col-4 col-lg-12 order-1 lg:order-2 px-0">
+                <figure class="mb-6 mt-0 lg:mt-6 flex justify-center">
+                  <img class="w-auto h-16 lg:h-24 lg:p-2" height="64" width="64" alt="Personal Assistance" src="https://ivisa.s3.amazonaws.com/visa-classification-steps/electronic-visa-online.png">
+                </figure>
+              </div>
+              <p class="col-8 col-lg-12 order-3 hidden lg:block text-sm mb-6 whitespace-normal">Get unlimited support during the entire process from our team of iVisa Experts that will help you apply correctly.</p>
+            </div>
+          </div>
+          <div class="card relative flex flex-col bg-white bg-clip-border mb-6 pt-6 lg:w-52 xl:w-64 mx-3 px-6 min-h-full shadow-none flex-none rounded-big border border-gray-300">
+            <div class="flex row">
+              <div class="col-8 col-lg-12 order-2 order-lg-1">
+                <div class="font-bold text-black flex items-center justify-start lg:justify-center whitespace-normal text-left lg:text-center m-0 leading-snug">
+                  Proper documentation
+                </div>
+                <div class="hidden lg:block mb-3">────</div>
+                <p class="block lg:hidden text-sm mt-3 mb-6 whitespace-normal text-left lg:text-center leading-snug">
+                  Send all the required documents to the Embassy or Consulate, and attend the Visa Interview if needed.
+                </p>
+              </div>
+              <div class="col-4 col-lg-12 order-1 lg:order-2 px-0">
+                <figure class="mb-6 mt-0 lg:mt-6 flex justify-center">
+                  <img class="w-auto h-16 lg:h-24 lg:p-2" height="64" width="64" alt="Proper documentation" src="https://ivisa.s3.amazonaws.com/visa-classification-steps/paper-visa-consulate.png">
+                </figure>
+              </div>
+              <p class="col-8 col-lg-12 order-3 hidden lg:block text-sm mb-6 whitespace-normal">Send all the required documents to the Embassy or Consulate, and attend the Visa Interview if needed.</p>
+            </div>
+          </div>
+          <div class="card relative flex flex-col bg-white bg-clip-border mb-6 pt-6 lg:w-52 xl:w-64 mx-3 px-6 min-h-full shadow-none flex-none rounded-big border border-gray-300">
+            <div class="flex row">
+              <div class="col-8 col-lg-12 order-2 order-lg-1">
+                <div class="font-bold text-black flex items-center justify-start lg:justify-center whitespace-normal text-left lg:text-center m-0 leading-snug">
+                  Get your visa
+                </div>
+                <div class="hidden lg:block mb-3">────</div>
+                <p class="block lg:hidden text-sm mt-3 mb-6 whitespace-normal text-left lg:text-center leading-snug">
+                  Receive your new visa and get ready to travel!
+                </p>
+              </div>
+              <div class="col-4 col-lg-12 order-1 lg:order-2 px-0">
+                <figure class="mb-6 mt-0 lg:mt-6 flex justify-center">
+                  <img class="w-auto h-16 lg:h-24 lg:p-2" height="64" width="64" alt="Get your visa" src="https://ivisa.s3.amazonaws.com/visa-classification-steps/travel-safely.png">
+                </figure>
+              </div>
+              <p class="col-8 col-lg-12 order-3 hidden lg:block text-sm mb-6 whitespace-normal">Receive your new visa and get ready to travel!</p>
+            </div>
+          </div>
+                </div>
+        
+                <div class="flex justify-center">
+                  <a href="#app" tabindex="-1" class="">
+            
+            <button type="button" data-destination="#app" data-btn-text="Apply Now" class="btn btn--primary btn--std flex-row-reverse">
+                      <span>
+                            Apply Now                </span>
+              
+                  </button>
+        
+             </a>
+                </div>
+              </div>
+              </div>
+        </div>
+
+        <!-- <div class="bg-gray-100 py-6 px-8 -mb-8">
+          <div class="testimonials-title text-center pb-12 flex justify-center items-center">
+            <span class="inline-block align-middle bg-secondary mb-2 w-6 md:w-12" style="height: 2px"></span>
+            <h2 class="px-2 md:px-4 text-secondary text-center inline">Our Customers Have Great Stories About Us</h2>
+            <span class="inline-block align-middle bg-secondary mb-2 w-6 md:w-12" style="height: 2px"></span>
+          </div>
+          <div class="trustpilot-widget" data-locale="en-US" data-template-id="539ad0ffdec7e10e686debd7" data-businessunit-id="560958f90000ff000583ccb5" data-style-height="350px" data-style-width="100%" data-theme="light" data-stars="5" data-review-languages="en" style="position: relative;"><iframe title="Customer reviews powered by Trustpilot" loading="auto" src="https://widget.trustpilot.com/trustboxes/539ad0ffdec7e10e686debd7/index.html?templateId=539ad0ffdec7e10e686debd7&amp;businessunitId=560958f90000ff000583ccb5#locale=en-US&amp;styleHeight=350px&amp;styleWidth=100%25&amp;theme=light&amp;stars=5&amp;reviewLanguages=en" style="position: relative; height: 350px; width: 100%; border-style: none; display: block; overflow: hidden;"></iframe></div>
+        </div> -->
+
+      </div>
+      </div>
+    </div> 
+
+
+    <div>
+      <footer class="bg-primary w-full">
+
+  <div class="pt-8 pb-12 sm:pb-2 w-full">
+<div class="flex flex-col lg:flex-row items-center px-8 max-w-7xl mx-auto">
+<div class="w-full lg:w-5/12">
+  <h3 class="text-white text-lg">Let's stay in touch!</h3>
+  <p class="text-white text-sm">Join our newsletter to receive the best traveling tips</p>
+</div>
+<div class="w-full lg:w-7/12 relative">
+  <form class="flex items-center" onsubmit="subscribeToNewsletter(event)">
+    <input id="newsletter-email" name="newsletter-email" type="email" placeholder="Your Email" aria-label="newsletter-email" class="rounded-lg w-10/12 mr-6" required="">
+
+    <div class="hp-email" aria-hidden="true">
+      <label for="hp-email" tabindex="-1">Confirm your email</label>
+      <input id="hp-email" type="text" name="hp-email" autocomplete="off" tabindex="-1" class="w-1">
+    </div>
+
+    <button id="newsletter-btn" type="submit" data-btn-text="Join Now" class="btn btn--secondary btn--std flex-row-reverse py-2 whitespace-nowrap">
+          <span>
+                Join Now                </span>
+  
+      </button>
+
+      </form>
+  <p class="subscribed-text absolute left-0 hidden text-white text-sm">
+    Thanks! Please check your email and confirm you want to join our Newsletter.      </p>
+</div>
+</div>
+</div>
+
+<script>
+function subscribeToNewsletter(event){
+event.preventDefault();
+const email = document.querySelector('#newsletter-email');
+const button = document.querySelector('#newsletter-btn');
+const hp = document.querySelector('#hp-email').value;
+if(hp !== ''){
+  return;
+}
+
+if(email.value !== null){
+  axios.post(route('public.klaviyo_subscribe_list', {
+    'email': email.value,
+    'source': 'website footer',
+    'list': 'WYBBQj'
+  }))
+    .then(() => {
+      document.querySelector('.subscribed-text').classList.remove('hidden');
+      button.innerText = 'Sent!';
+      button.disabled = true;
+      email.disabled = true;
+    }).catch(e => {
+    console.log('Error subscribing to newsletter:', e)
+  })
+}
+}
+</script>
+
+<style>
+.hp-email {
+z-index: -1000;
+position: absolute;
+max-width: 200px;
+}
+
+.subscribed-text {
+top: 105%;
+}
+
+@media screen and (min-width: 600px) {
+.subscribed-text {
+  top: 110%;
+}
+}
+</style>    
+<div class="bg-primary text-white border-b border-white mb-px">
+<div class="container py-10 px-8 flex flex-col md:flex-row lg:pb-6 max-w-7xl lg:m-auto">
+<div class="flex flex-col md:flex-row w-4/6">
+  <div class="flex items-start">
+    <img class="mb-8" src="https://d16zz69zs6o3lx.cloudfront.net/img/ivisa-logo-white.svg" alt="iVisa Logo" width="77" height="50">
+  </div>
+  <div class="flex flex-col md:flex-row md:w-full md:justify-evenly">
+              <ul class="p-0 mb-12">
+        <li class="opacity-75 mb-4">Documents</li>
+                      <li class="mb-3">
+            <a href="https://www.ivisa.com" class="text-sm text-white font-normal hover:text-white">
+              Travel Documents                </a>
+          </li>
+                      <li class="mb-3">
+            <a href="/photos" class="text-sm text-white font-normal hover:text-white">
+              Passport Photos                </a>
+          </li>
+                      <li class="mb-3">
+            <a href="https://www.ivisa.com/passport-renewal" class="text-sm text-white font-normal hover:text-white">
+              Passport Renewals                </a>
+          </li>
+                      <li class="mb-3">
+            <a href="https://www.ivisa.com/embassies" class="text-sm text-white font-normal hover:text-white">
+              Embassy Listings                </a>
+          </li>
+                      <li class="mb-3">
+            <a href="/plus" class="text-sm text-white font-normal hover:text-white">
+              iVisa Plus                </a>
+          </li>
+                  </ul>
+              <ul class="p-0 mb-12">
+        <li class="opacity-75 mb-4">iVisa</li>
+                      <li class="mb-3">
+            <a href="https://www.ivisa.com/about-us" class="text-sm text-white font-normal hover:text-white">
+              About Us                </a>
+          </li>
+                      <li class="mb-3">
+            <a href="https://ivisa.breezy.hr" class="text-sm text-white font-normal hover:text-white">
+              Jobs                </a>
+          </li>
+                      <li class="mb-3">
+            <a href="https://www.ivisa.com/blog" class="text-sm text-white font-normal hover:text-white">
+              Blog                </a>
+          </li>
+                      <li class="mb-3">
+            <a href="https://manage.kmail-lists.com/subscriptions/subscribe?a=Y8KLUV&amp;g=WYBBQj" class="text-sm text-white font-normal hover:text-white">
+              Join our Newsletter                </a>
+          </li>
+                      <li class="mb-3">
+            <a href="https://travel.ivisa.com/referral/" class="text-sm text-white font-normal hover:text-white">
+              Refer a Friend                </a>
+          </li>
+                  </ul>
+              <ul class="p-0 ">
+        <li class="opacity-75 mb-4">My Account</li>
+                      <li class="mb-3">
+            <a href="https://www.ivisa.com/login" class="text-sm text-white font-normal hover:text-white">
+              Login                </a>
+          </li>
+                      <li class="mb-3">
+            <a href="https://www.ivisa.com/contact-us" class="text-sm text-white font-normal hover:text-white">
+              Contact Us                </a>
+          </li>
+                      <li class="mb-3">
+            <a href="https://www.ivisa.com/faqs" class="text-sm text-white font-normal hover:text-white">
+              FAQ                </a>
+          </li>
+                      <li class="mb-3">
+            <a href="https://www.ivisa.com/register" class="text-sm text-white font-normal hover:text-white">
+              Register                </a>
+          </li>
+                  </ul>
+          </div>
+</div>
+
+<div class="flex flex-col md:w-2/6 items-center md:items-end">
+  <div class="flex flex-col md:flex-row justify-center items-center mb-8">
+<p class="text-white text-xs mb-4 md:mb-0 mr-2">Connect with us:</p>
+<div class="flex mt-0 mb-0 justify-center items-center">
+      <a class="mx-1 flex items-center justify-center" target="_blank" href="https://www.instagram.com/ivisa_travel/?hl=en" title="iVisa Instagram Page">
+    <div class="bg-white rounded-full">
+      <svg class="p-1 h-6 w-6 v2-h-6 v2-w-6 text-primary mr-0 ml-0" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>
+    </div>
+  </a>
+      <a class="mx-1 flex items-center justify-center" target="_blank" href="https://www.linkedin.com/company/ivisa/" title="iVisa LinkedIn Page">
+    <div class="bg-white rounded-full">
+      <svg class="p-1 h-6 w-6 v2-h-6 v2-w-6 text-primary mr-0 ml-0" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg>
+    </div>
+  </a>
+      <a class="mx-1 flex items-center justify-center" target="_blank" href="https://www.youtube.com/c/iVisa_Travel/videos" title="iVisa Youtube Channel">
+    <div class="bg-white rounded-full">
+      <svg class="p-1 h-6 w-6 v2-h-6 v2-w-6 text-primary mr-0 ml-0" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg>
+    </div>
+  </a>
+      <a class="mx-1 flex items-center justify-center" target="_blank" href="https://www.facebook.com/iVisaTravel/" title="iVisa Facebook Page">
+    <div class="bg-white rounded-full">
+      <svg class="p-1 h-6 w-6 v2-h-6 v2-w-6 text-primary mr-0 ml-0" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg>
+    </div>
+  </a>
+      <a class="mx-1 flex items-center justify-center" target="_blank" href="https://www.tiktok.com/@ivisa_travel?lang=en" title="iVisa TikTok Profile">
+    <div class="bg-white rounded-full">
+      <svg class="p-1 h-6 w-6 v2-h-6 v2-w-6 text-primary mr-0 ml-0" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"></path></svg>
+    </div>
+  </a>
+  </div>
+</div>      <div class="flex items-end">
+    <div class="p-0 text-right flex justify-center flex-col w-full">
+      <span class="hidden text-xs md:flex flex-row-reverse mb-2">Scan the QR code to download the iVisa app</span>
+      <a class="flex flex-row-reverse" href="https://app.adjust.com/kgga4s1?deep_link=com.ivisa.services%3A%2F%2Fhome">
+        <img alt="Link to Google Play Store" class="h-12 md:h-10" width="120" height="40" src="https://d16zz69zs6o3lx.cloudfront.net/img/play_store.svg">
+      </a>
+      <a class="flex flex-row-reverse" href="https://app.adjust.com/kgga4s1?deep_link=com.ivisa.services%3A%2F%2Fhome">
+        <img alt="Link to Apple App Store" class="h-12 md:h-10" width="120" height="40" src="https://d16zz69zs6o3lx.cloudfront.net/img/app_store.svg">
+      </a>
+    </div>
+
+    <div class="hidden md:block w-2/3 ml-6">
+      <img alt="QR code link to App Store" src="https://d16zz69zs6o3lx.cloudfront.net/img/apple_adjust_qr_code.png">
+    </div>
+  </div>
+</div>
+
+</div>
+</div>  
+<div class="bg-primary w-full m-auto">
+<div class="container md:flex">
+  <div class="flex flex-col justify-center items-center px-2 sm:px-0 pt-8 pb-6 lg:py-6 mb-0 md:items-start md:w-1/3 mr-4">
+    <p class="text-white text-center text-xs mb-0 max-w-xs lg:py-0 lg:text-left lg:max-w-full leading-normal">
+© 2014-2023 iVisa.com. All rights reserved. iVisa and iVisa logo are registered trademarks of iVisa.com.
+</p>
+  </div>
+  <div class="grid md:flex md:items-center grid-rows-2 grid-cols-2 text-center mx-2 pb-6 md:pb-0 gap-y-6">
+  <a class="text-white underline text-xs hover:text-white hover:underline md:mx-4" href="https://www.ivisa.com/terms-and-conditions">Terms and Conditions</a>
+  <a class="text-white underline text-xs hover:text-white hover:underline md:mx-4" href="https://www.ivisa.com/privacy">Privacy Policy</a>
+  <a class="text-white underline text-xs hover:text-white hover:underline md:mx-4" href="https://www.ivisa.com/affiliates">Affiliates &amp; Partnerships</a>
+</div>
+  <div class="flex items-center pb-20 md:pb-0" onclick="window.mount_currency_selector()">
+<div class="text-base flex items-center px-4 py-2 rounded-md duration-100 cursor-pointer transition-all border-1 border-white text-white hover:opacity-75 w-full justify-center flex-nowrap">
+<div class="flex items-center">
+  <svg class=" h-5 w-5 v2-h-5 v2-w-5  mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
+</svg>
+
+  <span class="whitespace-nowrap">English - <span class="uppercase">en</span></span>
+  <span class="mx-2">|</span>
+  <div class="whitespace-nowrap" id="currencyFooter">$ USD</div>
+</div>
+</div>
+</div>    </div>
+</div>
+</footer>    <script>
+function changeNavigationHeaderIfLoggedIn(){
+if(document.cookie.indexOf('ivlogged_in') === -1){
+  return;
+}
+
+const profileIcon = document.querySelector('#logged-in-header-transformer svg');
+const profileIconMobile = document.querySelector('#btn_header_login');
+
+if(profileIcon === null && profileIconMobile === null){
+  return;
+}
+
+const anchorTag = document.querySelector('#logged-in-header-transformer a');
+const anchorTagMobile = document.querySelector('#logged-in-header-transformer-mobile a');
+
+window.axios.get(window.route('public.user_information')).then(
+  function(res){
+    if(res.data['no_auth_user'] === true){
+      return;
+    }
+
+    profileIcon.remove();
+    anchorTag.innerHTML = res.data['welcome_message'] + ', ' + res.data['first_name'];
+    anchorTag.setAttribute('href', res.data['dashboard_url']);
+
+    profileIconMobile.remove();
+    anchorTagMobile.innerHTML = res.data['welcome_message'] + ', ' + res.data['first_name'];
+    anchorTagMobile.setAttribute('href', res.data['dashboard_url']);
+    anchorTagMobile.classList.add('nav-link', 'nav-link-dropdown-btn', 'p-0');
+    document.querySelector('#logged-in-header-transformer-mobile').classList.remove('mx-4');
+  }
+)
+}
+
+addEventListener('pageshow', function(){
+loadjs.ready('app', function(){
+  changeNavigationHeaderIfLoggedIn()
+});
+});
+</script>
+</div>

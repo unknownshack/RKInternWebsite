@@ -1,6 +1,5 @@
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
-import { MainModule } from './main/main.module';
+import { IVisaModule } from './ivisa/ivisa.module';
 
-
-platformBrowserDynamic().bootstrapModule(MainModule)
+platformBrowserDynamic().bootstrapModule(IVisaModule)
   .catch(err => console.error(err));

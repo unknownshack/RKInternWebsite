@@ -12,6 +12,7 @@ import { CareerComponent } from './career/career.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { IvisaComponent } from './ivisa/ivisa.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +23,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AboutComponent,
     CareerComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    IvisaComponent
 
   ],
   imports: [
