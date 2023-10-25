@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { IvisaComponent } from './ivisa.component';
 import { IVisaRoutingModule } from './ivisa-routing.module';
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { FormsModule } from '@angular/forms'; // Import FormsModule
 
 
 @NgModule({
@@ -12,7 +13,8 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
   imports: [
     BrowserModule,
     IVisaRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [IvisaComponent]

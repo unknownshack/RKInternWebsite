@@ -1,15 +1,29 @@
-<nav id="navigation-header" _ngcontent-jhq-c0="" _ngcontent-hnm-c0="" class="navbar navbar-expand-md navbar-dark fixed-top"><div _ngcontent-jhq-c0="" class="logo-container ml-0 sm:ml-4 mr-4 relative p-1"><img _ngcontent-jhq-c0="" src="https://d16zz69zs6o3lx.cloudfront.net/img/ivisa-logo-bars.svg" alt="ivisa logo" width="93" height="65" class="logo-ivisa"></div><div _ngcontent-jhq-c0="" class="flex items-center mr-auto"><div _ngcontent-jhq-c0="" class="leading-none mb-0 lg:mb-1 feature-logo"><p _ngcontent-jhq-c0="" class="hidden lg:inline-block align-middle m-0 w-full sm:w-auto">Featured on</p><img _ngcontent-jhq-c0="" alt="CNN" width="42" height="12" src="https://d16zz69zs6o3lx.cloudfront.net/img/CNN_small.png" class="hidden lg:block"></div></div><div _ngcontent-jhq-c0="" _ngcontent-hnm-c0="" id="navbarCollapse" class="navbar-collapse" style=""><ul class="flex flex-row px-4 items-center ml-auto" style="">
+<nav id="navigation-header" _ngcontent-jhq-c0="" _ngcontent-hnm-c0="" class="navbar navbar-expand-md navbar-dark fixed-top">
+  <div _ngcontent-jhq-c0="" class="logo-container ml-0 sm:ml-4 mr-4 relative p-1">
+    <h2 class="mb-0">Roger</h2>
+  </div>
+  
+  <!-- <div _ngcontent-jhq-c0="" class="flex items-center mr-auto">
+    <div _ngcontent-jhq-c0="" class="leading-none mb-0 lg:mb-1 feature-logo">
+      <p _ngcontent-jhq-c0="" class="hidden lg:inline-block align-middle m-0 w-full sm:w-auto">
+        Featured on
+      </p>
+      <img _ngcontent-jhq-c0="" alt="CNN" width="42" height="12" src="https://d16zz69zs6o3lx.cloudfront.net/img/CNN_small.png" class="hidden lg:block">
+    </div>
+  </div> -->
+  <div _ngcontent-jhq-c0="" _ngcontent-hnm-c0="" id="navbarCollapse" class="navbar-collapse" style="">
+    <ul class="flex flex-row px-4 items-center ml-auto" style="">
 
       <li class="nav-item justify-center">
 <a id="btn_travel_docs" class="nav-link nav-link-dropdown-btn px-4">
   <span class="text-black md:text-primary">Travel Documents</span>
 </a>
 </li>
-<li class="nav-item justify-center">
+<!-- <li class="nav-item justify-center">
 <a id="btn_subscription" class="nav-link nav-link-dropdown-btn lg:px-4" href="/plus">
   <span class="">iVisa Plus</span>
 </a>
-</li>
+</li> -->
 <li class="nav-item flex-col nav-user">
 <a (click)="dropdownClickHandler($event)" [attr.aria-expanded]="false" class="h-full flex items-center px-4 py-2 rounded-md duration-100 transition-all hover:bg-gray-200 dropdown-js" id="renewPassportBtn" href="javascript:void(0)" aria-haspopup="true">
   <span class="text-dark text-sm pointer-events-none">Passport</span>
@@ -44,7 +58,7 @@
 </div>
       
       <li id="logged-in-header-transformer" class="hidden lg:block text-sm">
-    <a class="h-full flex items-center px-4 py-2 rounded-md duration-100 transition-all hover:bg-gray-200" href="https://www.ivisa.com/login" aria-label="My Account">
+    <a class="h-full flex items-center px-4 py-2 rounded-md duration-100 transition-all hover:bg-gray-200" href="" aria-label="My Account">
       <svg class="text-black h-6 w-6 v2-h-6 v2-w-6  mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
 </svg>
@@ -71,7 +85,7 @@
 
 
 
-    <div class="lg:mt-20 md:mt-0 relative flex items-center bg-gray-custom">
+    <div class="md:mt-10 relative flex items-center bg-gray-custom">
       <div class="flex container pt-8 lg:pt-16 pb-8 lg:pb-0">
 
         <div class="container flex">
@@ -79,7 +93,129 @@
             <h1 class="lg:text-left mt-12 mb-4 text-gray-950 w-full lg:w-11/12">
               Find Visa information for all countries and apply today.  
             </h1>
-            <h2 class="hidden lg:block text-left mb-6 text-dark text-2xl w-11/12">Focus on your trip, not paperwork. Let us help you easily get your travel documents.</h2>
+            <h2 class="hidden lg:block text-left mb-6 text-dark text-2xl w-11/12">
+              Focus on your trip, not paperwork. Let us help you easily get your travel documents.
+            </h2>
+
+        <!-- Carousel-->
+            <div class="w-full" data-vue-component="visa-checker" data-vue-props="" data-v-app="">
+              <form class="w-full v2-w-full v2-max-content max-content mx-auto v2-mx-auto max-w-container v2-max-w-container px-2 rounded-md v2-h-full h-full flex v2-flex flex-col v2-flex-col v2-gap-x-32 v2-gap-y-24 my-0 v2-my-0 items-end v2-items-end widget-visa-checker home-widget mb-0 flex-col z-20" action="" method="post" onsubmit="return false;" split-visa-checker="false">
+                 <span class="hidden v2-hidden w-full mb-4 text-white text-center text-lg sm:text-2xl inline-block">Check Visa Requirements</span>
+                 <div class="flex flex-1 w-full flex-wrap v2-gap-16 v2-w-full v2-flex v2-flex-1 v2-flex-col md:v2-flex-row">
+                    <div class="m-0 py-0 intro-item md:w-1/2 px-2 h-24 md:mb-0 flex flex-col justify-center items-center p-0 w-full relative mb-1 rounded-tl-md rounded-tr-md v2-w-full md:v2-w-1/2">
+                       <h4 class="mb-2 w-full Title_06_Sb v2-mb-8 v2-text-gray-500 pl-0 text-dark">Where am I From?</h4>
+                       <div class="dropdown v2-relative w-full max-w-full" tabindex="0" id="countryFrom">
+                        <div (click)="toggleDropdown()" class="text-dark border-gray-300 border-1 foxtrot Label_02_R v2-rounded-pill v2-w-full focus:v2-ring-gray-500 focus:v2-border-gray-500 hover:v2-border-gray-500 v2-border-1 v2-border-gray-300 v2-p-28 v2-truncate v2-bg-white v2-flex v2-items-center v2-cursor-pointer focus:v2-outline-none v2-border-solid" data-flip="false" style="height: 2.6rem;">
+                          <div class="inline-block">
+                            <svg class="v2-h-18 v2-w-18 h-3 w-3 ml-2 v2-ml-8 text-primary cursor-pointer v2-hidden" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                              <!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) -->
+                              <path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200z"></path>
+                            </svg>
+                          </div>
+                          <!---->
+                          <div class="v2-flex v2-items-center v2-h-[36px] flex-1 v2-flex-1 v2-pr-16 pl-2 v2-pl-8 truncate v2-truncate" data-dusk="filter-value"><span>{{ selectedCountry }}</span></div>
+                          <div class="inline-block">
+                            <svg class="v2-h-18 v2-w-18 h-3 w-3 mr-0 ml-0 text-gray-500 v2-text-gray-500 cursor-pointer" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                              <!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) -->
+                              <path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path>
+                            </svg>
+                          </div>
+                        </div>
+                        <div [ngClass]="{ 'show': isDropdownVisible }" style="top: 42px; position: absolute;" id="showFromDropDown" class="dropdown-filter z-50 shadow-lg dropdown-menu w-full text-dark">
+                          <div class="p-2">
+                            <input
+                                #fromCountry
+                                name="doNotAutofill0.11462820164262011"
+                                type="search"
+                                autocomplete="off"
+                                role="combobox"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                                data-dusk="Nationality as in Passport"
+                                class="w-full h-9 pl-8 text-base rounded-md bg-white border-1 border-solid border-gray-300 flex items-center focus:outline-none focus:border-gray-300 focus:ring-0"
+                                (input)="filterCountries(fromCountry.value)"
+                              >
+
+                          </div>
+                          <span class="absolute" style="top: 24px; left: 16px;">
+                            <div class="inline-block">
+                              <svg class="h-4 w-4 mr-0 ml-0" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) -->
+                                <path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path>
+                              </svg>
+                            </div>
+                          </span>
+                          <div class="scrollable-options h-auto overflow-y-scroll" role="listbox" style="max-height: 200px;">
+                            <div role="option" class="option-element py-2 px-3 text-left items-center flex text-md w-full text-base cursor-pointer navigate-item-option"
+                                *ngFor="let country of filteredCountries"
+                                [ngClass]="{'highlighted-option': country.value === selectedCountry}"
+                                (click)="selectCountry(country.value)">
+                              {{ country.label }}
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                       <!---->
+                    </div>
+                    <div class="m-0 py-0 intro-item md:w-1/2 pr-2 md:px-2 h-24 flex flex-col justify-center items-center p-0 w-full relative rounded-br-md rounded-bl-md v2-w-full md:v2-w-1/2">
+                       <h4 class="mb-2 w-full Title_06_Sb v2-mb-8 v2-text-gray-500 pl-0 text-dark">Where am I Going?</h4>
+                       <div class="dropdown v2-relative w-full max-w-full" tabindex="0">
+                          <div (click)="toggleDropdownTravel()" class="text-dark border-gray-300 border-1 foxtrot Label_02_R v2-rounded-pill v2-w-full focus:v2-ring-gray-500 focus:v2-border-gray-500 hover:v2-border-gray-500 v2-border-1 v2-border-gray-300 v2-p-28 v2-truncate v2-bg-white v2-flex v2-items-center v2-cursor-pointer focus:v2-outline-none v2-border-solid" data-flip="false" style="height: 2.6rem;">
+                             <div class="inline-block">
+                                <svg class="v2-h-24 v2-w-24 h-4 w-4 ml-2 v2-ml-8 text-primary cursor-pointer v2-hidden" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                   <!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) -->
+                                   <path d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"></path>
+                                </svg>
+                             </div>
+                             <!---->
+                             <div class="v2-flex v2-items-center v2-h-[36px] flex-1 v2-flex-1 v2-pr-16 pl-2 v2-pl-8 truncate v2-truncate" data-dusk="filter-value"><span>{{ selectedTravelCountry ? selectedTravelCountry : "Travel To Destination" }}</span></div>
+                             <div class="inline-block">
+                                <svg class="v2-h-18 v2-w-18 h-3 w-3 mr-0 ml-0 text-gray-500 v2-text-gray-500 cursor-pointer" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                   <!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) -->
+                                   <path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path>
+                                </svg>
+                             </div>
+                          </div>
+                          <div [ngClass]="{ 'show': isDropdownTravelVisible }" class="dropdown-filter z-50 v2-shadow-lg shadow-lg dropdown-menu v2-w-full w-full v2-relative relative text-dark" style="padding-top: 0px; position: absolute;">
+                             <div class="p-2">
+                              <input name="doNotAutofill0.5895615502862448"
+                                #toCountry 
+                                type="search" autocomplete="off" role="combobox" 
+                                aria-haspopup="true" aria-expanded="false" 
+                                data-dusk="Traveling to" 
+                                class="v2-px-24 v2-py-20 v2-border-0 v2-outline-0 v2-rounded-t-xl v2-w-full w-full h-9 pl-8 text-base rounded-md bg-white border-1 border-solid border-gray-300 flex items-center focus:outline-none focus:border-gray-300 focus:v2-ring-0 focus:v2-outline-none focus:v2-ring-0"
+                                (input)="filterTravelCountries(toCountry.value)"></div>
+                             <span class="absolute v2-absolute v2-hidden" style="top: 16px; left: 16px;">
+                                <div class="inline-block">
+                                   <svg class="v2-h-24 v2-w-24 h-4 w-4 mr-0 ml-0  " fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                      <!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) -->
+                                      <path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path>
+                                   </svg>
+                                </div>
+                             </span>
+                             <div class="scrollable-options h-auto overflow-y-scroll" role="listbox" style="max-height: 200px;">
+                              <div role="option" class="option-element py-2 px-3 text-left items-center flex text-md w-full text-base cursor-pointer navigate-item-option"
+                                  *ngFor="let country of filteredTravelCountries"
+                                  [ngClass]="{'highlighted-option': country.value === selectedTravelCountry}"
+                                  (click)="selectTravelCountry(country.value)">
+                                {{ country.label }}
+                              </div>
+                            </div>
+                             <!---->
+                          </div>
+                       </div>
+                       <!---->
+                    </div>
+                 </div>
+                 <div class="mb-4 md:w-auto mt-8 sm:mt-4 visachecker_cta flex w-full justify-center md:mb-0 v2-flex v2-items-end v2-w-full lg:v2-w-auto">
+                    <button class="btn btn--primary btn--std btn--wide v2-w-full v2-justify-center v2-h-min Title_06_B v2-flex v2-items-center v2-rounded-pill disabled:v2-bg-gray-100 disabled:v2-text-gray-300 hover:v2-bg-white hover:v2-text-black hover:v2-border-black disabled:hover:v2-border-transparent v2-transition-all v2-bg-green-500 v2-border-2 v2-border-transparent v2-px-32 v2-py-12 v2-cursor-pointer" id="btn_visa_checker" data-btn-text="Get Started!">
+                       <span class="">Get Started!</span><!---->
+                    </button>
+                 </div>
+              </form>
+           </div>      
+        <!-- Carousel-->
             <div>
             </div>
           </div>
@@ -92,7 +228,7 @@
 
 
 
-    <div class="hero-trustpilot relative lg:-mb-20">
+    <!-- <div class="hero-trustpilot relative lg:-mb-20">
       <div class="container our-number-stats mx-auto text-center mb-24 mt-4 relative z-10">
       <div class="flex flex-col lg:flex-row justify-evenly border-0 lg:border-1 lg:border-gray-300 shadow-xl bg-white py-8 mb-8">
             <span class="lg:mb-0 flex w-auto px-2 text-black text-base text-center justify-center items-center">
@@ -104,7 +240,7 @@
     
         <div class="w-auto">
           <a target="_blank" href="https://www.trustpilot.com/review/ivisa.com?sort=recency&amp;utm_medium=trustbox&amp;utm_source=MicroCombo" class="flex flex-col justify-center flex-wrap items-center" aria-label="View our Trustpilot page">
-            <!-- Stars  with logo-->
+            
             <div class="flex justify-between items-center">
               <img class="h-6 xl:h-8 mr-1" alt="" src="https://d16zz69zs6o3lx.cloudfront.net/img/trustpilot/star-filled-black.svg" width="32" height="32">
               <img class="h-6 xl:h-8 mr-1" alt="" src="https://d16zz69zs6o3lx.cloudfront.net/img/trustpilot/star-filled-black.svg" width="32" height="32">
@@ -120,7 +256,7 @@
       <span class="text-black text-lg font-normal">
               Trustpilot recommended. We <strong>lead the industry</strong> in innovation and reputation
           </span>
-    </div></div>
+    </div></div> -->
 
 
 
@@ -386,7 +522,7 @@
       </div>                  </div>
         </div>
       
-            <button id="collapseCountriesBtn" class="flex flex-col justify-center items-center relative active:outline-none focus:outline-none" type="button" style="bottom: -64px;">
+            <button id="collapseCountriesBtn" class="flex flex-col justify-center items-center relative active:outline-none focus:outline-none mb-5" type="button" style="bottom: -64px;">
         <div class="flex justify-center items-center w-12 cursor-pointer text-white h-12 bg-secondary rounded-full" (click)="toggleArrowImage()">
           <img id="arrow-img" class="icon-arrow-open" src="https://d16zz69zs6o3lx.cloudfront.net/img/icons/icon-arrow-open-white.svg" alt="">
         </div>
@@ -1133,7 +1269,7 @@
         
         </div>
 
-        <div class="container pb-24 md:py-24 mt-12 lg:mt-0">
+        <!-- <div class="container pb-24 md:py-24 mt-12 lg:mt-0">
           <h2 class="text-black mb-3">Why Choose Us</h2>
           <div class="h-1 w-24 bg-secondary mb-6"></div>
         
@@ -1174,9 +1310,9 @@
         
              </a>
           </div>
-        </div>
+        </div> -->
 
-        <div class="bg-gray-100 pt-16">
+        <!-- <div class="bg-gray-100 pt-16">
           <div class="container flex justify-between">
             <div class="w-1/2 flex flex-col justify-center mr-6">
                       <div class="text-3xl lg:text-6xl mb-4">Download our <span class="text-primary">app!</span></div>
@@ -1195,9 +1331,9 @@
               <a href="https://app.adjust.com/10qsd1aq"><img alt="Link to Google Play Store" class="w-full h-auto" src="https://d16zz69zs6o3lx.cloudfront.net/img/play_store.svg"></a>
             </div>
           </div>
-        </div>
+        </div> -->
 
-        <div class="bg-gray-100 py-12 pt-24 ivisa-tabs text-center">
+        <!-- <div class="bg-gray-100 py-12 pt-24 ivisa-tabs text-center">
           <div class="flex justify-center items-center">
             <span class="inline-block align-middle bg-secondary mb-2 w-6 md:w-12" style="height: 2px"></span>
             <h2 class="px-2 md:px-4 text-secondary text-center  inline">How it Works?</h2>
@@ -1532,7 +1668,7 @@
                 </div>
               </div>
               </div>
-        </div>
+        </div> -->
 
         <!-- <div class="bg-gray-100 py-6 px-8 -mb-8">
           <div class="testimonials-title text-center pb-12 flex justify-center items-center">
@@ -1547,7 +1683,7 @@
       </div>
     </div> 
 
-
+<!--footer-->
     <div>
       <footer class="bg-primary w-full">
 
@@ -1628,7 +1764,7 @@ top: 105%;
 <div class="container py-10 px-8 flex flex-col md:flex-row lg:pb-6 max-w-7xl lg:m-auto">
 <div class="flex flex-col md:flex-row w-4/6">
   <div class="flex items-start">
-    <img class="mb-8" src="https://d16zz69zs6o3lx.cloudfront.net/img/ivisa-logo-white.svg" alt="iVisa Logo" width="77" height="50">
+    <h2> Roger </h2>
   </div>
   <div class="flex flex-col md:flex-row md:w-full md:justify-evenly">
               <ul class="p-0 mb-12">
@@ -1649,13 +1785,10 @@ top: 105%;
             <a href="https://www.ivisa.com/embassies" class="text-sm text-white font-normal hover:text-white">
               Embassy Listings                </a>
           </li>
-                      <li class="mb-3">
-            <a href="/plus" class="text-sm text-white font-normal hover:text-white">
-              iVisa Plus                </a>
-          </li>
+              
                   </ul>
               <ul class="p-0 mb-12">
-        <li class="opacity-75 mb-4">iVisa</li>
+        <li class="opacity-75 mb-4">Roger</li>
                       <li class="mb-3">
             <a href="https://www.ivisa.com/about-us" class="text-sm text-white font-normal hover:text-white">
               About Us                </a>
@@ -1701,37 +1834,10 @@ top: 105%;
 
 <div class="flex flex-col md:w-2/6 items-center md:items-end">
   <div class="flex flex-col md:flex-row justify-center items-center mb-8">
-<p class="text-white text-xs mb-4 md:mb-0 mr-2">Connect with us:</p>
-<div class="flex mt-0 mb-0 justify-center items-center">
-      <a class="mx-1 flex items-center justify-center" target="_blank" href="https://www.instagram.com/ivisa_travel/?hl=en" title="iVisa Instagram Page">
-    <div class="bg-white rounded-full">
-      <svg class="p-1 h-6 w-6 v2-h-6 v2-w-6 text-primary mr-0 ml-0" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>
-    </div>
-  </a>
-      <a class="mx-1 flex items-center justify-center" target="_blank" href="https://www.linkedin.com/company/ivisa/" title="iVisa LinkedIn Page">
-    <div class="bg-white rounded-full">
-      <svg class="p-1 h-6 w-6 v2-h-6 v2-w-6 text-primary mr-0 ml-0" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg>
-    </div>
-  </a>
-      <a class="mx-1 flex items-center justify-center" target="_blank" href="https://www.youtube.com/c/iVisa_Travel/videos" title="iVisa Youtube Channel">
-    <div class="bg-white rounded-full">
-      <svg class="p-1 h-6 w-6 v2-h-6 v2-w-6 text-primary mr-0 ml-0" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg>
-    </div>
-  </a>
-      <a class="mx-1 flex items-center justify-center" target="_blank" href="https://www.facebook.com/iVisaTravel/" title="iVisa Facebook Page">
-    <div class="bg-white rounded-full">
-      <svg class="p-1 h-6 w-6 v2-h-6 v2-w-6 text-primary mr-0 ml-0" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg>
-    </div>
-  </a>
-      <a class="mx-1 flex items-center justify-center" target="_blank" href="https://www.tiktok.com/@ivisa_travel?lang=en" title="iVisa TikTok Profile">
-    <div class="bg-white rounded-full">
-      <svg class="p-1 h-6 w-6 v2-h-6 v2-w-6 text-primary mr-0 ml-0" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"></path></svg>
-    </div>
-  </a>
-  </div>
+<!----> 
 </div>      <div class="flex items-end">
     <div class="p-0 text-right flex justify-center flex-col w-full">
-      <span class="hidden text-xs md:flex flex-row-reverse mb-2">Scan the QR code to download the iVisa app</span>
+      <span class="hidden text-xs md:flex flex-row-reverse mb-2">Scan the QR code to download the Roger app</span>
       <a class="flex flex-row-reverse" href="https://app.adjust.com/kgga4s1?deep_link=com.ivisa.services%3A%2F%2Fhome">
         <img alt="Link to Google Play Store" class="h-12 md:h-10" width="120" height="40" src="https://d16zz69zs6o3lx.cloudfront.net/img/play_store.svg">
       </a>
@@ -1752,7 +1858,7 @@ top: 105%;
 <div class="container md:flex">
   <div class="flex flex-col justify-center items-center px-2 sm:px-0 pt-8 pb-6 lg:py-6 mb-0 md:items-start md:w-1/3 mr-4">
     <p class="text-white text-center text-xs mb-0 max-w-xs lg:py-0 lg:text-left lg:max-w-full leading-normal">
-© 2014-2023 iVisa.com. All rights reserved. iVisa and iVisa logo are registered trademarks of iVisa.com.
+© 2014-2023 Roger.com. All rights reserved. Roger and Roger logo are registered trademarks of Roger.com.
 </p>
   </div>
   <div class="grid md:flex md:items-center grid-rows-2 grid-cols-2 text-center mx-2 pb-6 md:pb-0 gap-y-6">
@@ -1816,3 +1922,4 @@ loadjs.ready('app', function(){
 });
 </script>
 </div>
+<!--footer-->
