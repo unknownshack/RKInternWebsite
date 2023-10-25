@@ -13,6 +13,8 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { IvisaComponent } from './ivisa/ivisa.component';
+import { MainComponent } from '../ivisa/main/main.component';
+import { VisitorVisaComponent } from '../ivisa/visitor-visa/visitor-visa.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +26,9 @@ import { IvisaComponent } from './ivisa/ivisa.component';
     CareerComponent,
     LoginComponent,
     RegisterComponent,
-    IvisaComponent
+    IvisaComponent,
+    MainComponent,
+    VisitorVisaComponent
 
   ],
   imports: [

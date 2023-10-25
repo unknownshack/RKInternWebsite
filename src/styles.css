@@ -8,3 +8,131 @@
 .poppins-font {
   font-family:  Poppins, Arial, sans-serif !important;
 }
+
+
+#navigation-header {
+  --tw-bg-opacity: 1;
+    --tw-text-opacity: 1;
+    align-items: center;
+    background-color: rgb(255 255 255/var(--tw-bg-opacity));
+    display: flex;
+    font-size: .875rem;
+    font-weight: 400;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    text-transform: inherit!important;
+    width: 100%;
+}
+
+.dropdown-menu{
+  left: inherit;
+  right: inherit;
+  top: inherit;
+}
+
+.container{
+  max-width: 1200px;
+}
+
+h1{
+  font-size: 44px;
+}
+
+.bg-gray-custom{
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 245 247/var(--tw-bg-opacity));
+}
+
+@media (min-width: 992px){
+  .hero-trustpilot {
+      top: -73px;
+  }
+}
+
+.trusted-by-container {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+
+.trusted-by-container::-webkit-scrollbar {
+  display: none;
+}
+
+.text-secondary {
+  --tw-text-opacity: 1;
+  color: rgb(43 58 140/var(--tw-text-opacity)) !important;
+}
+
+h2 {
+  font-size: 1.875rem;
+  letter-spacing: .25px;
+  line-height: 1.25;
+}
+
+.bg-secondary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(43 58 140/var(--tw-bg-opacity)) !important;
+}
+
+.bg-gray-100{
+  --tw-bg-opacity: 1;
+    background-color: rgb(248 250 252/var(--tw-bg-opacity));
+}
+
+.bg-gray-25 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 245 247/var(--tw-bg-opacity));
+}
+
+.h3, h3 {
+  --tw-text-opacity: 1;
+  color: rgb(89 91 102/var(--tw-text-opacity));
+  font-size: 1.5rem;
+  line-height: 1.375;
+}
+
+.btn--primary, .btn--primary:active, .btn--primary:focus, .btn--primary:hover {
+  --tw-border-opacity: 1;
+  --tw-bg-opacity: 1;
+  --tw-text-opacity: 1;
+    background-color: rgb(16 108 165/var(--tw-bg-opacity));
+    border-color: rgb(16 108 165/var(--tw-border-opacity));
+    color: rgb(255 255 255/var(--tw-text-opacity));
+} 
+
+.btn--std {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 0.75rem;
+  padding-top: 0.75rem;
+}
+
+.dropdown .foxtrot {
+  --tw-bg-opacity: 1;
+  align-items: center;
+  background-color: rgb(255 255 255/var(--tw-bg-opacity));
+  border-style: solid;
+  cursor: pointer;
+  display: flex;
+  line-height: 1.5rem;
+  padding-bottom: 0.5rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+}
+
+h4 {
+  letter-spacing: .15px;
+}
+h4 {
+  font-size: 1.25rem;
+  line-height: 1.625;
+}
+.h3, h1, h2, h3, h4 {
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+h1, h2, h3, h4, p, ul {
+  margin-top: 0;
+}

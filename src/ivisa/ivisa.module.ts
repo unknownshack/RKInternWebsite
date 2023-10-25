@@ -4,17 +4,20 @@ import { IvisaComponent } from './ivisa.component';
 import { IVisaRoutingModule } from './ivisa-routing.module';
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { FormsModule } from '@angular/forms'; // Import FormsModule
-
+import { ReactiveFormsModule } from '@angular/forms';
+import { MainComponent } from './main/main.component';
 
 @NgModule({
   declarations: [ 
-    IvisaComponent
+    IvisaComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,
     IVisaRoutingModule,
     BrowserAnimationsModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [IvisaComponent]

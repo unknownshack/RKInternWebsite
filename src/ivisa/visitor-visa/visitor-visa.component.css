@@ -1,0 +1,13 @@
+.header-marker[data-v-1643bf33] {
+  border-top-left-radius: inherit;
+  height: 90px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 5px;
+}
+
+.bg-red-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(205 20 55/var(--tw-bg-opacity));
+}
