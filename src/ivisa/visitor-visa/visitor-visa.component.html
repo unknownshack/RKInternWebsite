@@ -10,7 +10,7 @@
           <span class="cursor-pointer">{{travelCountry}}</span>
         </a>
         <span> &gt; </span>
-        <h1 class="inline text-base text-gray-900">{{travelCountry}} Visitor Visa: Online application</h1>
+        <span class="inline text-base text-gray-900">{{travelCountry}} Visitor Visa: Online application</span>
       </div>
     </div>
 
@@ -101,8 +101,12 @@
         </div>
         <div class="w-full lg:w-1/3 xl:w-1/4">
           <div class="mb-4 lg:mb-4 md:flex md:flex-col md:justify-center lg:block w-full">
-            <div class="hidden lg:flex"><button class="btn btn--std btn--primary btn--full"
-                data-dusk="lm-apply-now-button"><span>Apply Now</span></button></div>
+            <div class="hidden lg:flex">
+              <button class="btn btn--std btn--primary btn--full"
+                data-dusk="lm-apply-now-button"
+                (click)="applyNow()">
+                <span>Apply Now</span>
+              </button></div>
           </div>
         </div>
       </section>

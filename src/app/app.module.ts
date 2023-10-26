@@ -15,6 +15,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { IvisaComponent } from './ivisa/ivisa.component';
 import { MainComponent } from '../ivisa/main/main.component';
 import { VisitorVisaComponent } from '../ivisa/visitor-visa/visitor-visa.component';
+import { ApplyNowComponent } from '../ivisa/apply-now/apply-now.component';
+import { ApplyNowStepperComponent } from '../ivisa/apply-now-stepper/apply-now-stepper.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +30,9 @@ import { VisitorVisaComponent } from '../ivisa/visitor-visa/visitor-visa.compone
     RegisterComponent,
     IvisaComponent,
     MainComponent,
-    VisitorVisaComponent
+    VisitorVisaComponent,
+    ApplyNowComponent,
+    ApplyNowStepperComponent
 
   ],
   imports: [

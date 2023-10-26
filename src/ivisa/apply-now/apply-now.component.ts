@@ -4,12 +4,11 @@ import { ActivatedRoute } from '@angular/router';
 
 
 @Component({
-  selector: 'app-visitor-visa',
-  templateUrl: './visitor-visa.component.html',
-  styleUrls: ['./visitor-visa.component.css']
+  selector: 'app-apply-now',
+  templateUrl: './apply-now.component.html',
+  styleUrls: ['./apply-now.component.css']
 })
-export class VisitorVisaComponent implements OnInit {
-  
+export class ApplyNowComponent implements OnInit {
   constructor(private router: Router, private route: ActivatedRoute){}
 
   travelCountry: string = "";
@@ -18,7 +17,7 @@ export class VisitorVisaComponent implements OnInit {
     this.travelCountry = this.route.snapshot.paramMap.get("country") ?? "";
   }
 
-  applyNow(){
-    this.router.navigate(["/apply-now", this.travelCountry]);
+  fillInformation(){
+    this.router.navigate(["./apply-now-stepper", this.travelCountry]);
   }
 }

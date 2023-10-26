@@ -136,3 +136,16 @@ h4 {
 h1, h2, h3, h4, p, ul {
   margin-top: 0;
 }
+
+.border-solid {
+  border-style: solid;
+}
+.border-1 {
+  border-width: 1px;
+}
+
+.rounded-md {
+  border-radius: 0.375rem;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

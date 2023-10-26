@@ -1,0 +1,1059 @@
+<div class="pb-8 lg:mt-20 ">
+  <div class="mb-12 sm:mb-0 container">
+    <div class="block text-left w-full mt-8 sm:mt-4 sm:mb-8">
+      <div>
+        <div class="text-gray-900 flex items-center mb-2"><span> {{travelCountry}} </span></div>
+        <h1 class="m-0 text-2xl sm:text-4xl flex items-center">
+          <div><span class="block sm:hidden">Visitor Visa</span><span class="hidden sm:block">Visitor Visa • 10 years,
+              Multiple Entry</span></div>
+        </h1>
+      </div>
+    </div>
+    <mat-stepper #stepper>
+      <mat-step [stepControl]="firstFormGroup">
+        <form [formGroup]="firstFormGroup">
+          <ng-template matStepLabel>Trip Details</ng-template>
+
+          <div class="flex flex-col w-full items-start md:flex-row"><!---->
+            <div id="question-container" class="flex-1 flex-col lg:flex-row items-start w-full"><!---->
+              <div class="w-full mx-auto order-2 lg:order-none order-2 lg:pr-8">
+                <div><!----></div>
+                <div>
+                  <div class="mb-4 bg-white pb-4 rounded-md border-1 border-solid border-white md:border-gray-300">
+                    <div
+                      class="w-full leading-tight text-xl sm:text-2xl flex items-center justify-between mt-4 md:mt-0 py-4 md:p-6 relative rounded-lg text-dark font-bold">
+                      <div class="bg-black absolute top-0 left-0 w-1 h-full" style="border-top-left-radius: inherit;">
+                      </div><span class="ml-4 md:ml-0">Your Trip Details</span>
+                      <div class="flex"><!----><!----><!----></div>
+                    </div><!---->
+                    <div class="w-full md:px-0 pt-5 flex flex-col justify-center">
+                      <div class="card-body md:px-5">
+                        <div class="form-row flex flex-col lg:flex-row">
+                          <div class="form-group flex flex-col justify-start max-w-full col-12 col-md-10">
+                            <div class="ivisa-input-wrapper w-full h-full" data-ivisa-slug="arrival_date"
+                              data-ivisa-question-selector="general.arrival_date">
+                              <div class="w-full h-full" data-v-402b6d91=""><label class="foxtrot"
+                                  data-v-402b6d91="">When is your arrival date? <!----></label>
+                                <div class="relative" data-v-402b6d91="">
+                                  <div modelmodifiers="[object Object]" data-v-402b6d91="">
+                                    <div disabled="false">
+                                      <div class="flex items-center"><input placeholder="Select Date" class="foxtrot"
+                                          type="search" readonly="" name="general.arrival_date"></div>
+                                      <div class="vc-popover-content-wrapper" placement="bottom-start"><!----></div>
+                                    </div>
+                                  </div><!----><span class="absolute right-0 top-0 h-full flex items-center mr-4"
+                                    data-v-402b6d91=""><!----></span>
+                                </div><!----><!---->
+                              </div>
+                            </div><!---->
+                          </div>
+                          <div class="form-group flex flex-col justify-start max-w-full col-12 col-md-10">
+                            <div class="ivisa-input-wrapper w-full h-full" data-ivisa-slug="departure_date"
+                              data-ivisa-question-selector="general.departure_date">
+                              <div class="w-full h-full" data-v-402b6d91=""><label class="foxtrot"
+                                  data-v-402b6d91="">When is your return date? <!----></label>
+                                <div class="relative" data-v-402b6d91="">
+                                  <div modelmodifiers="[object Object]" data-v-402b6d91="">
+                                    <div disabled="false">
+                                      <div class="flex items-center"><input placeholder="Select Date" class="foxtrot"
+                                          type="search" readonly="" name="general.departure_date"></div>
+                                      <div class="vc-popover-content-wrapper" placement="bottom-start"><!----></div>
+                                    </div>
+                                  </div><!----><span class="absolute right-0 top-0 h-full flex items-center mr-4"
+                                    data-v-402b6d91=""><!----></span>
+                                </div><!----><!---->
+                              </div>
+                            </div><!---->
+                          </div>
+                          <div class="form-group flex flex-col justify-start max-w-full col-12 col-md-10">
+                            <div class="ivisa-input-wrapper w-full h-full" data-ivisa-slug="phone"
+                              data-ivisa-question-selector="general.phone">
+                              <div class="w-full h-full" data-v-402b6d91=""><label class="foxtrot"
+                                  data-v-402b6d91="">Phone number <div class="inline-block tooltip-light"
+                                    data-v-5784ed69="" data-v-402b6d91=""
+                                    style="border: 12px solid transparent; margin: -12px; --c81fc0a4: 9999;">
+
+                                    <div class="popper" data-v-5784ed69="" style="display: none;"><span
+                                        data-v-402b6d91="" data-v-5784ed69-s="">We collect your phone number to contact
+                                        you if there is an issue with your order.</span>
+                                      <div id="arrow" data-popper-arrow="" data-v-20b7fd4a="" data-v-5784ed69=""></div>
+                                    </div>
+                                  </div></label>
+                                <div class="relative" data-v-402b6d91="">
+                                  <div class="flex flex-row w-full" name="general.phone"
+                                    modelmodifiers="[object Object]" data-v-402b6d91="">
+                                    <div class="dropdown v2-relative w-1/2 mr-1 country-dropdown" tabindex="0"
+                                      data-dusk="dial-codes">
+                                      <div
+                                        class="text-dark border-gray-300 border-1 foxtrot Label_02_R v2-rounded-pill v2-w-full focus:v2-ring-gray-500 focus:v2-border-gray-500 hover:v2-border-gray-500 v2-border-1 v2-border-gray-300 v2-p-28 v2-truncate v2-bg-white v2-flex v2-items-center v2-cursor-pointer focus:v2-outline-none v2-border-solid"
+                                        data-flip="false" style="height: 2.6rem;"><!----><!---->
+                                        <div
+                                          class="v2-flex v2-items-center v2-h-[36px] flex-1 v2-flex-1 v2-pr-16 pl-4 v2-pl-16 truncate v2-truncate"
+                                          data-dusk="filter-value"><span>+977</span></div>
+                                        <div class="inline-block"><svg
+                                            class="v2-h-18 v2-w-18 h-3 w-3 mr-0 ml-0 text-gray-500 v2-text-gray-500 cursor-pointer"
+                                            fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) -->
+                                            <path
+                                              d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z">
+                                            </path>
+                                          </svg></div>
+                                      </div>
+                                      <div
+                                        class="dropdown-filter z-50 v2-shadow-lg shadow-lg dropdown-menu v2-w-full w-full v2-relative relative text-dark min-w-xs"
+                                        style="padding-top: 0px;">
+                                        <div class="p-2"><input name="doNotAutofill0.9541696542237719" type="search"
+                                            autocomplete="off" role="combobox" aria-haspopup="true"
+                                            aria-expanded="false" data-dusk="(+XX)"
+                                            class="v2-px-24 v2-py-20 v2-border-0 v2-outline-0 v2-rounded-t-xl v2-w-full w-full h-9 pl-8 text-base rounded-md bg-white border-1 border-solid border-gray-300 flex items-center focus:outline-none focus:border-gray-300 focus:v2-ring-0 focus:v2-outline-none focus:v2-ring-0">
+                                        </div><span class="absolute v2-absolute v2-hidden"
+                                          style="top: 16px; left: 16px;">
+                                          <div class="inline-block"><svg class="v2-h-24 v2-w-24 h-4 w-4 mr-0 ml-0  "
+                                              fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                                              viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) -->
+                                              <path
+                                                d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z">
+                                              </path>
+                                            </svg></div>
+                                        </span><!---->
+                                      </div>
+                                    </div><input maxlength="25" placeholder="111-222-3333" name="telephone"
+                                      class="foxtrot" required="" type="tel">
+                                  </div><!----><span class="absolute right-0 top-0 h-full flex items-center mr-4"
+                                    data-v-402b6d91=""><!----></span>
+                                </div><!---->
+                                <div class="text-sm text-gray-500 mt-2" data-v-402b6d91=""><span
+                                    data-v-402b6d91="">We’ve selected the country code for you, but you can select
+                                    another if it needs correcting.</span></div>
+                              </div>
+                            </div><!---->
+                          </div>
+                          <div class="form-group flex flex-col justify-start max-w-full col-12 col-md-10">
+                            <div class="ivisa-input-wrapper w-full h-full" data-ivisa-slug="email"
+                              data-ivisa-question-selector="general.email">
+                              <div class="w-full h-full" data-v-402b6d91=""><label class="foxtrot"
+                                  data-v-402b6d91="">Email address <!----></label>
+                                <div class="relative" data-v-402b6d91=""><input class="foxtrot" name="general.email"
+                                    required="" spellcheck="false" type="text" data-v-402b6d91=""><!----><span
+                                    class="absolute right-0 top-0 h-full flex items-center mr-4"
+                                    data-v-402b6d91=""><!----></span></div><!----><!---->
+                              </div>
+                            </div><!---->
+                          </div>
+                          <div class="form-group flex flex-col justify-start max-w-full col-12 col-md-10">
+                            <div class="ivisa-input-wrapper w-full h-full" data-ivisa-slug="agree_terms_and_conditions"
+                              data-ivisa-question-selector="general.agree_terms_and_conditions">
+                              <div class="w-full h-full" data-v-402b6d91=""><!---->
+                                <div class="relative" data-v-402b6d91=""><!---->
+                                  <div disabled="false" class="flex items-start" data-v-402b6d91="">
+                                    <div class="flex h-5 items-center" data-v-402b6d91=""><input type="checkbox"
+                                        name="general.agree_terms_and_conditions" class="foxtrot"
+                                        id="customCheckgeneral.agree_terms_and_conditions" data-v-402b6d91=""></div>
+                                    <label class="ml-3 text-xs" for="customCheckgeneral.agree_terms_and_conditions"
+                                      data-dusk="label-general.agree_terms_and_conditions" data-v-402b6d91="">I certify
+                                      that I have read and accept the iVisa Terms and Conditions, Privacy Policy, and
+                                      Refund Policy.</label>
+                                  </div><!---->
+                                </div><!----><!---->
+                              </div>
+                            </div><!---->
+                          </div>
+                          <div class="form-group flex flex-col justify-start max-w-full col-12 col-md-10">
+                            <div class="ivisa-input-wrapper w-full h-full" data-ivisa-slug="consent_to_marketing_emails"
+                              data-ivisa-question-selector="general.consent_to_marketing_emails">
+                              <div class="w-full h-full" data-v-402b6d91=""><!---->
+                                <div class="relative" data-v-402b6d91=""><!---->
+                                  <div disabled="false" class="flex items-start" data-v-402b6d91="">
+                                    <div class="flex h-5 items-center" data-v-402b6d91=""><input type="checkbox"
+                                        name="general.consent_to_marketing_emails" class="foxtrot"
+                                        id="customCheckgeneral.consent_to_marketing_emails" data-v-402b6d91=""></div>
+                                    <label class="ml-3 text-xs" for="customCheckgeneral.consent_to_marketing_emails"
+                                      data-dusk="label-general.consent_to_marketing_emails" data-v-402b6d91="">Yes, I
+                                      want iVisa to send me marketing emails about iVisa’s products, services, and
+                                      promotions.&nbsp; I can unsubscribe at any time.</label>
+                                  </div><!---->
+                                </div><!----><!---->
+                              </div>
+                            </div><!---->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!----><!---->
+                </div>
+                <div><!----></div>
+                <div><!----></div>
+                <div><!----></div>
+                <div><!----></div>
+                <div><!----></div>
+                <div id="paynow"><!---->
+                  <div class="w-full" data-v-1b6c4836="" style="display: none;"><!----><!---->
+                    <div class="payment__card payment relative flex flex-col bg-white bg-clip-border mb-4"
+                      data-v-1b6c4836="">
+                      <div class="overflow-hidden bg-white rounded-md border-1 border-white md:border-gray-300 md:px-6"
+                        data-v-1b6c4836="">
+                        <div class="flex items-center justify-between py-5 border-b border-gray-300" data-v-1b6c4836="">
+                          Select a payment method. All transactions are safe and secure</div>
+                        <div class="pt-5 w-full" data-v-1b6c4836="">
+                          <div class="flex items-center justify-between" data-v-1b6c4836="">
+                            <div class="font-bold" data-v-1b6c4836="">Credit / Debit Card</div><img
+                              src="https://d16zz69zs6o3lx.cloudfront.net/img/payment/credit_card_icons.png"
+                              class="object-none" alt="Credit Card Icon" data-v-1b6c4836="">
+                          </div>
+                          <div data-v-1b6c4836="">
+                            <div data-v-0828013e="" data-v-1b6c4836="">
+                              <div class="grid grid-cols-10 gap-x-2 gap-y-3 mt-3 pl-2" data-v-0828013e="">
+                                <div class="col-span-10" data-v-0828013e=""><label class="foxtrot"
+                                    data-v-0828013e="">Card Holder Name</label><input required="" type="text"
+                                    name="full_name" autocomplete="cc-name" class="foxtrot" placeholder=""
+                                    data-v-0828013e=""><!----></div>
+                                <div class="col-span-10 sm:col-span-4" data-v-0828013e=""><label class="foxtrot"
+                                    data-v-0828013e="">Card Number</label>
+                                  <div class="relative flex items-center" data-v-0828013e=""><input required=""
+                                      type="text" inputmode="numeric" name="number" autocomplete="cc-number"
+                                      class="foxtrot" placeholder="" data-v-0828013e=""><!----></div><!---->
+                                </div>
+                                <div class="col-span-10 sm:col-span-2" data-v-0828013e=""><label class="foxtrot"
+                                    data-v-0828013e="">Exp. Month</label><select required="" name="month"
+                                    autocomplete="cc-exp-month" class="foxtrot" data-v-0828013e="">
+                                    <option disabled="" value="" data-v-0828013e=""></option>
+                                    <option value="1" data-v-0828013e="">1 - January</option>
+                                    <option value="2" data-v-0828013e="">2 - February</option>
+                                    <option value="3" data-v-0828013e="">3 - March</option>
+                                    <option value="4" data-v-0828013e="">4 - April</option>
+                                    <option value="5" data-v-0828013e="">5 - May</option>
+                                    <option value="6" data-v-0828013e="">6 - June</option>
+                                    <option value="7" data-v-0828013e="">7 - July</option>
+                                    <option value="8" data-v-0828013e="">8 - August</option>
+                                    <option value="9" data-v-0828013e="">9 - September</option>
+                                    <option value="10" data-v-0828013e="">10 - October</option>
+                                    <option value="11" data-v-0828013e="">11 - November</option>
+                                    <option value="12" data-v-0828013e="">12 - December</option>
+                                  </select><!----></div>
+                                <div class="col-span-10 sm:col-span-2" data-v-0828013e=""><label class="foxtrot"
+                                    data-v-0828013e="">Exp. Year</label><select required="" name="year"
+                                    autocomplete="cc-exp-year" class="foxtrot" data-v-0828013e="">
+                                    <option disabled="" value="" data-v-0828013e=""></option>
+                                    <option value="2023" data-v-0828013e="">2023</option>
+                                    <option value="2024" data-v-0828013e="">2024</option>
+                                    <option value="2025" data-v-0828013e="">2025</option>
+                                    <option value="2026" data-v-0828013e="">2026</option>
+                                    <option value="2027" data-v-0828013e="">2027</option>
+                                    <option value="2028" data-v-0828013e="">2028</option>
+                                    <option value="2029" data-v-0828013e="">2029</option>
+                                    <option value="2030" data-v-0828013e="">2030</option>
+                                    <option value="2031" data-v-0828013e="">2031</option>
+                                    <option value="2032" data-v-0828013e="">2032</option>
+                                    <option value="2033" data-v-0828013e="">2033</option>
+                                    <option value="2034" data-v-0828013e="">2034</option>
+                                    <option value="2035" data-v-0828013e="">2035</option>
+                                    <option value="2036" data-v-0828013e="">2036</option>
+                                    <option value="2037" data-v-0828013e="">2037</option>
+                                    <option value="2038" data-v-0828013e="">2038</option>
+                                    <option value="2039" data-v-0828013e="">2039</option>
+                                    <option value="2040" data-v-0828013e="">2040</option>
+                                    <option value="2041" data-v-0828013e="">2041</option>
+                                    <option value="2042" data-v-0828013e="">2042</option>
+                                    <option value="2043" data-v-0828013e="">2043</option>
+                                    <option value="2044" data-v-0828013e="">2044</option>
+                                    <option value="2045" data-v-0828013e="">2045</option>
+                                    <option value="2046" data-v-0828013e="">2046</option>
+                                    <option value="2047" data-v-0828013e="">2047</option>
+                                    <option value="2048" data-v-0828013e="">2048</option>
+                                    <option value="2049" data-v-0828013e="">2049</option>
+                                    <option value="2050" data-v-0828013e="">2050</option>
+                                    <option value="2051" data-v-0828013e="">2051</option>
+                                    <option value="2052" data-v-0828013e="">2052</option>
+                                    <option value="2053" data-v-0828013e="">2053</option>
+                                  </select><!----></div>
+                                <div class="col-span-10 sm:col-span-2" data-v-0828013e="">
+                                  <div class="flex" data-v-0828013e=""><label class="foxtrot"
+                                      data-v-0828013e="">Security Code</label><!----></div><input required=""
+                                    inputmode="numeric" type="text" name="cvv" autocomplete="cc-csc" class="foxtrot"
+                                    placeholder="" data-v-0828013e=""><!---->
+                                </div>
+                              </div>
+                              <div
+                                class="text-center flex flex-col md:flex-row items-center justify-center mt-4 lg:hidden"
+                                data-v-0828013e=""><img
+                                  src="https://d16zz69zs6o3lx.cloudfront.net/img/payment/safe-checkout.png"
+                                  alt="Safe checkout" class="border-0 mr-2" data-v-0828013e="" style="height: 45px;">
+                                <div class="mt-4 md:mt-0 w-full" data-v-0828013e=""><button
+                                    class="btn btn--primary btn--std btn--full" id="btnSubmitPaymentMobile"
+                                    type="submit" data-btn-text="Submit Payment" data-v-0828013e=""><span
+                                      class="">Submit Payment</span><!----></button></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="relative py-4 mt-6" data-v-1b6c4836="">
+                          <div class="absolute inset-0 flex items-center justify-center" data-v-1b6c4836="">
+                            <div class="w-full sm:w-1/2 border-b border-gray-300" data-v-1b6c4836=""></div>
+                          </div>
+                          <div class="relative flex justify-center" data-v-1b6c4836=""><span
+                              class="bg-white px-4 text-sm" data-v-1b6c4836="">Or Pay With</span></div>
+                        </div>
+                        <ul role="list" class="pl-0 pb-0" data-v-1b6c4836=""><!---->
+                          <li class="flex items-center justify-between p-3 border-b border-gray-300" data-v-1b6c4836="">
+                            <div data-v-1b6c4836=""> Paypal </div>
+                            <div id="paypal-button" class="object-none overflow-hidden flex justify-center relative z-0"
+                              data-v-1b6c4836="" style="width: 100px;">
+                              <div id="zoid-paypal-buttons-uid_1bd46d5a05_mdy6mji6ntk"
+                                class="paypal-buttons paypal-buttons-context-iframe paypal-buttons-label-paypal paypal-buttons-layout-vertical"
+                                data-paypal-smart-button-version="5.0.406"
+                                style="height: 0px; transition: all 0.2s ease-in-out 0s;">
+                                <style nonce="">
+                                  #zoid-paypal-buttons-uid_1bd46d5a05_mdy6mji6ntk {
+                                    position: relative;
+                                    display: inline-block;
+                                    width: 100%;
+                                    min-height: 25px;
+                                    min-width: 150px;
+                                    font-size: 0;
+                                  }
+
+                                  #zoid-paypal-buttons-uid_1bd46d5a05_mdy6mji6ntk>iframe {
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    width: 100%;
+                                    height: 100%;
+                                  }
+
+                                  #zoid-paypal-buttons-uid_1bd46d5a05_mdy6mji6ntk>iframe.component-frame {
+                                    z-index: 100;
+                                  }
+
+                                  #zoid-paypal-buttons-uid_1bd46d5a05_mdy6mji6ntk>iframe.prerender-frame {
+                                    transition: opacity .2s linear;
+                                    z-index: 200;
+                                  }
+
+                                  #zoid-paypal-buttons-uid_1bd46d5a05_mdy6mji6ntk>iframe.visible {
+                                    opacity: 1;
+                                  }
+
+                                  #zoid-paypal-buttons-uid_1bd46d5a05_mdy6mji6ntk>iframe.invisible {
+                                    opacity: 0;
+                                    pointer-events: none;
+                                  }
+
+                                  #zoid-paypal-buttons-uid_1bd46d5a05_mdy6mji6ntk>.smart-menu {
+                                    position: absolute;
+                                    z-index: 300;
+                                    top: 0;
+                                    left: 0;
+                                    width: 100%;
+                                  }
+                                </style><iframe allowtransparency="true" name="" title="PayPal"
+                                  allowpaymentrequest="allowpaymentrequest" scrolling="no" id="jsx-iframe-9b24f88cd1"
+                                  class="component-frame visible"
+                                  style="background-color: transparent; border: none;"></iframe>
+                                <div id="smart-menu" class="smart-menu"></div>
+                                <div id="installments-modal" class="installments-modal"></div><iframe
+                                  name="__detect_close_uid_54ddd2da6a_mdy6mji6ntk__" style="display: none;"></iframe>
+                              </div>
+                            </div>
+                          </li><!---->
+                          <li class="flex items-center justify-between p-3 border-b border-gray-300" data-v-1b6c4836="">
+                            <div data-v-1b6c4836=""> Venmo </div><button id="venmo-button" data-v-1b6c4836=""><img
+                                src="https://d16zz69zs6o3lx.cloudfront.net/img/payment/venmo.png" alt="Venmo"
+                                data-v-1b6c4836=""></button>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <h3 class="py-3" data-v-1b6c4836="" style="display: none;">Other Payments</h3>
+                    <div class="relative flex flex-col bg-white bg-clip-border my-4" data-v-1b6c4836=""
+                      style="display: none;">
+                      <form id="payment-form" class="" data-v-1b6c4836="">
+                        <div id="payment-element" data-v-1b6c4836=""></div>
+                        <div id="error-message" data-v-1b6c4836=""></div>
+                      </form>
+                    </div>
+                    <div data-v-1b6c4836=""><!----><!----></div><!---->
+                    <div id="device-fingerprint" class="hidden" data-v-1b6c4836=""></div>
+                    <div class="bg-white popup" role="dialog" aria-modal="true" data-v-1b6c4836=""
+                      style="display: none;">
+                      <div class="bg-white popup-inner three-ds rounded-lg relative w-1/2" data-v-1b6c4836="">
+                        <main class="h-full" id="challenge-modal" data-v-1b6c4836="">
+                          <div id="challenge" data-v-1b6c4836=""></div>
+                        </main>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex mt-4 lg:hidden justify-between"><button
+                    class="btn btn--secondary btn--std mr-3 btnPrevious" id="btnPreviousUnderSection"
+                    data-btn-text="Previous"><span class="">Previous</span><!----></button><!----><button
+                    class="btn btn--primary btn--std btnContinue hidden md:block" id="btnContinueUnderSection"
+                    type="submit" data-btn-text="Continue"><span class="">Continue</span><!----></button><!---->
+                </div>
+              </div>
+              <div style="margin-bottom: 150px;"></div>
+            </div>
+            <div class="flex flex-col sticky lg:w-1/3">
+              <app-side-banner></app-side-banner>
+            </div>
+          </div>
+        </form>
+      </mat-step>
+      <mat-step [stepControl]="secondFormGroup" label="Your Info">
+        <div class="flex flex-col w-full items-start md:flex-row"><!---->
+          <div id="question-container" class="flex-1 flex-col lg:flex-row items-start w-full"><!---->
+            <div class="w-full mx-auto order-2 lg:order-none order-2 lg:pr-8">
+              <div class="mb-4 bg-white pb-4 rounded-md border-1 border-solid border-white md:border-gray-300">
+                <div
+                  class="w-full leading-tight text-xl sm:text-2xl flex items-center justify-between mt-4 md:mt-0 py-4 md:p-6 relative rounded-lg text-dark font-bold">
+                  <div class="bg-black absolute top-0 left-0 w-1 h-full" style="border-top-left-radius: inherit;">
+                  </div><span class="ml-4 md:ml-0">Your Personal Details</span><!----><!----><!---->
+                </div>
+                <div class="w-full md:px-0 pt-5">
+                  <div class="card-body md:px-5">
+                    <div class="form-row flex flex-col lg:flex-row">
+                      <div class="form-group flex flex-col justify-start max-w-full col-12 col-md-10">
+                        <div class="ivisa-input-wrapper w-full h-full" data-ivisa-slug="first_name"
+                          data-ivisa-question-selector="applicant.0.first_name">
+                          <div class="w-full h-full" data-v-402b6d91=""><label class="foxtrot error"
+                              data-v-402b6d91="">First and middle name <div class="inline-block tooltip-light"
+                                data-v-5784ed69="" data-v-402b6d91=""
+                                style="border: 12px solid transparent; margin: -12px; --c81fc0a4: 9999;">
+
+                                <div class="popper" data-v-5784ed69=""
+                                  style="position: absolute; inset: auto auto 0px 0px; margin: 0px; transform: translate3d(-96px, -141.4px, 0px); display: none;"
+                                  data-popper-placement="top"><span data-v-402b6d91="" data-v-5784ed69-s="">Including
+                                    a middle name is recommended, but it's not required if you don't have one.</span>
+                                  <div id="arrow" data-popper-arrow="" data-v-20b7fd4a="" data-v-5784ed69=""
+                                    style="position: absolute; left: 0px; transform: translate3d(293px, 0px, 0px);">
+                                  </div>
+                                </div>
+                              </div></label>
+                            <div class="relative" data-v-402b6d91=""><input class="foxtrot"
+                                name="applicant.0.first_name" required="" placeholder="John William" spellcheck="false"
+                                type="text" data-v-402b6d91=""><!----><span
+                                class="absolute right-0 top-0 h-full flex items-center mr-4"
+                                data-v-402b6d91=""><!----></span></div><small class="foxtrot input-error mt-2"
+                              data-v-402b6d91="">The field is required</small>
+                            <div class="text-sm text-gray-500 mt-2" data-v-402b6d91=""><span data-v-402b6d91="">Enter
+                                this information as it appears in your passport, using Latin characters (A-Z).</span>
+                            </div>
+                          </div>
+                        </div><!---->
+                      </div>
+                      <div class="form-group flex flex-col justify-start max-w-full col-12 col-md-10">
+                        <div class="ivisa-input-wrapper w-full h-full" data-ivisa-slug="last_name"
+                          data-ivisa-question-selector="applicant.0.last_name">
+                          <div class="w-full h-full" data-v-402b6d91=""><label class="foxtrot error"
+                              data-v-402b6d91="">Last name <!----></label>
+                            <div class="relative" data-v-402b6d91=""><input class="foxtrot" name="applicant.0.last_name"
+                                required="" placeholder="Smith" spellcheck="false" type="text"
+                                data-v-402b6d91=""><!----><span
+                                class="absolute right-0 top-0 h-full flex items-center mr-4"
+                                data-v-402b6d91=""><!----></span></div><small class="foxtrot input-error mt-2"
+                              data-v-402b6d91="">The field is required</small>
+                            <div class="text-sm text-gray-500 mt-2" data-v-402b6d91=""><span data-v-402b6d91="">Enter
+                                this information as it appears in your passport, using Latin characters (A-Z).</span>
+                            </div>
+                          </div>
+                        </div><!---->
+                      </div>
+                      <div class="form-group flex flex-col justify-start max-w-full col-12 col-md-10">
+                        <div class="ivisa-input-wrapper w-full h-full" data-ivisa-slug="gender"
+                          data-ivisa-question-selector="applicant.0.gender">
+                          <div class="w-full h-full" data-v-402b6d91=""><label class="foxtrot error"
+                              data-v-402b6d91="">Gender <div class="inline-block tooltip-light" data-v-5784ed69=""
+                                data-v-402b6d91=""
+                                style="border: 12px solid transparent; margin: -12px; --c81fc0a4: 9999;">
+                                <div data-v-5784ed69=""><span class="ml-1 text-primary text-xs" data-v-402b6d91=""
+                                    data-v-5784ed69-s="">Learn more</span></div>
+                                <div class="popper" data-v-5784ed69="" style="display: none;"><span data-v-402b6d91=""
+                                    data-v-5784ed69-s="">Please select the option as it appears on your
+                                    passport.</span>
+                                  <div id="arrow" data-popper-arrow="" data-v-20b7fd4a="" data-v-5784ed69=""></div>
+                                </div>
+                              </div></label>
+                            <div class="relative" data-v-402b6d91=""><!---->
+                              <div modelmodifiers="[object Object]" data-v-402b6d91="">
+                                <div><select class="foxtrot mr-1 truncate" data-dusk="dropdown-applicant.0.gender"
+                                    required="">
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                  </select></div>
+                              </div><span class="absolute right-0 top-0 h-full flex items-center mr-4"
+                                data-v-402b6d91=""><!----></span>
+                            </div><small class="foxtrot input-error mt-2" data-v-402b6d91="">The field is
+                              required</small><!---->
+                          </div>
+                        </div><!---->
+                      </div>
+                      <div class="form-group flex flex-col justify-start max-w-full col-12 col-md-10">
+                        <div class="ivisa-input-wrapper w-full h-full" data-ivisa-slug="dob"
+                          data-ivisa-question-selector="applicant.0.dob">
+                          <div class="w-full h-full" data-v-402b6d91=""><label class="foxtrot error"
+                              data-v-402b6d91="">Date of birth <!----></label>
+                            <div class="relative" data-v-402b6d91="">
+                              <div class="ivisa-datepicker flex items-center border-0 p-0"
+                                modelmodifiers="[object Object]" type="date" data-v-402b6d91=""><select
+                                  name="applicant.0.dob.month" class="foxtrot mr-1 flex-2">
+                                  <option value="">Month</option>
+                                  <option value="1">January</option>
+                                  <option value="2">February</option>
+                                  <option value="3">March</option>
+                                  <option value="4">April</option>
+                                  <option value="5">May</option>
+                                  <option value="6">June</option>
+                                  <option value="7">July</option>
+                                  <option value="8">August</option>
+                                  <option value="9">September</option>
+                                  <option value="10">October</option>
+                                  <option value="11">November</option>
+                                  <option value="12">December</option>
+                                </select><select name="applicant.0.dob.day" class="foxtrot mr-1 flex-1">
+                                  <option value="">Day</option>
+                                  <option value="1">1</option>
+                                  <option value="2">2</option>
+                                  <option value="3">3</option>
+                                  <option value="4">4</option>
+                                  <option value="5">5</option>
+                                  <option value="6">6</option>
+                                  <option value="7">7</option>
+                                  <option value="8">8</option>
+                                  <option value="9">9</option>
+                                  <option value="10">10</option>
+                                  <option value="11">11</option>
+                                  <option value="12">12</option>
+                                  <option value="13">13</option>
+                                  <option value="14">14</option>
+                                  <option value="15">15</option>
+                                  <option value="16">16</option>
+                                  <option value="17">17</option>
+                                  <option value="18">18</option>
+                                  <option value="19">19</option>
+                                  <option value="20">20</option>
+                                  <option value="21">21</option>
+                                  <option value="22">22</option>
+                                  <option value="23">23</option>
+                                  <option value="24">24</option>
+                                  <option value="25">25</option>
+                                  <option value="26">26</option>
+                                  <option value="27">27</option>
+                                  <option value="28">28</option>
+                                  <option value="29">29</option>
+                                  <option value="30">30</option>
+                                  <option value="31">31</option>
+                                </select><!----><select name="applicant.0.dob.year" class="foxtrot flex-1">
+                                  <option value="">Year</option>
+                                  <option value="2023">2023</option>
+                                  <option value="2022">2022</option>
+                                  <option value="2021">2021</option>
+                                  <option value="2020">2020</option>
+                                  <option value="2019">2019</option>
+                                  <option value="2018">2018</option>
+                                  <option value="2017">2017</option>
+                                  <option value="2016">2016</option>
+                                  <option value="2015">2015</option>
+                                  <option value="2014">2014</option>
+                                  <option value="2013">2013</option>
+                                  <option value="2012">2012</option>
+                                  <option value="2011">2011</option>
+                                  <option value="2010">2010</option>
+                                  <option value="2009">2009</option>
+                                  <option value="2008">2008</option>
+                                  <option value="2007">2007</option>
+                                  <option value="2006">2006</option>
+                                  <option value="2005">2005</option>
+                                  <option value="2004">2004</option>
+                                  <option value="2003">2003</option>
+                                  <option value="2002">2002</option>
+                                  <option value="2001">2001</option>
+                                  <option value="2000">2000</option>
+                                  <option value="1999">1999</option>
+                                  <option value="1998">1998</option>
+                                  <option value="1997">1997</option>
+                                  <option value="1996">1996</option>
+                                  <option value="1995">1995</option>
+                                  <option value="1994">1994</option>
+                                  <option value="1993">1993</option>
+                                  <option value="1992">1992</option>
+                                  <option value="1991">1991</option>
+                                  <option value="1990">1990</option>
+                                  <option value="1989">1989</option>
+                                  <option value="1988">1988</option>
+                                  <option value="1987">1987</option>
+                                  <option value="1986">1986</option>
+                                  <option value="1985">1985</option>
+                                  <option value="1984">1984</option>
+                                  <option value="1983">1983</option>
+                                  <option value="1982">1982</option>
+                                  <option value="1981">1981</option>
+                                  <option value="1980">1980</option>
+                                  <option value="1979">1979</option>
+                                  <option value="1978">1978</option>
+                                  <option value="1977">1977</option>
+                                  <option value="1976">1976</option>
+                                  <option value="1975">1975</option>
+                                  <option value="1974">1974</option>
+                                  <option value="1973">1973</option>
+                                  <option value="1972">1972</option>
+                                  <option value="1971">1971</option>
+                                  <option value="1970">1970</option>
+                                  <option value="1969">1969</option>
+                                  <option value="1968">1968</option>
+                                  <option value="1967">1967</option>
+                                  <option value="1966">1966</option>
+                                  <option value="1965">1965</option>
+                                  <option value="1964">1964</option>
+                                  <option value="1963">1963</option>
+                                  <option value="1962">1962</option>
+                                  <option value="1961">1961</option>
+                                  <option value="1960">1960</option>
+                                  <option value="1959">1959</option>
+                                  <option value="1958">1958</option>
+                                  <option value="1957">1957</option>
+                                  <option value="1956">1956</option>
+                                  <option value="1955">1955</option>
+                                  <option value="1954">1954</option>
+                                  <option value="1953">1953</option>
+                                  <option value="1952">1952</option>
+                                  <option value="1951">1951</option>
+                                  <option value="1950">1950</option>
+                                  <option value="1949">1949</option>
+                                  <option value="1948">1948</option>
+                                  <option value="1947">1947</option>
+                                  <option value="1946">1946</option>
+                                  <option value="1945">1945</option>
+                                  <option value="1944">1944</option>
+                                  <option value="1943">1943</option>
+                                  <option value="1942">1942</option>
+                                  <option value="1941">1941</option>
+                                  <option value="1940">1940</option>
+                                  <option value="1939">1939</option>
+                                  <option value="1938">1938</option>
+                                  <option value="1937">1937</option>
+                                  <option value="1936">1936</option>
+                                  <option value="1935">1935</option>
+                                  <option value="1934">1934</option>
+                                  <option value="1933">1933</option>
+                                  <option value="1932">1932</option>
+                                  <option value="1931">1931</option>
+                                  <option value="1930">1930</option>
+                                  <option value="1929">1929</option>
+                                  <option value="1928">1928</option>
+                                  <option value="1927">1927</option>
+                                  <option value="1926">1926</option>
+                                  <option value="1925">1925</option>
+                                  <option value="1924">1924</option>
+                                  <option value="1923">1923</option>
+                                  <option value="1922">1922</option>
+                                  <option value="1921">1921</option>
+                                  <option value="1920">1920</option>
+                                  <option value="1919">1919</option>
+                                  <option value="1918">1918</option>
+                                  <option value="1917">1917</option>
+                                  <option value="1916">1916</option>
+                                  <option value="1915">1915</option>
+                                  <option value="1914">1914</option>
+                                  <option value="1913">1913</option>
+                                </select></div><!----><span class="absolute right-0 top-0 h-full flex items-center mr-4"
+                                data-v-402b6d91=""><!----></span>
+                            </div><small class="foxtrot input-error mt-2" data-v-402b6d91="">The field is
+                              required</small><!---->
+                          </div>
+                        </div><!---->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col sticky lg:w-1/3" style="top: 7rem;">
+            <app-side-banner></app-side-banner>
+          </div>
+        </div>
+      </mat-step>
+      <mat-step [stepControl]="secondFormGroup" label="Services">
+        <div class="flex flex-col w-full items-start md:flex-row"><!---->
+          <div id="question-container" class="flex-1 flex-col lg:flex-row items-start w-full">
+            <div class="w-full mx-auto order-2 lg:order-none order-2 lg:pr-8">
+              <div>
+                <div class="mb-4 bg-white pb-4 rounded-md border-1 border-solid border-white md:border-gray-300">
+                  <div
+                    class="w-full leading-tight text-xl sm:text-2xl flex items-center justify-between mt-4 md:mt-0 py-4 md:p-6 relative rounded-lg text-dark font-bold">
+                    <div class="bg-black absolute top-0 left-0 w-1 h-full" style="border-top-left-radius: inherit;">
+                    </div><span class="ml-4 md:ml-0">Processing Time &amp; Fee</span>
+                    <div class="flex"><!----><!----><!----></div>
+                  </div><!---->
+                  <div class="w-full md:px-0 pt-5 flex flex-col justify-center">
+                    <div class="card-body md:px-5">
+                      <div class="form-row flex flex-col lg:flex-row">
+                        <div class="form-group flex flex-col justify-start max-w-full col-12 col-md-12">
+                          <div class="ivisa-input-wrapper w-full h-full" data-ivisa-slug="product_add_ons"
+                            data-ivisa-question-selector="general.product_add_ons">
+                            <div class="w-full h-full" data-v-402b6d91=""><!---->
+                              <div class="relative" data-v-402b6d91=""><!---->
+                                <div modelmodifiers="[object Object]" data-v-402b6d91=""><!---->
+                                  <div>
+                                    <div class="bold text-base mb-6">1. Choose an option</div>
+                                    <div
+                                      class="border-gray-300 flex border-3 rounded-md mb-4 hover:border-secondary transition-colors duration-150 ease-out cursor-pointer relative">
+                                      <div
+                                        class="bg-blue-100 text-2xl md:text-3xl lg:text-4xl w-1/3 rounded-l-md bold flex flex-col items-center justify-center relative overflow-hidden"
+                                        data-dusk="subscription-add-on"><img class="absolute w-full"
+                                          src="https://d16zz69zs6o3lx.cloudfront.net/img/crosses.svg"
+                                          alt="iVisa Plus"><span class="-mb-2">iVisa<span
+                                            class="text-primary">+</span></span><!----></div>
+                                      <div class="px-2 py-1 rounded-full text-white bg-green-500 absolute text-xs bold"
+                                        style="top: -0.7rem; right: 1rem;">Recommended</div>
+                                      <div class="p-6 w-2/3">
+                                        <p class="bold text-xl mb-4">Save USD $112.49!</p>
+                                        <p class="text-sm">Discount on all iVisa processing fees for USD $89.99/year
+                                          <span class="text-primary underline">Learn more</span>
+                                        </p>
+                                      </div>
+                                    </div>
+                                    <div
+                                      class="border-gray-300 border-1 rounded-md bold px-6 py-4 hover:border-secondary transition-colors duration-150 ease-out cursor-pointer mb-6"
+                                      data-dusk="no-subscription">No, I want to pay full price</div>
+                                  </div>
+                                </div><!---->
+                              </div><!----><!---->
+                            </div>
+                          </div><!---->
+                        </div>
+                        <div class="form-group flex flex-col justify-start max-w-full col-12 col-md-12">
+                          <div class="ivisa-input-wrapper w-full h-full" data-ivisa-slug="visa_processing_speed"
+                            data-ivisa-question-selector="general.visa_processing_speed">
+                            <div class="w-full h-full" data-v-402b6d91=""><!---->
+                              <div class="relative" data-v-402b6d91=""><!---->
+                                <div modelmodifiers="[object Object]" data-v-402b6d91="">
+                                  <div class="bold text-base mb-4">2. Choose your processing time</div>
+                                  <ul class="list">
+                                    <li
+                                      class="flex justify-between items-center py-2 px-4 mb-3 rounded-xl border-1 border-primary border-secondary border-3 selected-option cursor-pointer"
+                                      data-dusk="Standard">
+                                      <div class="info flex flex-col items-start"><span
+                                          class="days text-xl text-primary">Standard</span><span
+                                          class="ppa text-md text-dark">Price per applicant</span></div>
+                                      <div class="price text-xl"><span class="text-dark">USD $224.99</span><!----></div>
+                                    </li>
+                                  </ul>
+                                </div><!---->
+                              </div><!----><!---->
+                            </div>
+                          </div><!---->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><!----><!---->
+              </div>
+
+
+
+            </div>
+          </div>
+          <div class="flex flex-col sticky lg:w-1/3" style="top: 7rem;">
+            <app-side-banner></app-side-banner>
+          </div>
+        </div>
+      </mat-step>
+      <mat-step>
+        <ng-template matStepLabel>Checkout</ng-template>
+        <div class="flex flex-col w-full items-start md:flex-row"><!---->
+          <div id="question-container" class="flex-1 flex-col lg:flex-row items-start w-full"><!---->
+            <div class="w-full mx-auto order-2 lg:order-none order-2 lg:pr-8">
+              <div><!----></div>
+              <div><!----></div>
+              <div><!----></div>
+              <div><!----></div>
+              <div><!----></div>
+              <div><!----></div>
+              <div><!----></div>
+              <div id="paynow"><!---->
+                <div class="w-full" data-v-1b6c4836="" style=""><!----><!---->
+                  <div class="payment__card payment relative flex flex-col bg-white bg-clip-border mb-4"
+                    data-v-1b6c4836="">
+                    <div class="overflow-hidden bg-white rounded-md border-1 border-white md:border-gray-300 md:px-6"
+                      data-v-1b6c4836="">
+                      <div class="flex items-center justify-between py-5 border-b border-gray-300" data-v-1b6c4836="">
+                        Select a payment method. All transactions are safe and secure</div>
+                      <div class="pt-5 w-full" data-v-1b6c4836="">
+                        <div class="flex items-center justify-between" data-v-1b6c4836="">
+                          <div class="font-bold" data-v-1b6c4836="">Credit / Debit Card</div><img
+                            src="https://d16zz69zs6o3lx.cloudfront.net/img/payment/credit_card_icons.png"
+                            class="object-none" alt="Credit Card Icon" data-v-1b6c4836="">
+                        </div>
+                        <div data-v-1b6c4836="">
+                          <div data-v-0828013e="" data-v-1b6c4836="">
+                            <div class="grid grid-cols-10 gap-x-2 gap-y-3 mt-3 pl-2" data-v-0828013e="">
+                              <div class="col-span-10" data-v-0828013e=""><label class="foxtrot" data-v-0828013e="">Card
+                                  Holder Name</label><input required="" type="text" name="full_name"
+                                  autocomplete="cc-name" class="foxtrot" placeholder="" data-v-0828013e=""><!----></div>
+                              <div class="col-span-10 sm:col-span-4" data-v-0828013e=""><label class="foxtrot"
+                                  data-v-0828013e="">Card Number</label>
+                                <div class="relative flex items-center" data-v-0828013e=""><input required=""
+                                    type="text" inputmode="numeric" name="number" autocomplete="cc-number"
+                                    class="foxtrot" placeholder="" data-v-0828013e=""><!----></div><!---->
+                              </div>
+                              <div class="col-span-10 sm:col-span-2" data-v-0828013e=""><label class="foxtrot"
+                                  data-v-0828013e="">Exp. Month</label><select required="" name="month"
+                                  autocomplete="cc-exp-month" class="foxtrot" data-v-0828013e="">
+                                  <option disabled="" value="" data-v-0828013e=""></option>
+                                  <option value="1" data-v-0828013e="">1 - January</option>
+                                  <option value="2" data-v-0828013e="">2 - February</option>
+                                  <option value="3" data-v-0828013e="">3 - March</option>
+                                  <option value="4" data-v-0828013e="">4 - April</option>
+                                  <option value="5" data-v-0828013e="">5 - May</option>
+                                  <option value="6" data-v-0828013e="">6 - June</option>
+                                  <option value="7" data-v-0828013e="">7 - July</option>
+                                  <option value="8" data-v-0828013e="">8 - August</option>
+                                  <option value="9" data-v-0828013e="">9 - September</option>
+                                  <option value="10" data-v-0828013e="">10 - October</option>
+                                  <option value="11" data-v-0828013e="">11 - November</option>
+                                  <option value="12" data-v-0828013e="">12 - December</option>
+                                </select><!----></div>
+                              <div class="col-span-10 sm:col-span-2" data-v-0828013e=""><label class="foxtrot"
+                                  data-v-0828013e="">Exp. Year</label><select required="" name="year"
+                                  autocomplete="cc-exp-year" class="foxtrot" data-v-0828013e="">
+                                  <option disabled="" value="" data-v-0828013e=""></option>
+                                  <option value="2023" data-v-0828013e="">2023</option>
+                                  <option value="2024" data-v-0828013e="">2024</option>
+                                  <option value="2025" data-v-0828013e="">2025</option>
+                                  <option value="2026" data-v-0828013e="">2026</option>
+                                  <option value="2027" data-v-0828013e="">2027</option>
+                                  <option value="2028" data-v-0828013e="">2028</option>
+                                  <option value="2029" data-v-0828013e="">2029</option>
+                                  <option value="2030" data-v-0828013e="">2030</option>
+                                  <option value="2031" data-v-0828013e="">2031</option>
+                                  <option value="2032" data-v-0828013e="">2032</option>
+                                  <option value="2033" data-v-0828013e="">2033</option>
+                                  <option value="2034" data-v-0828013e="">2034</option>
+                                  <option value="2035" data-v-0828013e="">2035</option>
+                                  <option value="2036" data-v-0828013e="">2036</option>
+                                  <option value="2037" data-v-0828013e="">2037</option>
+                                  <option value="2038" data-v-0828013e="">2038</option>
+                                  <option value="2039" data-v-0828013e="">2039</option>
+                                  <option value="2040" data-v-0828013e="">2040</option>
+                                  <option value="2041" data-v-0828013e="">2041</option>
+                                  <option value="2042" data-v-0828013e="">2042</option>
+                                  <option value="2043" data-v-0828013e="">2043</option>
+                                  <option value="2044" data-v-0828013e="">2044</option>
+                                  <option value="2045" data-v-0828013e="">2045</option>
+                                  <option value="2046" data-v-0828013e="">2046</option>
+                                  <option value="2047" data-v-0828013e="">2047</option>
+                                  <option value="2048" data-v-0828013e="">2048</option>
+                                  <option value="2049" data-v-0828013e="">2049</option>
+                                  <option value="2050" data-v-0828013e="">2050</option>
+                                  <option value="2051" data-v-0828013e="">2051</option>
+                                  <option value="2052" data-v-0828013e="">2052</option>
+                                  <option value="2053" data-v-0828013e="">2053</option>
+                                </select><!----></div>
+                              <div class="col-span-10 sm:col-span-2" data-v-0828013e="">
+                                <div class="flex" data-v-0828013e=""><label class="foxtrot" data-v-0828013e="">Security
+                                    Code</label><!----></div><input required="" inputmode="numeric" type="text"
+                                  name="cvv" autocomplete="cc-csc" class="foxtrot" placeholder=""
+                                  data-v-0828013e=""><!---->
+                              </div>
+                            </div>
+                            <div
+                              class="text-center flex flex-col md:flex-row items-center justify-center mt-4 lg:hidden"
+                              data-v-0828013e=""><img
+                                src="https://d16zz69zs6o3lx.cloudfront.net/img/payment/safe-checkout.png"
+                                alt="Safe checkout" class="border-0 mr-2" data-v-0828013e="" style="height: 45px;">
+                              <div class="mt-4 md:mt-0 w-full" data-v-0828013e=""><button
+                                  class="btn btn--primary btn--std btn--full" id="btnSubmitPaymentMobile" type="submit"
+                                  data-btn-text="Submit Payment" data-v-0828013e=""><span class="">Submit
+                                    Payment</span><!----></button></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="relative py-4 mt-6" data-v-1b6c4836="">
+                        <div class="absolute inset-0 flex items-center justify-center" data-v-1b6c4836="">
+                          <div class="w-full sm:w-1/2 border-b border-gray-300" data-v-1b6c4836=""></div>
+                        </div>
+                        <div class="relative flex justify-center" data-v-1b6c4836=""><span class="bg-white px-4 text-sm"
+                            data-v-1b6c4836="">Or Pay With</span></div>
+                      </div>
+                      <ul role="list" class="pl-0 pb-0" data-v-1b6c4836=""><!---->
+                        <li class="flex items-center justify-between p-3 border-b border-gray-300" data-v-1b6c4836="">
+                          <div data-v-1b6c4836=""> Paypal </div>
+                          <div id="paypal-button" class="object-none overflow-hidden flex justify-center relative z-0"
+                            data-v-1b6c4836="" style="width: 100px;">
+                            <div id="zoid-paypal-buttons-uid_6813e8b9f4_mdk6mje6nda"
+                              class="paypal-buttons paypal-buttons-context-iframe paypal-buttons-label-paypal paypal-buttons-layout-vertical"
+                              data-paypal-smart-button-version="5.0.406"
+                              style="height: 40px; transition: all 0.2s ease-in-out 0s;">
+                              <style nonce="">
+                                #zoid-paypal-buttons-uid_6813e8b9f4_mdk6mje6nda {
+                                  position: relative;
+                                  display: inline-block;
+                                  width: 100%;
+                                  min-height: 25px;
+                                  min-width: 150px;
+                                  font-size: 0;
+                                }
+
+                                #zoid-paypal-buttons-uid_6813e8b9f4_mdk6mje6nda>iframe {
+                                  position: absolute;
+                                  top: 0;
+                                  left: 0;
+                                  width: 100%;
+                                  height: 100%;
+                                }
+
+                                #zoid-paypal-buttons-uid_6813e8b9f4_mdk6mje6nda>iframe.component-frame {
+                                  z-index: 100;
+                                }
+
+                                #zoid-paypal-buttons-uid_6813e8b9f4_mdk6mje6nda>iframe.prerender-frame {
+                                  transition: opacity .2s linear;
+                                  z-index: 200;
+                                }
+
+                                #zoid-paypal-buttons-uid_6813e8b9f4_mdk6mje6nda>iframe.visible {
+                                  opacity: 1;
+                                }
+
+                                #zoid-paypal-buttons-uid_6813e8b9f4_mdk6mje6nda>iframe.invisible {
+                                  opacity: 0;
+                                  pointer-events: none;
+                                }
+
+                                #zoid-paypal-buttons-uid_6813e8b9f4_mdk6mje6nda>.smart-menu {
+                                  position: absolute;
+                                  z-index: 300;
+                                  top: 0;
+                                  left: 0;
+                                  width: 100%;
+                                }
+                              </style><iframe allowtransparency="true" name="" title="PayPal"
+                                allowpaymentrequest="allowpaymentrequest" scrolling="no" id="jsx-iframe-e006b631d2"
+                                class="component-frame visible"
+                                style="background-color: transparent; border: none;"></iframe>
+                              <div id="smart-menu" class="smart-menu"></div>
+                              <div id="installments-modal" class="installments-modal"></div><iframe
+                                name="__detect_close_uid_73b1d0c8ce_mdk6mje6nda__" style="display: none;"></iframe>
+                            </div>
+                          </div>
+                        </li><!---->
+                        <li class="flex items-center justify-between p-3 border-b border-gray-300" data-v-1b6c4836="">
+                          <div data-v-1b6c4836=""> Venmo </div><button id="venmo-button" data-v-1b6c4836=""><img
+                              src="https://d16zz69zs6o3lx.cloudfront.net/img/payment/venmo.png" alt="Venmo"
+                              data-v-1b6c4836=""></button>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <h3 class="py-3" data-v-1b6c4836="" style="display: none;">Other Payments</h3>
+                  <div class="relative flex flex-col bg-white bg-clip-border my-4" data-v-1b6c4836=""
+                    style="display: none;">
+                    <form id="payment-form" class="" data-v-1b6c4836="">
+                      <div id="payment-element" data-v-1b6c4836=""></div>
+                      <div id="error-message" data-v-1b6c4836=""></div>
+                    </form>
+                  </div>
+                  <div data-v-1b6c4836=""><!----><!----></div><!---->
+                  <div id="device-fingerprint" class="hidden" data-v-1b6c4836=""></div>
+                  <div class="bg-white popup" role="dialog" aria-modal="true" data-v-1b6c4836="" style="display: none;">
+                    <div class="bg-white popup-inner three-ds rounded-lg relative w-1/2" data-v-1b6c4836="">
+                      <main class="h-full" id="challenge-modal" data-v-1b6c4836="">
+                        <div id="challenge" data-v-1b6c4836=""></div>
+                      </main>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex mt-4 lg:hidden justify-between"><button
+                  class="btn btn--secondary btn--std mr-3 btnPrevious" id="btnPreviousUnderSection"
+                  data-btn-text="Previous"><span class="">Previous</span><!----></button><!----><!----><!---->
+              </div>
+            </div>
+            <div style="margin-bottom: 150px;"></div>
+          </div>
+          <div class="flex flex-col sticky lg:w-1/3" style="top: 7rem;">
+            <div class="hidden lg:block">
+              <div class="text-black" dusk="product-sidebar-summary">
+                <div class="sticky">
+                  <div class="lg:hidden mb-4 flex items-center justify-between">
+                    <p class="m-0 text-xl">Price Breakdown</p><span class="cursor-pointer">
+                      <div class="inline-block"><svg
+                          class="v2-h-36 v2-w-36 h-6 w-6 mr-2 ml-2 v2-mr-8 v2-ml-8 text-gray-500 "
+                          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                          <path fill-rule="evenodd"
+                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                            clip-rule="evenodd"></path>
+                        </svg>
+                      </div>
+                    </span>
+                  </div>
+                  <div class="border-1 rounded-md border-solid border-gray-300 mb-4">
+                    <div class="mb-4 bg-gray-100 p-4 rounded-md">
+                      <div class="flex justify-between items-center mb-1"><span class="bold">Documents</span><span
+                          class="text-xs">1 Applicant</span></div>
+                      <div class="text-xs">Canada Visitor Visa (10 years, Multiple Entry)</div>
+                    </div>
+                    <div class="mb-4 text-xs px-4">
+                      <div class="flex justify-between mb-1"><span class="mr-4">Government Fees</span><span
+                          class="text-black">139.00</span></div>
+                      <div class="flex justify-between mb-1"><span class="mr-4">Processing speed (Standard) </span><span
+                          class="text-black">224.99</span></div>
+                      <div class="flex justify-between mb-1"><span class="mr-4">iVisa Plus - Individual Subscription (1
+                          year)</span><span class="text-black">89.99</span></div>
+                      <div class="flex justify-between mb-1"><span class="mr-4">iVisa Plus Membership
+                          Discount</span><span class="text-red-500">-112.49</span></div><!---->
+                    </div>
+                  </div>
+                  <div class="mb-4 ml-4">
+                    <div class="coupon flex flex-col py-3 md:py-0">
+                      <div class="items-center justify-between flex">
+                        <div class="">
+                          <div class="text-sm text-black">Have a coupon code?</div><!---->
+                        </div>
+                        <div class="w-1/2 text-sm shadow-md justify-between validation rounded-lg bg-white flex"><input
+                            class="w-3/4 border-0 px-3 rounded-lg outline-none" id="promo_code" name="promotion-code"
+                            placeholder="Enter code"><!----><button
+                            class="btn btn-- btn--small btn--icon flex flex-row-reverse border-0 mr-3"
+                            id="coupon_button" type="submit" data-btn-text="arrow-right"><span class=""></span>
+                            <div class="inline-block"><svg class="v2-h-18 v2-w-18 h-3 w-3 ml-2 v2-ml-8 text-primary "
+                                fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) -->
+                                <path
+                                  d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z">
+                                </path>
+                              </svg></div>
+                          </button></div>
+                      </div><!---->
+                    </div>
+                  </div>
+                  <div class="px-4">
+                    <div class="flex justify-between bold"><span>Total</span><span>USD $341.49</span></div>
+                    <div class="flex justify-between text-xs text-gray-900 mb-2"><span>For all
+                        applicants</span><span>(Includes taxes and fees)</span></div>
+                  </div>
+                </div>
+                <div class="hidden lg:block w-full mt-8"><!----><button (click)="submitPayment()" class="btn btn--primary btn--std btn--full"
+                    id="btnSubmitPayment" type="submit" data-btn-text="Submit Payment"><span class="">Submit
+                      Payment</span><!----></button>
+                  <button class="btn btn--navigation btn--std btn--icon btn--icon--left  btnPrevious"
+                    id="btnPreviousSidebar" data-btn-text="Previous"><span class="">Previous</span>
+                    
+                  </button>
+                </div>
+              </div>
+            </div><!----><!---->
+            <div class="left-0 bottom-0 w-full fixed md:hidden bg-white p-4"
+              style="z-index: 1000; box-shadow: rgba(17, 18, 17, 0.18) 0px 0px 16px 0px;">
+              <div class="flex justify-between items-center">
+                <p class="text-dark mb-0 leading-none"><span><span class="bold text-lg">Total: 341.49</span><span
+                      class="ml-1 text-lg bold">USD</span></span></p><!---->
+              </div>
+            </div>
+          </div>
+        </div>
+      </mat-step>
+    </mat-stepper>
+  </div>
+
+</div>
