@@ -1,3 +1,8 @@
+<div *ngIf="showAlert">
+  <alert [dismissOnTimeout]="2000" type="success" (onClosed)="onAlertClose()">
+    You have successfully made the payment.
+  </alert>
+</div>
 <div class="pb-8">
   <div class="mb-12 sm:mb-0 container">
     <div class="block text-left w-full mt-8 sm:mt-4 sm:mb-8">
@@ -13,8 +18,10 @@
       <mat-step [stepControl]="firstFormGroup">
         <ng-template matStepLabel>Trip Details</ng-template>
 
-        <div class="flex flex-col w-full items-start md:flex-row"><!---->
-          <div id="question-container" class="flex-1 flex-col lg:flex-row items-start w-full"><!---->
+        <div class="flex flex-col w-full items-start md:flex-row">
+
+          <div id="question-container" class="flex-1 flex-col lg:flex-row items-start w-full">
+
             <div class="w-full mx-auto order-2 lg:order-none order-2 lg:pr-8">
               <div>
                 <div class="mb-4 bg-white pb-4 rounded-md border-1 border-solid  md:border-gray-300">
@@ -22,7 +29,8 @@
                     class="w-full leading-tight text-xl sm:text-2xl flex items-center justify-between mt-4 md:mt-0 py-4 md:p-6 relative rounded-lg text-dark font-bold">
                     <div class="bg-black absolute top-0 left-0 w-1 h-full" style="border-top-left-radius: inherit;">
                     </div><span class="ml-4 md:ml-0">Your Trip Details</span>
-                  </div><!---->
+                  </div>
+
                   <!--Write form here-->
                   <form class="mx-5 mt-2">
                     <div class="form-group">
@@ -54,7 +62,9 @@
                       </div>
                     </div>
                   </form>
-                </div><!----><!---->
+                </div>
+
+
               </div>
             </div>
           </div>
@@ -64,14 +74,19 @@
         </div>
       </mat-step>
       <mat-step [stepControl]="secondFormGroup" label="Your Info">
-        <div class="flex flex-col w-full items-start md:flex-row"><!---->
-          <div id="question-container" class="flex-1 flex-col lg:flex-row items-start w-full"><!---->
+        <div class="flex flex-col w-full items-start md:flex-row">
+
+          <div id="question-container" class="flex-1 flex-col lg:flex-row items-start w-full">
+
             <div class="w-full mx-auto order-2 lg:order-none order-2 lg:pr-8">
               <div class="mb-4 bg-white pb-4 rounded-md border-1 border-solid">
                 <div
                   class="w-full leading-tight text-xl sm:text-2xl flex items-center justify-between mt-4 md:mt-0 py-4 md:p-6 relative rounded-lg text-dark font-bold">
                   <div class="bg-black absolute top-0 left-0 w-1 h-full" style="border-top-left-radius: inherit;">
-                  </div><span class="ml-4 md:ml-0">Your Personal Details</span><!----><!----><!---->
+                  </div><span class="ml-4 md:ml-0">Your Personal Details</span>
+
+
+
                 </div>
                 <form class="mx-5 mt-2">
                   <div class="form-group">
@@ -104,7 +119,8 @@
         </div>
       </mat-step>
       <mat-step [stepControl]="secondFormGroup" label="Services">
-        <div class="flex flex-col w-full items-start md:flex-row"><!---->
+        <div class="flex flex-col w-full items-start md:flex-row">
+
           <div id="question-container" class="flex-1 flex-col lg:flex-row items-start w-full">
             <div class="w-full mx-auto order-2 lg:order-none order-2 lg:pr-8">
               <div>
@@ -113,17 +129,24 @@
                     class="w-full leading-tight text-xl sm:text-2xl flex items-center justify-between mt-4 md:mt-0 py-4 md:p-6 relative rounded-lg text-dark font-bold">
                     <div class="bg-black absolute top-0 left-0 w-1 h-full" style="border-top-left-radius: inherit;">
                     </div><span class="ml-4 md:ml-0">Processing Time &amp; Fee</span>
-                    <div class="flex"><!----><!----><!----></div>
-                  </div><!---->
+                    <div class="flex">
+
+
+                    </div>
+                  </div>
+
                   <div class="w-full md:px-0 pt-5 flex flex-col justify-center">
                     <div class="card-body md:px-5">
                       <div class="form-row flex flex-col lg:flex-row">
                         <div class="form-group flex flex-col justify-start max-w-full col-12 col-md-12">
                           <div class="ivisa-input-wrapper w-full h-full" data-ivisa-slug="product_add_ons"
                             data-ivisa-question-selector="general.product_add_ons">
-                            <div class="w-full h-full" data-v-402b6d91=""><!---->
-                              <div class="relative" data-v-402b6d91=""><!---->
-                                <div modelmodifiers="[object Object]" data-v-402b6d91=""><!---->
+                            <div class="w-full h-full" data-v-402b6d91="">
+
+                              <div class="relative" data-v-402b6d91="">
+
+                                <div modelmodifiers="[object Object]" data-v-402b6d91="">
+
                                   <div>
                                     <div class="bold text-base mb-6">1. Choose an option</div>
                                     <div
@@ -132,7 +155,8 @@
                                         class="bg-blue-100 text-2xl md:text-3xl lg:text-4xl w-1/3 rounded-l-md bold flex flex-col items-center justify-center relative overflow-hidden"
                                         data-dusk="subscription-add-on">
                                         <img class="absolute w-full" src="" alt=""><span class="-mb-2">Roger<span
-                                            class="text-primary">+</span></span><!---->
+                                            class="text-primary">+</span></span>
+
                                       </div>
                                       <div class="px-2 py-1 rounded-full text-white bg-green-500 absolute text-xs bold"
                                         style="top: -0.7rem; right: 1rem;">Recommended</div>
@@ -144,16 +168,22 @@
                                       </div>
                                     </div>
                                   </div>
-                                </div><!---->
-                              </div><!----><!---->
+                                </div>
+
+                              </div>
+
+
                             </div>
-                          </div><!---->
+                          </div>
+
                         </div>
                         <div class="form-group flex flex-col justify-start max-w-full col-12 col-md-12">
                           <div class="ivisa-input-wrapper w-full h-full" data-ivisa-slug="visa_processing_speed"
                             data-ivisa-question-selector="general.visa_processing_speed">
-                            <div class="w-full h-full" data-v-402b6d91=""><!---->
-                              <div class="relative" data-v-402b6d91=""><!---->
+                            <div class="w-full h-full" data-v-402b6d91="">
+
+                              <div class="relative" data-v-402b6d91="">
+
                                 <div modelmodifiers="[object Object]" data-v-402b6d91="">
                                   <div class="bold text-base mb-4">2. Choose your processing time</div>
                                   <ul class="list">
@@ -163,18 +193,25 @@
                                       <div class="info flex flex-col items-start"><span
                                           class="days text-xl text-primary">Standard</span><span
                                           class="ppa text-md text-dark">Price per applicant</span></div>
-                                      <div class="price text-xl"><span class="text-dark">USD $224.99</span><!----></div>
+                                      <div class="price text-xl"><span class="text-dark">USD $224.99</span>
+                                      </div>
                                     </li>
                                   </ul>
-                                </div><!---->
-                              </div><!----><!---->
+                                </div>
+
+                              </div>
+
+
                             </div>
-                          </div><!---->
+                          </div>
+
                         </div>
                       </div>
                     </div>
                   </div>
-                </div><!----><!---->
+                </div>
+
+
               </div>
 
 
@@ -188,11 +225,16 @@
       </mat-step>
       <mat-step>
         <ng-template matStepLabel>Checkout</ng-template>
-        <div class="flex flex-col w-full items-start md:flex-row"><!---->
-          <div id="question-container" class="flex-1 flex-col lg:flex-row items-start w-full"><!---->
+        <div class="flex flex-col w-full items-start md:flex-row">
+
+          <div id="question-container" class="flex-1 flex-col lg:flex-row items-start w-full">
+
             <div class="w-full mx-auto order-2 lg:order-none order-2 lg:pr-8">
-              <div id="paynow"><!---->
-                <div class="w-full" style=""><!----><!---->
+              <div id="paynow">
+
+                <div class="w-full" style="">
+
+
                   <div class="payment__card payment relative flex flex-col bg-white bg-clip-border mb-4">
                     <div class="overflow-hidden bg-white rounded-md border-1  md:border-gray-300 md:px-6">
                       <div class="flex items-center justify-between py-3 border-b border-gray-300">
@@ -214,7 +256,7 @@
                             <label>Expiry Date</label>
                             <input type="text" class="form-control" bsDatepicker>
                           </div>
-                          
+
                           <div class="form-group">
                             <label>Security Code</label>
                             <input type="number" class="form-control">
@@ -226,7 +268,8 @@
                             <div class="mt-4 md:mt-0 w-full"><button class="btn btn--primary btn--std btn--full"
                                 id="btnSubmitPaymentMobile" type="submit" data-btn-text="Submit Payment"><span
                                   class="">Submit
-                                  Payment</span><!----></button></div>
+                                  Payment</span>
+                              </button></div>
                           </div>
                         </div>
                       </div>
@@ -237,12 +280,13 @@
                         <div class="relative flex justify-center"><span class="bg-white px-4 text-sm">Or Pay With</span>
                         </div>
                       </div>
-                      <ul role="list" class="pl-0 pb-0"><!---->
+                      <ul role="list" class="pl-0 pb-0">
+
                         <li class="flex items-center justify-between p-3 border-b border-gray-300">
                           <div> Paypal </div>
-                          <img
-                              src="https://d16zz69zs6o3lx.cloudfront.net/img/payment/paypal.png" alt="Venmo">
-                        </li><!---->
+                          <img src="https://d16zz69zs6o3lx.cloudfront.net/img/payment/paypal.png" alt="Venmo">
+                        </li>
+
                         <li class="flex items-center justify-between p-3 border-b border-gray-300">
                           <div> Venmo </div><button id="venmo-button"><img
                               src="https://d16zz69zs6o3lx.cloudfront.net/img/payment/venmo.png" alt="Venmo"></button>
@@ -257,7 +301,10 @@
                       <div id="error-message"></div>
                     </form>
                   </div>
-                  <div><!----><!----></div><!---->
+                  <div>
+
+                  </div>
+
                   <div id="device-fingerprint" class="hidden"></div>
                   <div class="bg-white popup" role="dialog" aria-modal="true" style="display: none;">
                     <div class="bg-white popup-inner three-ds rounded-lg relative w-1/2">
@@ -270,7 +317,11 @@
               </div>
               <div class="flex mt-4 lg:hidden justify-between"><button
                   class="btn btn--secondary btn--std mr-3 btnPrevious" id="btnPreviousUnderSection"
-                  data-btn-text="Previous"><span class="">Previous</span><!----></button><!----><!----><!---->
+                  data-btn-text="Previous"><span class="">Previous</span>
+                </button>
+
+
+
               </div>
             </div>
             <div style="margin-bottom: 150px;"></div>
@@ -305,19 +356,21 @@
                       <div class="flex justify-between mb-1"><span class="mr-4">Roger - Individual Subscription (1
                           year)</span><span class="text-black">89.99</span></div>
                       <div class="flex justify-between mb-1"><span class="mr-4">Roger Membership
-                          Discount</span><span class="text-red-500">-112.49</span></div><!---->
+                          Discount</span><span class="text-red-500">-112.49</span></div>
+
                     </div>
                   </div>
                   <div class="mb-4 ml-4">
                     <div class="coupon flex flex-col py-3 md:py-0">
                       <div class="items-center justify-between flex">
                         <div class="">
-                          <div class="text-sm text-black">Have a coupon code?</div><!---->
+                          <div class="text-sm text-black">Have a coupon code?</div>
+
                         </div>
                         <div class="w-1/2 text-sm shadow-md justify-between validation rounded-lg bg-white flex"><input
                             class="w-3/4 border-0 px-3 rounded-lg outline-none" id="promo_code" name="promotion-code"
-                            placeholder="Enter code"><!----><button
-                            class="btn btn-- btn--small btn--icon flex flex-row-reverse border-0 mr-3"
+                            placeholder="Enter code">
+                          <button class="btn btn-- btn--small btn--icon flex flex-row-reverse border-0 mr-3"
                             id="coupon_button" type="submit" data-btn-text="arrow-right"><span class=""></span>
                             <div class="inline-block"><svg class="v2-h-18 v2-w-18 h-3 w-3 ml-2 v2-ml-8 text-primary "
                                 fill="currentColor" xmlns="http://www.w3.org/2000/svg"
@@ -326,8 +379,10 @@
                                   d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z">
                                 </path>
                               </svg></div>
-                          </button></div>
-                      </div><!---->
+                          </button>
+                        </div>
+                      </div>
+
                     </div>
                   </div>
                   <div class="px-4">
@@ -336,22 +391,26 @@
                         applicants</span><span>(Includes taxes and fees)</span></div>
                   </div>
                 </div>
-                <div class="hidden lg:block w-full mt-8"><!----><button (click)="submitPayment()"
-                    class="btn btn--primary btn--std btn--full" id="btnSubmitPayment" type="submit"
-                    data-btn-text="Submit Payment"><span class="">Submit
-                      Payment</span><!----></button>
+                <div class="hidden lg:block w-full mt-8">
+                  <button (click)="submitPayment()" class="btn btn--primary btn--std btn--full" id="btnSubmitPayment"
+                    type="submit" [disabled]="showAlert" data-btn-text="Submit Payment"><span class="">Submit
+                      Payment</span>
+                  </button>
                   <button class="btn btn--navigation btn--std btn--icon btn--icon--left  btnPrevious"
                     id="btnPreviousSidebar" data-btn-text="Previous"><span class="">Previous</span>
 
                   </button>
                 </div>
               </div>
-            </div><!----><!---->
+            </div>
+
+
             <div class="left-0 bottom-0 w-full fixed md:hidden bg-white p-4"
               style="z-index: 1000; box-shadow: rgba(17, 18, 17, 0.18) 0px 0px 16px 0px;">
               <div class="flex justify-between items-center">
                 <p class="text-dark mb-0 leading-none"><span><span class="bold text-lg">Total: 341.49</span><span
-                      class="ml-1 text-lg bold">USD</span></span></p><!---->
+                      class="ml-1 text-lg bold">USD</span></span></p>
+
               </div>
             </div>
           </div>

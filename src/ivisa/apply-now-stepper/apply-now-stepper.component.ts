@@ -15,6 +15,8 @@ export class ApplyNowStepperComponent implements OnInit {
   travelCountry: string = "";
   genderValue: string = "";
 
+  showAlert: boolean = false;
+
   selectedDate: Date= new Date();
 
   ngOnInit() {
@@ -34,7 +36,10 @@ export class ApplyNowStepperComponent implements OnInit {
   }
   
   submitPayment(){
-    alert("You have submitted payment");
+    this.showAlert = true;
+  }
+  
+  onAlertClose(){
     this.router.navigate([""]);
   }
 
