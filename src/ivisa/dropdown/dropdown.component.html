@@ -1,0 +1,57 @@
+<div class="dropdown w-full" tabindex="0">
+  <div (click)="toggleDropdown()"
+    class="text-dark border-1 foxtrot" style="height: 2.6rem;">
+    <div class="inline-block">
+      <svg class="v2-h-24 v2-w-24 h-4 w-4 ml-2 v2-ml-8 text-primary cursor-pointer v2-hidden"
+        fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+        <path
+          d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z">
+        </path>
+      </svg>
+    </div>
+    <!---->
+    <div
+      class="flex-1 pl-2 truncate"
+      data-dusk="filter-value"><span>{{ selectedValue.label ? selectedValue.label : "Select" }}</span></div>
+    <div class="inline-block">
+      <svg class="h-3 w-3 mr-0 ml-0 text-gray-500 cursor-pointer"
+        fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+        <!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) -->
+        <path
+          d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z">
+        </path>
+      </svg>
+    </div>
+  </div>
+  <div [ngClass]="{ 'show': isDropdownVisible }"
+    class="dropdown-filter z-50 v2-shadow-lg shadow-lg dropdown-menu v2-w-full w-full v2-relative relative text-dark"
+    style="padding-top: 0px; position: absolute;">
+    <div class="p-2">
+      <input name="doNotAutofill0.5895615502862448" #inputBox type="search" autocomplete="off"
+        role="combobox" aria-haspopup="true" aria-expanded="false" data-dusk="Traveling to"
+        class="v2-px-24 v2-py-20 v2-border-0 v2-outline-0 v2-rounded-t-xl v2-w-full w-full h-9 pl-8 text-base rounded-md bg-white border-1 border-solid border-gray-300 flex items-center focus:outline-none focus:border-gray-300 focus:v2-ring-0 focus:v2-outline-none focus:v2-ring-0"
+        (input)="filterDropDownData(inputBox.value)">
+    </div>
+    <span class="absolute v2-absolute v2-hidden" style="top: 16px; left: 16px;">
+      <div class="inline-block">
+        <svg class="v2-h-24 v2-w-24 h-4 w-4 mr-0 ml-0  " fill="currentColor"
+          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+          <!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) -->
+          <path
+            d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z">
+          </path>
+        </svg>
+      </div>
+    </span>
+    <div class="scrollable-options h-auto overflow-y-scroll" role="listbox" style="max-height: 200px;">
+      <div role="option"
+        class="option-element py-2 px-3 text-left items-center flex text-md w-full text-base cursor-pointer navigate-item-option"
+        *ngFor="let data of filteredDropdownData"
+        [ngClass]="{'highlighted-option': data.value === selectedValue.value}"
+        (click)="selectValue(data)">
+        {{ data.label }}
+      </div>
+    </div>
+    <!---->
+  </div>
+</div>

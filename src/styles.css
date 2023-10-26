@@ -4,11 +4,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import '~ngx-bootstrap/datepicker/bs-datepicker.css';
 
 .poppins-font {
   font-family:  Poppins, Arial, sans-serif !important;
 }
 
+.alert{
+  margin-bottom: 0px !important;
+}
 
 #navigation-header {
   --tw-bg-opacity: 1;
@@ -146,6 +150,10 @@ h1, h2, h3, h4, p, ul {
 
 .rounded-md {
   border-radius: 0.375rem;
+}
+
+.form-control{
+  height: inherit !important;
 }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

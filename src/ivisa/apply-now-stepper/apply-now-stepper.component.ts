@@ -13,7 +13,10 @@ export class ApplyNowStepperComponent implements OnInit {
   constructor(private router: Router, private route: ActivatedRoute,private _formBuilder: FormBuilder) {}
 
   travelCountry: string = "";
-  
+  genderValue: string = "";
+
+  selectedDate: Date= new Date();
+
   ngOnInit() {
     this.travelCountry = this.route.snapshot.paramMap.get("country") ?? "";
   }
@@ -25,6 +28,10 @@ export class ApplyNowStepperComponent implements OnInit {
   secondFormGroup = this._formBuilder.group({
     secondCtrl: ['', Validators.required],
   });
+
+  onDateChange(event: Event){
+
+  }
   
   submitPayment(){
     alert("You have submitted payment");

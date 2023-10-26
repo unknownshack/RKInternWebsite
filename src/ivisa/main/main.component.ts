@@ -14,6 +14,7 @@ export class MainComponent implements OnInit {
     });
   }
   
+  showAlert: boolean = false;
   form: FormGroup;
   selectedCountry: string = 'Nepal - NP';
   selectedTravelCountry: string = '';
@@ -281,13 +282,17 @@ export class MainComponent implements OnInit {
     this.isDropdownVisible = !this.isDropdownVisible;
   }
 
+  onAlertClose(){
+    this.showAlert = false;
+  }
+
   onSubmit(){
     if (this.selectedCountry !== '' && this.selectedTravelCountry !== '') 
     {
       this.router.navigate(['/visitor-visa', this.selectedTravelCountry.split(" - ")[0]]);
     } 
     else {
-      alert("Select destionation"); 
+      this.showAlert = true; 
     }
   }
 

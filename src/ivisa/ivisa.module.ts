@@ -14,6 +14,12 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatStepperModule} from '@angular/material/stepper';
 import {MatButtonModule} from '@angular/material/button';
 import { SideBannerComponent } from './side-banner/side-banner.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { FooterComponent } from './footer/footer.component';
+import { DropdownComponent } from './dropdown/dropdown.component';
+
+import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
+import {AlertModule } from 'ngx-bootstrap/alert';
 
 @NgModule({
   declarations: [ 
@@ -21,7 +27,10 @@ import { SideBannerComponent } from './side-banner/side-banner.component';
     MainComponent,
     ApplyNowComponent,
     ApplyNowStepperComponent,
-    SideBannerComponent
+    SideBannerComponent,
+    NavbarComponent,
+    FooterComponent,
+    DropdownComponent
   ],
   imports: [
     BrowserModule,
@@ -33,6 +42,8 @@ import { SideBannerComponent } from './side-banner/side-banner.component';
     ReactiveFormsModule,
     MatFormFieldModule,
     MatInputModule,
+    BsDatepickerModule.forRoot(),
+    AlertModule.forRoot()
   ],
   providers: [],
   bootstrap: [IvisaComponent]
