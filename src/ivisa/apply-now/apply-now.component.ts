@@ -12,6 +12,8 @@ import { DropDownModel } from 'src/Model/dropdownModel';
 export class ApplyNowComponent implements OnInit {
   constructor(private router: Router, private route: ActivatedRoute){}
 
+  selectedOption = "";
+  showValidationError = false;
   travelCountry: string = "";
   applyForOption: DropDownModel[] = [{label: "Visitor Visa - 10 years, Multiple Entry", value:"1"}, {label:"Advance CBSA Declaration (ArriveCAN) - 30 days, Single Entry", value:"2"}]
 
@@ -19,7 +21,19 @@ export class ApplyNowComponent implements OnInit {
     this.travelCountry = this.route.snapshot.paramMap.get("country") ?? "";
   }
 
-  fillInformation(){
-    this.router.navigate(["./apply-now-stepper", this.travelCountry]);
+  handleOnDropdownSelect(value: string){
+    if(value != ""){
+      this.selectedOption = value;
+      this.showValidationError = false;
+    }
+  }
+
+  onValidateSubmit(){
+    if(this.selectedOption != ""){
+      this.router.navigate(["./apply-now-stepper", this.travelCountry]);
+    }
+    else{
+      this.showValidationError = true;
+    }
   }
 }

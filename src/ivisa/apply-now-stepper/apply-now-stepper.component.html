@@ -32,35 +32,62 @@
                   </div>
 
                   <!--Write form here-->
-                  <form class="mx-5 mt-2">
+                  <form class="mx-5 mt-2" [formGroup]="form" [class.was-validated]="tripDetailsIsFormSubmitted">
                     <div class="form-group">
-                      <label for="exampleInputEmail1">When is your arrival date?</label>
-                      <input type="text" placeholder="mm-dd-yyyy" class="form-control" bsDatepicker>
+                      <label for="arrivalDate">When is your arrival date?</label>
+                      <input type="text" formControlName="arrivalDate" placeholder="mm-dd-yyyy" class="form-control"
+                        bsDatepicker [ngClass]="{
+                        'is-invalid':
+                        tripDetailsIsFormSubmitted &&
+                            form.controls['arrivalDate'].errors
+                    }" required>
+                      <!-- <div class="invalid-feedback" *ngIf="tripDetailsIsFormSubmitted && form.controls['arrivalDate'].errors?.['required']">
+                        Arrival date needs to be selected.
+                      </div> -->
                     </div>
                     <div class="form-group">
-                      <label for="exampleInputPassword1">When is your return date?</label>
-                      <input type="text" placeholder="mm-dd-yyyy" class="form-control" bsDatepicker>
+                      <label for="returnDate">When is your return date?</label>
+                      <input formControlName="returnDate" type="text" placeholder="mm-dd-yyyy" class="form-control"
+                        bsDatepicker [ngClass]="{
+                        'is-invalid':
+                        tripDetailsIsFormSubmitted &&
+                            form.controls['returnDate'].errors
+                    }" required>
 
                     </div>
                     <div class="form-group">
-                      <label for="exampleInputPassword1">Phone Number</label>
+                      <label for="phone">Phone Number</label>
                       <div class="row">
                         <div class="col-3 pr-1">
                           <app-dropdown></app-dropdown>
                         </div>
                         <div class="col-6 pl-0">
-                          <input type="number" placeholder="Phone Number" class="form-control">
+                          <input type="number" placeholder="Phone Number" class="form-control" formControlName="phone"
+                            [ngClass]="{
+                            'is-invalid':
+                            tripDetailsIsFormSubmitted &&
+                                form.controls['phone'].errors
+                        }" required>
                         </div>
                       </div>
                     </div>
                     <div class="form-group">
-                      <label for="exampleInputPassword1">Email</label>
+                      <label for="email">Email</label>
                       <div class="row">
                         <div class="col-9">
-                          <input type="text" placeholder="abc@email.com" class="form-control">
+                          <input type="text" placeholder="abc@email.com" class="form-control" formControlName="email"
+                            [ngClass]="{
+                            'is-invalid':
+                            tripDetailsIsFormSubmitted &&
+                                form.controls['email'].errors
+                        }" required>
                         </div>
                       </div>
                     </div>
+                    <button class="btn btn--primary btn--std btn--full btnContinue" (click)="submitStep1Form()"
+                      id="btnContinueSidebar" type="submit" data-btn-text="Save &amp; Continue">
+                      <span class="">Save &amp; Continue</span>
+                    </button>
                   </form>
                 </div>
 
@@ -73,7 +100,7 @@
           </div>
         </div>
       </mat-step>
-      <mat-step [stepControl]="secondFormGroup" label="Your Info">
+      <mat-step label="Your Info">
         <div class="flex flex-col w-full items-start md:flex-row">
 
           <div id="question-container" class="flex-1 flex-col lg:flex-row items-start w-full">
@@ -88,27 +115,48 @@
 
 
                 </div>
-                <form class="mx-5 mt-2">
+                <form class="mx-5 mt-2" [formGroup]="secondForm" [class.was-validated]="isYourDetailsFormSubmitted">
                   <div class="form-group">
                     <label for="exampleInputEmail1">First and Middle Name</label>
-                    <input type="text" placeholder="John William" class="form-control">
+                    <input type="text" placeholder="John William" class="form-control" formControlName="firstName"
+                      [ngClass]="{
+                            'is-invalid':
+                            isYourDetailsFormSubmitted &&
+                            secondForm.controls['firstName'].errors
+                        }" required>
                   </div>
                   <div class="form-group">
                     <label for="exampleInputEmail1">Last Name</label>
-                    <input type="text" placeholder="Doe" class="form-control">
+                    <input type="text" placeholder="Doe" class="form-control" formControlName="lastName" [ngClass]="{
+                            'is-invalid':
+                            isYourDetailsFormSubmitted &&
+                            secondForm.controls['lastName'].errors
+                        }" required>
                   </div>
                   <div class="form-group">
                     <label for="exampleInputEmail1">Gender</label>
-                    <select [(ngModel)]="genderValue" class="form-control">
-                      <option [value]="'option1'">Default</option>
-                      <option [value]="'option2'">Male</option>
-                      <option [value]="'option3'">Female</option>
+                    <select [(ngModel)]="genderValue" class="form-control" formControlName="gender" [ngClass]="{
+                            'is-invalid':
+                            isYourDetailsFormSubmitted &&
+                            secondForm.controls['gender'].errors
+                        }" required>
+                      <option [value]="">Male</option>
+                      <option [value]="">Female</option>
                     </select>
                   </div>
                   <div class="form-group">
                     <label>Date of Birth</label>
-                    <input type="type" placeholder="mm-dd-yyyy" class="form-control" bsDatepicker>
+                    <input type="type" placeholder="mm-dd-yyyy" class="form-control" bsDatepicker formControlName="dob"
+                      [ngClass]="{
+                            'is-invalid':
+                            isYourDetailsFormSubmitted &&
+                            secondForm.controls['dob'].errors
+                        }" required>
                   </div>
+                  <button class="btn btn--primary btn--std btn--full btnContinue" (click)="submitStep2Form()"
+                    id="btnContinueSidebar" type="submit" data-btn-text="Save &amp; Continue">
+                    <span class="">Save &amp; Continue</span>
+                  </button>
                 </form>
               </div>
             </div>

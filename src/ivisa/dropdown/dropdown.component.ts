@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, OnChanges } from '@angular/core';
+import { Component, Input, OnInit, OnChanges, EventEmitter, Output } from '@angular/core';
 import { DropDownModel } from '../../Model/dropdownModel';
 
 @Component({
@@ -10,6 +10,12 @@ export class DropdownComponent implements OnInit, OnChanges {
   
 
   @Input() dropdownData: DropDownModel[] = [];
+  @Output() dataEvent = new EventEmitter<string>();
+
+  // sendDataToParent(data: string) {
+  //   this.dataEvent.emit(data);
+  // }
+
   selectedValue: DropDownModel = {label:"", value:""};
   isDropdownVisible: boolean = false;
   
@@ -30,6 +36,7 @@ export class DropdownComponent implements OnInit, OnChanges {
   selectValue(value: DropDownModel){
     this.selectedValue = value;
     this.isDropdownVisible = false;
+    this.dataEvent.emit(this.selectedValue.value);
   }
   filterDropDownData(searchTerm: string){
     let searchString = searchTerm.toLowerCase();

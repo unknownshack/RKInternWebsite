@@ -40,23 +40,17 @@
                           <label for="exampleInputEmail1">Where Am I From?</label>
                           <input type="email" value="Nepal-NP" disabled class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
                         </div>
-                        <div class="form-group">
+                        <div class="form-group mb-0">
                           <label for="exampleInputPassword1">Applying for</label>
-                          <app-dropdown [dropdownData]="applyForOption"></app-dropdown>
+                          <app-dropdown (dataEvent)="handleOnDropdownSelect($event)" [dropdownData]="applyForOption"></app-dropdown>
                         </div>
+                        <small *ngIf="showValidationError" class="text-danger">You need to select the value.</small>
                       </form>
                     </div>
                   </div><!----><!---->
                 </div>
-                <div><!----></div>
-                <div><!----></div>
-                <div><!----></div>
-                <div><!----></div>
-                <div><!----></div>
-                <div><!----></div>
-                <div id="paynow"><!----><!----></div>
                 <div class="flex mt-4 justify-between"><!----><!----><button
-                    class="btn btn--primary btn--std btnContinue hidden md:block" (click)="fillInformation()" id="btnContinueUnderSection"
+                    class="btn btn--primary btn--std btnContinue hidden md:block" (click)="onValidateSubmit()" id="btnContinueUnderSection"
                     type="submit" data-btn-text="Start Now"><span class="">Start Now</span><!----></button><!---->
                 </div>
               </div>
@@ -121,7 +115,7 @@
                 style="z-index: 1000; box-shadow: rgba(17, 18, 17, 0.18) 0px 0px 16px 0px;">
                 <div class="flex justify-between items-center">
                   <p class="text-dark mb-0 leading-none"><span class="bold text-lg">Total: TBD</span></p><button
-                    class="btn btn--primary btn--std btnContinue" (click)="fillInformation()" id="btnContinueUnderSectionMobile" type="submit"
+                    class="btn btn--primary btn--std btnContinue" (click)="onValidateSubmit()" id="btnContinueUnderSectionMobile" type="submit"
                     data-btn-text="Start Now"><span class="">Start Now</span><!----></button>
                 </div>
               </div>
