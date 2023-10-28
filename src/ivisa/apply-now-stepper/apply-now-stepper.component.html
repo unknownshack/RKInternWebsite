@@ -1,4 +1,4 @@
-<div *ngIf="showAlert">
+<div *ngIf="showAlert" class="alertLocation">
   <alert [dismissOnTimeout]="2000" type="success" (onClosed)="onAlertClose()">
     You have successfully made the payment.
   </alert>
@@ -100,7 +100,7 @@
           </div>
         </div>
       </mat-step>
-      <mat-step label="Your Info">
+      <mat-step [stepControl]="secondFormGroup" label="Your Info">
         <div class="flex flex-col w-full items-start md:flex-row">
 
           <div id="question-container" class="flex-1 flex-col lg:flex-row items-start w-full">
@@ -183,8 +183,10 @@
                     </div>
                   </div>
 
-                  <div class="w-full md:px-0 pt-5 flex flex-col justify-center">
+                  <div class="w-full md:px-0 flex flex-col justify-center">
                     <div class="card-body md:px-5">
+                      <small class="block text-danger mb-2" *ngIf="showErrorForFeeSelection"><i>*You have select either
+                          of two packages.</i></small>
                       <div class="form-row flex flex-col lg:flex-row">
                         <div class="form-group flex flex-col justify-start max-w-full col-12 col-md-12">
                           <div class="ivisa-input-wrapper w-full h-full" data-ivisa-slug="product_add_ons"
@@ -197,7 +199,7 @@
 
                                   <div>
                                     <div class="bold text-base mb-6">1. Choose an option</div>
-                                    <div
+                                    <div [ngClass]="{'border border-info': isRogerOfferSelected}" (click)="rogerOffer()"
                                       class="border-1 border-gray-300 flex border-3 rounded-md mb-4 hover:border-secondary transition-colors duration-150 ease-out cursor-pointer relative">
                                       <div
                                         class="bg-blue-100 text-2xl md:text-3xl lg:text-4xl w-1/3 rounded-l-md bold flex flex-col items-center justify-center relative overflow-hidden"
@@ -235,7 +237,8 @@
                                 <div modelmodifiers="[object Object]" data-v-402b6d91="">
                                   <div class="bold text-base mb-4">2. Choose your processing time</div>
                                   <ul class="list">
-                                    <li
+                                    <li [ngClass]="{'border border-info': isStandardOfferSelected}"
+                                      (click)="standardOffer()"
                                       class="flex justify-between items-center py-2 px-4 mb-3 rounded-xl border-1 border-primary border-secondary border-3 selected-option cursor-pointer"
                                       data-dusk="Standard">
                                       <div class="info flex flex-col items-start"><span
@@ -254,6 +257,10 @@
                           </div>
 
                         </div>
+                        <button class="btn btn--primary btn--std btn--full btnContinue" (click)="submitFeeChoice()"
+                          id="btnContinueSidebar" type="submit" data-btn-text="Save &amp; Continue">
+                          <span class="">Save &amp; Continue</span>
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -271,7 +278,7 @@
           </div>
         </div>
       </mat-step>
-      <mat-step>
+      <mat-step [stepControl]="secondFormGroup">
         <ng-template matStepLabel>Checkout</ng-template>
         <div class="flex flex-col w-full items-start md:flex-row">
 
@@ -287,40 +294,60 @@
                     <div class="overflow-hidden bg-white rounded-md border-1  md:border-gray-300 md:px-6">
                       <div class="flex items-center justify-between py-3 border-b border-gray-300">
                         Select a payment method. All transactions are safe and secure</div>
-                      <div class="pt-2 w-full">
-                        <div class="flex items-center justify-between">
-                          <div class="font-bold">Credit / Debit Card</div>
-                        </div>
-                        <div class="mt-2">
-                          <div class="form-group">
-                            <label>Card Holder Name </label>
-                            <input type="text" class="form-control">
+                      <form [formGroup]="paymentForm" [class.was-validated]="isPaymentInfoSubmitted">
+                        <div class="pt-2 w-full">
+                          <div class="flex items-center justify-between">
+                            <div class="font-bold">Credit / Debit Card</div>
                           </div>
-                          <div class="form-group">
-                            <label>Card Number</label>
-                            <input type="number" class="form-control">
-                          </div>
-                          <div class="form-group">
-                            <label>Expiry Date</label>
-                            <input type="text" class="form-control" bsDatepicker>
-                          </div>
+                          <div class="mt-2">
+                            <div class="form-group">
+                              <label>Card Holder Name </label>
+                              <input type="text" class="form-control" formControlName="cardHolderName" [ngClass]="{
+                                'is-invalid':
+                                isPaymentInfoSubmitted &&
+                                paymentForm.controls['cardHolderName'].errors
+                            }" required
+                              >
+                            </div>
+                            <div class="form-group">
+                              <label>Card Number</label>
+                              <input type="number" class="form-control" formControlName="cardNumber" [ngClass]="{
+                                'is-invalid':
+                                isPaymentInfoSubmitted &&
+                                paymentForm.controls['cardNumber'].errors
+                            }" required>
+                            </div>
+                            <div class="form-group">
+                              <label>Expiry Date</label>
+                              <input type="text" class="form-control" bsDatepicker formControlName="expiryDate" [ngClass]="{
+                                'is-invalid':
+                                isPaymentInfoSubmitted &&
+                                paymentForm.controls['expiryDate'].errors
+                            }" required>
+                            </div>
 
-                          <div class="form-group">
-                            <label>Security Code</label>
-                            <input type="number" class="form-control">
-                          </div>
+                            <div class="form-group">
+                              <label>Security Code</label>
+                              <input type="number" class="form-control" formControlName="securityCode" [ngClass]="{
+                                'is-invalid':
+                                isPaymentInfoSubmitted &&
+                                paymentForm.controls['securityCode'].errors
+                            }" required>
+                            </div>
 
-                          <div class="text-center flex flex-col md:flex-row items-center justify-center mt-4 lg:hidden">
-                            <img src="https://d16zz69zs6o3lx.cloudfront.net/img/payment/safe-checkout.png"
-                              alt="Safe checkout" class="border-0 mr-2" style="height: 45px;">
-                            <div class="mt-4 md:mt-0 w-full"><button class="btn btn--primary btn--std btn--full"
-                                id="btnSubmitPaymentMobile" type="submit" data-btn-text="Submit Payment"><span
-                                  class="">Submit
-                                  Payment</span>
-                              </button></div>
+                            <div
+                              class="text-center flex flex-col md:flex-row items-center justify-center mt-4 lg:hidden">
+                              <img src="https://d16zz69zs6o3lx.cloudfront.net/img/payment/safe-checkout.png"
+                                alt="Safe checkout" class="border-0 mr-2" style="height: 45px;">
+                              <div class="mt-4 md:mt-0 w-full"><button class="btn btn--primary btn--std btn--full"
+                                  id="btnSubmitPaymentMobile" type="submit" data-btn-text="Submit Payment"><span
+                                    class="">Submit
+                                    Payment</span>
+                                </button></div>
+                            </div>
                           </div>
                         </div>
-                      </div>
+                      </form>
                       <div class="relative py-4 mt-6">
                         <div class="absolute inset-0 flex items-center justify-center">
                           <div class="w-full sm:w-1/2 border-b border-gray-300"></div>

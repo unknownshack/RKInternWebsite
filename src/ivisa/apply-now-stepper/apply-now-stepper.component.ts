@@ -18,9 +18,12 @@ export class ApplyNowStepperComponent implements OnInit {
   @ViewChild(MatStepper) stepper: MatStepper;
   tripDetailsIsFormSubmitted = false;
   isYourDetailsFormSubmitted = false;
+  isPaymentInfoSubmitted = false;
   travelCountry: string = "";
   genderValue: string = "Select";
-
+  isStandardOfferSelected: boolean = false;
+  isRogerOfferSelected: boolean = false;
+  showErrorForFeeSelection = false;
   showAlert: boolean = false;
 
   selectedDate: Date= new Date();
@@ -45,6 +48,13 @@ export class ApplyNowStepperComponent implements OnInit {
     dob: ['', Validators.required]
   });
 
+  paymentForm = this._formBuilder.group({
+    cardHolderName: ['', Validators.required],
+    cardNumber: ['', Validators.required],
+    expiryDate: ['', Validators.required],
+    securityCode: ['', Validators.required]
+  })
+
 
   submitStep1Form(){
     this.tripDetailsIsFormSubmitted = true;
@@ -57,6 +67,26 @@ export class ApplyNowStepperComponent implements OnInit {
     this.isYourDetailsFormSubmitted = true;
     if (this.secondForm.valid) { 
       this.stepper.next();
+    }
+  }
+
+  standardOffer(){
+    this.isRogerOfferSelected = false;
+    this.isStandardOfferSelected = true;
+    this.showErrorForFeeSelection = false;
+  }
+
+  rogerOffer(){
+    this.isRogerOfferSelected = true;
+    this.isStandardOfferSelected = false;
+    this.showErrorForFeeSelection = false;
+  }
+
+  submitFeeChoice(){
+    if(this.isRogerOfferSelected || this.isStandardOfferSelected){
+      this.stepper.next();
+    }else{
+      this.showErrorForFeeSelection = true;
     }
   }
 
@@ -74,7 +104,10 @@ export class ApplyNowStepperComponent implements OnInit {
   }
   
   submitPayment(){
-    this.showAlert = true;
+    this.isPaymentInfoSubmitted = true;
+    if(this.paymentForm.valid){
+      this.showAlert = true;
+    }
   }
   
   onAlertClose(){
