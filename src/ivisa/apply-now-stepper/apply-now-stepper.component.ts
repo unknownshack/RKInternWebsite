@@ -25,6 +25,7 @@ export class ApplyNowStepperComponent implements OnInit {
   isRogerOfferSelected: boolean = false;
   showErrorForFeeSelection = false;
   showAlert: boolean = false;
+  phoneNumbers = ['+977', '+61', '+123'];
 
   selectedDate: Date= new Date();
 

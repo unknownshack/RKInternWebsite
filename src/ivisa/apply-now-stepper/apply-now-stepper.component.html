@@ -59,7 +59,9 @@
                       <label for="phone">Phone Number</label>
                       <div class="row">
                         <div class="col-3 pr-1">
-                          <app-dropdown></app-dropdown>
+                          <select class="form-control">
+                            <option *ngFor="let number of phoneNumbers" [value]="number">{{ number }}</option>
+                          </select>
                         </div>
                         <div class="col-6 pl-0">
                           <input type="number" placeholder="Phone Number" class="form-control" formControlName="phone"
